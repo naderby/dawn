@@ -4,41 +4,41 @@
       "type": "main-collection-banner",
       "settings": {
         "show_collection_description": true,
-        "show_collection_image": true
+        "show_collection_image": false
       }
     },
-    "16333520410b464cef": {
+    "163273619058e0de8b": {
       "type": "collection-list",
       "blocks": {
-        "16333520410b464cef-0": {
+        "163273619058e0de8b-0": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "quantic"
+          }
+        },
+        "163273619058e0de8b-1": {
           "type": "featured_collection",
           "settings": {
             "collection": "rx-7v"
           }
         },
-        "16333520410b464cef-1": {
+        "163273619058e0de8b-2": {
           "type": "featured_collection",
           "settings": {
-            "collection": ""
-          }
-        },
-        "16333520410b464cef-2": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": ""
+            "collection": "tour-x-4"
           }
         }
       },
       "block_order": [
-        "16333520410b464cef-0",
-        "16333520410b464cef-1",
-        "16333520410b464cef-2"
+        "163273619058e0de8b-0",
+        "163273619058e0de8b-1",
+        "163273619058e0de8b-2"
       ],
       "settings": {
         "title": "Collections",
         "image_ratio": "square",
         "color_scheme": "background-1",
-        "swipe_on_mobile": false,
+        "swipe_on_mobile": true,
         "image_padding": false,
         "show_view_all": false
       }
@@ -48,7 +48,7 @@
       "settings": {
         "products_per_page": 16,
         "image_ratio": "adapt",
-        "show_secondary_image": false,
+        "show_secondary_image": true,
         "add_image_padding": false,
         "show_image_outline": true,
         "show_vendor": false,
@@ -61,7 +61,7 @@
   },
   "order": [
     "banner",
-    "16333520410b464cef",
+    "163273619058e0de8b",
     "product-grid"
   ]
 }
