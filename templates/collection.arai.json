@@ -27,12 +27,19 @@
           "settings": {
             "collection": "tour-x-4"
           }
+        },
+        "5a28c23e-f37a-41e9-9ce5-dc41e30ce6f9": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "clearance-arai"
+          }
         }
       },
       "block_order": [
         "163273619058e0de8b-0",
         "163273619058e0de8b-1",
-        "163273619058e0de8b-2"
+        "163273619058e0de8b-2",
+        "5a28c23e-f37a-41e9-9ce5-dc41e30ce6f9"
       ],
       "settings": {
         "title": "Collections",
