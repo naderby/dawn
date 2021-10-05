@@ -60,7 +60,8 @@
 
 @media screen and (max-width: 749px) {
   .collection-list .collection-list__item {
-    width: calc(100% - 3rem);
+    /* width: calc(100% - 3rem); */
+    width: calc(50% - 3rem);
   }
 
   .collection-list__item.grid__item {

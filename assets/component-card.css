@@ -74,7 +74,7 @@
 }
 
 .card__text-spacing {
-  padding: 3rem;
+  /* padding: 3rem; */
 }
 
 .card-colored.color-background-1 {
@@ -82,7 +82,7 @@
 }
 
 .card--media .card__text-spacing {
-  padding: 2rem;
+  /* padding: 2rem; */
 }
 
 @media screen and (min-width: 750px) {
