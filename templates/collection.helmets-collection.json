@@ -13,23 +13,25 @@
         "163273619058e0de8b-0": {
           "type": "featured_collection",
           "settings": {
-            "collection": ""
+            "collection": "arai"
           }
         },
         "163273619058e0de8b-1": {
           "type": "featured_collection",
           "settings": {
-            "collection": ""
+            "collection": "agv"
           }
         },
         "163273619058e0de8b-2": {
           "type": "featured_collection",
+          "disabled": true,
           "settings": {
             "collection": ""
           }
         },
         "5a28c23e-f37a-41e9-9ce5-dc41e30ce6f9": {
           "type": "featured_collection",
+          "disabled": true,
           "settings": {
             "collection": "bjbj"
           }
