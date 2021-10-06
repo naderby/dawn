@@ -110,6 +110,7 @@
     },
     "16335486202ebdcd0b": {
       "type": "page",
+      "disabled": true,
       "settings": {
         "page": "delivery-returns"
       }
