@@ -25,7 +25,12 @@
       {% endif %}
   {% endfor %}
   </ul>
-  
+  <ul>
+    {%- for product_vendor in shop.vendors -%}
+      <li>{{ product_vendor | link_to_vendor }}</li>
+    {%- endfor -%}
+  </ul>
+    
 <div id="ProductGridContainer">
   {%- paginate collection.products by section.settings.products_per_page -%}
     {%- if collection.products.size == 0 -%}
