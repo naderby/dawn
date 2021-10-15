@@ -24,15 +24,23 @@
         },
         "163273619058e0de8b-2": {
           "type": "featured_collection",
+          "disabled": true,
           "settings": {
-            "collection": "arai-motorcycle-helmets"
+            "collection": ""
           }
         },
         "5a28c23e-f37a-41e9-9ce5-dc41e30ce6f9": {
           "type": "featured_collection",
           "disabled": true,
           "settings": {
-            "collection": "bjbj"
+            "collection": ""
+          }
+        },
+        "10f205ed-1ff3-43d8-b416-78f68ad79607": {
+          "type": "featured_collection",
+          "disabled": true,
+          "settings": {
+            "collection": ""
           }
         }
       },
@@ -40,7 +48,8 @@
         "163273619058e0de8b-0",
         "163273619058e0de8b-1",
         "163273619058e0de8b-2",
-        "5a28c23e-f37a-41e9-9ce5-dc41e30ce6f9"
+        "5a28c23e-f37a-41e9-9ce5-dc41e30ce6f9",
+        "10f205ed-1ff3-43d8-b416-78f68ad79607"
       ],
       "settings": {
         "title": "Featured Brands",
