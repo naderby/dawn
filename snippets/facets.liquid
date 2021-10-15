@@ -164,21 +164,39 @@
                 </details>
               {% endcase %}
             {%- endfor -%}
-            <ul>
-              {% for tag in collection.all_tags %}
-                  {% if current_tags contains tag %}
-                        <li class="active">{{ tag | link_to_remove_tag: tag }} &#10003; </li>
-                  {% else %}
-                        <li>{{ tag | link_to_add_tag: tag }}</li>
-                  {% endif %}
-              {% endfor %}
-              </ul>
-              <ul>
-                {%- for product_vendor in shop.vendors -%}
-                  <li>{{ product_vendor | link_to_vendor }}</li>
-                {%- endfor -%}
-              </ul>
-                        <noscript>
+            <details class="disclosure-has-popup facets__disclosure js-filter">
+              <summary class="facets__summary caption-large focus-offset">
+                <div>
+                  <span>TAGS</span>
+                </div>
+              </summary>
+              <div class="facets__display">
+                <div class="facets__header">
+                  <span class="facets__selected no-js-hidden">gfdgdfs</span>
+                  <facet-remove>
+                    <a href="{{ filter.url_to_remove }}" class="facets__reset link underlined-link">
+                      {{ 'products.facets.reset' | t }}
+                    </a>
+                  </facet-remove>
+                </div>
+
+                <ul class="facets__list list-unstyled" role="list">
+                  {% for tag in collection.all_tags %}
+                      {% if current_tags contains tag %}
+                            <li class="list-menu__item facets__item active">{{ tag | link_to_remove_tag: tag }} &#10003; </li>
+                      {% else %}
+                            <li class="list-menu__item facets__item">{{ tag | link_to_add_tag: tag }}</li>
+                      {% endif %}
+                  {% endfor %}
+                  </ul>
+              </div>
+            </details>
+
+
+
+
+
+              <noscript>
               <button type="submit" class="facets__button-no-js button button--tertiary">{{ 'products.facets.filter_button' | t }}</button>
             </noscript>
           </div>
