@@ -16,20 +16,6 @@
     {% render 'facets', results: collection, enable_filtering: section.settings.enable_filtering, enable_sorting: section.settings.enable_sorting, collapse_on_larger_devices: section.settings.collapse_on_larger_devices %}
   </div>
 {%- endif -%}
-<ul>
-  {% for tag in collection.all_tags %}
-      {% if current_tags contains tag %}
-            <li class="active">{{ tag | link_to_remove_tag: tag }} &#10003; </li>
-      {% else %}
-            <li>{{ tag | link_to_add_tag: tag }}</li>
-      {% endif %}
-  {% endfor %}
-  </ul>
-  <ul>
-    {%- for product_vendor in shop.vendors -%}
-      <li>{{ product_vendor | link_to_vendor }}</li>
-    {%- endfor -%}
-  </ul>
     
 <div id="ProductGridContainer">
   {%- paginate collection.products by section.settings.products_per_page -%}
