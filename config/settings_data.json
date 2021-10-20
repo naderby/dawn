@@ -1,7 +1,7 @@
 {
   "current": {
-    "colors_solid_button_labels": "#ffffff",
-    "colors_accent_1": "#121212",
+    "colors_solid_button_labels": "#121212",
+    "colors_accent_1": "#bed63a",
     "colors_accent_2": "#334fb4",
     "colors_text": "#121212",
     "colors_outline_button_labels": "#121212",
@@ -9,6 +9,7 @@
     "colors_background_2": "#f3f3f3",
     "type_header_font": "assistant_n4",
     "type_body_font": "assistant_n4",
+    "sale_badge_color_scheme": "accent-1",
     "social_facebook_link": "https:\/\/www.facebook.com\/gearchangeonline",
     "currency_code_enabled": false,
     "checkout_logo_image": "shopify:\/\/shop_images\/gc_logo_large_f101fa01-2121-452f-8d14-9cb4d87b4950.png",
