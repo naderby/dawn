@@ -25,10 +25,19 @@
               "color_scheme": "background-1",
               "link": ""
             }
+          },
+          "1a500d03-e802-4d91-b2dd-71062ae5c8ec": {
+            "type": "announcement",
+            "settings": {
+              "text": "Chat with us for the best prices",
+              "color_scheme": "accent-1",
+              "link": ""
+            }
           }
         },
         "block_order": [
-          "announcement-bar-0"
+          "announcement-bar-0",
+          "1a500d03-e802-4d91-b2dd-71062ae5c8ec"
         ],
         "settings": {
         }
