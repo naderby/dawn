@@ -2208,6 +2208,8 @@ details[open] > .header__icon--menu .icon-hamburger {
   color: rgba(var(--color-foreground), 0.75);
   font-family: var(--font-heading-family);
   font-style: var(--font-heading-style);
+  font-size: 2rem;
+  text-transform: uppercase;
 }
 
 .header__menu-item:hover {
