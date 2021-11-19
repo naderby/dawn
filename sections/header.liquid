@@ -330,10 +330,22 @@
       <h1 class="header__heading">
     {%- endif -%}
         <a href="{{ routes.root_url }}" class="header__heading-link link link--text focus-inset">
-
+          {% comment %} {%- if section.settings.logo != blank -%}
+            {%- assign image_size = section.settings.logo_width | append: 'x' -%}
+            <img srcset="{{ section.settings.logo | img_url: image_size }} 1x, {{ section.settings.logo | img_url: image_size, scale: 2 }} 2x"
+              src="{{ section.settings.logo | img_url: image_size }}"
+              loading="lazy"
+              class="header__heading-logo"
+              width="{{ section.settings.logo.width }}"
+              height="{{ section.settings.logo.height }}"
+              alt="{{ section.settings.logo.alt | default: shop.name | escape }}"
+            >
+          {%- else -%}
+            <span class="h2">{{ shop.name }}</span>
+          {%- endif -%} {% endcomment %}
           <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
             width="381.975px" height="45.06px" viewBox="275.957 245.595 381.975 45.06"
-            enable-background="new 275.957 245.595 381.975 45.06" xml:space="preserve">
+            enable-background="new 275.957 245.595 381.975 45.06" xml:space="preserve" class="header__heading-logo">
               <path fill="#BED63A" d="M322.849,262.692l-22.942-0.058c-2.013-0.019-2.629,1.097-1.989,2.913l0.815,2.162
               c0.947,2.147,1.62,2.257,3.13,2.257l13.825,0.065l1.391,5.592c0.507,2.445-1.125,3.405-3.139,3.405h-16.253
               c-2.267,0-5.319-1.013-6.881-4.674l-4.947-12.34c-1.066-2.979-0.07-6.92,5.51-6.92l27.766,0.025
@@ -380,7 +392,7 @@
               c-1.08,0-1.152,0.979-1.152,0.979s-0.034,1.064-0.034,1.176c0,0.008,0.016,0.363,0.252,0.605c0.521,0.531,1.715,1.71,2.237,2.242
               c0.254,0.263,0.599,0.262,0.599,0.27h9.516v-1.386h0.01L657.932,269.378L657.932,269.378z"/>
             </svg>
-                    </a>
+        </a>
     {%- if request.page_type == 'index' -%}
       </h1>
     {%- endif -%}
