@@ -3,6 +3,12 @@
     "main": {
       "type": "main-product",
       "blocks": {
+        "b3823b51-5d12-4c31-a0c6-0c29676ea18d": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "<a href=\"{{ product.vendor | url_for_vendor }}\"><img src=\"{{ product.vendor | append: \".svg\" | asset_url }}\"><\/a>"
+          }
+        },
         "vendor": {
           "type": "text",
           "settings": {
@@ -61,22 +67,10 @@
           "settings": {
             "share_label": "Share"
           }
-        },
-        "3d95f3c7-2338-43b0-9b8f-98f8c74c55ff": {
-          "type": "text",
-          "settings": {
-            "text": "Text block",
-            "text_style": "body"
-          }
-        },
-        "b3823b51-5d12-4c31-a0c6-0c29676ea18d": {
-          "type": "custom_liquid",
-          "settings": {
-            "custom_liquid": "<a href=\"{{ product.vendor | url_for_vendor }}\"><img src=\"{{ product.vendor | append: \".svg\" | asset_url }}\"><\/a>"
-          }
         }
       },
       "block_order": [
+        "b3823b51-5d12-4c31-a0c6-0c29676ea18d",
         "vendor",
         "title",
         "subtitle",
@@ -86,9 +80,7 @@
         "quantity_selector",
         "buy_buttons",
         "description",
-        "share",
-        "3d95f3c7-2338-43b0-9b8f-98f8c74c55ff",
-        "b3823b51-5d12-4c31-a0c6-0c29676ea18d"
+        "share"
       ],
       "settings": {
         "enable_sticky_info": true,
