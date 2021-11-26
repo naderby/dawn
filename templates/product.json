@@ -12,8 +12,8 @@
         "vendor": {
           "type": "text",
           "settings": {
-            "text": "{{ product.vendor }}",
-            "text_style": "subtitle"
+            "text": "Range: {{ product.metafields.my_fields.range.value }}",
+            "text_style": "body"
           }
         },
         "title": {
