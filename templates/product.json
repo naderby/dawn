@@ -6,7 +6,7 @@
         "b3823b51-5d12-4c31-a0c6-0c29676ea18d": {
           "type": "custom_liquid",
           "settings": {
-            "custom_liquid": "<a href=\"{{ product.vendor | url_for_vendor }}\"><img style=\"max-width:10rem; background:rgba(var(--color-foreground),.04);padding:1rem;border-radius:1\nrem;\" src=\"{{ product.vendor | prepend: \"vendor-\" | handle | append: \".svg\" | downcase | asset_url }}\"><\/a>"
+            "custom_liquid": "<a href=\"{{ product.vendor | url_for_vendor }}\"><img style=\"max-width:10rem; background:rgba(var(--color-foreground),.04);padding:1rem;border-radius:1rem;\" src=\"{{ product.vendor | prepend: \"vendor-\" | handle | append: \".svg\" | downcase | asset_url }}\"><\/a>"
           }
         },
         "title": {
