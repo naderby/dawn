@@ -9,13 +9,6 @@
             "custom_liquid": "<a href=\"{{ product.vendor | url_for_vendor }}\"><img style=\"max-width:10rem\" src=\"{{ product.vendor | prepend: \"vendor-\" | handle | append: \".svg\" | downcase | asset_url }}\"><\/a>"
           }
         },
-        "vendor": {
-          "type": "text",
-          "settings": {
-            "text": "Range: {{ product.metafields.my_fields.range.value }}",
-            "text_style": "body"
-          }
-        },
         "title": {
           "type": "title",
           "settings": {
@@ -57,6 +50,13 @@
             "show_dynamic_checkout": true
           }
         },
+        "vendor": {
+          "type": "text",
+          "settings": {
+            "text": "Range: {{ product.metafields.my_fields.range.value }}",
+            "text_style": "body"
+          }
+        },
         "description": {
           "type": "description",
           "settings": {
@@ -71,7 +71,6 @@
       },
       "block_order": [
         "b3823b51-5d12-4c31-a0c6-0c29676ea18d",
-        "vendor",
         "title",
         "subtitle",
         "price",
@@ -79,6 +78,7 @@
         "9ee8db31-91e6-4b9d-8a1a-525454dd7b60",
         "quantity_selector",
         "buy_buttons",
+        "vendor",
         "description",
         "share"
       ],
