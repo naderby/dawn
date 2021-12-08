@@ -11,6 +11,7 @@
     "type_body_font": "mono",
     "sale_badge_color_scheme": "accent-1",
     "social_facebook_link": "https:\/\/www.facebook.com\/gearchangeonline",
+    "favicon": "shopify:\/\/shop_images\/favicon.png",
     "currency_code_enabled": false,
     "checkout_logo_image": "shopify:\/\/shop_images\/gc_logo_large_f101fa01-2121-452f-8d14-9cb4d87b4950.png",
     "checkout_logo_position": "left",
@@ -23,7 +24,7 @@
             "settings": {
               "text": "Chat with us for the best prices",
               "color_scheme": "accent-1",
-              "link": ""
+              "link": "shopify:\/\/pages\/about-us"
             }
           },
           "f8e391d0-0152-4014-8ecc-c9e2300e684d": {
