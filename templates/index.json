@@ -1,5 +1,50 @@
 {
   "sections": {
+    "163899179357ab03e6": {
+      "type": "image-banner",
+      "blocks": {
+        "16389917923d4e93eb-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "WINTER RIDING",
+            "heading_size": "medium"
+          }
+        },
+        "16389917923d4e93eb-1": {
+          "type": "text",
+          "settings": {
+            "text": "Survive any weather. Nothing stops a ride!"
+          }
+        },
+        "16389917923d4e93eb-2": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Shop Winter Riding",
+            "button_link_1": "",
+            "button_style_secondary_1": true,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "16389917923d4e93eb-0",
+        "16389917923d4e93eb-1",
+        "16389917923d4e93eb-2"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/heatedgloves.jpg",
+        "image_height": "small",
+        "adapt_height_first_image": false,
+        "desktop_text_box_position": "center",
+        "show_text_box": false,
+        "image_overlay_opacity": 0,
+        "color_scheme": "background-1",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
     "rich_text": {
       "type": "rich-text",
       "blocks": {
@@ -202,60 +247,15 @@
         "desktop_layout": "right",
         "mobile_layout": "collage"
       }
-    },
-    "163899179357ab03e6": {
-      "type": "image-banner",
-      "blocks": {
-        "16389917923d4e93eb-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "WINTER RIDING",
-            "heading_size": "medium"
-          }
-        },
-        "16389917923d4e93eb-1": {
-          "type": "text",
-          "settings": {
-            "text": "Survive any weather. Nothing stops a ride!"
-          }
-        },
-        "16389917923d4e93eb-2": {
-          "type": "buttons",
-          "settings": {
-            "button_label_1": "Shop Winter Riding",
-            "button_link_1": "",
-            "button_style_secondary_1": true,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
-        }
-      },
-      "block_order": [
-        "16389917923d4e93eb-0",
-        "16389917923d4e93eb-1",
-        "16389917923d4e93eb-2"
-      ],
-      "settings": {
-        "image": "shopify:\/\/shop_images\/heatedgloves.jpg",
-        "image_height": "small",
-        "adapt_height_first_image": false,
-        "desktop_text_box_position": "center",
-        "show_text_box": false,
-        "image_overlay_opacity": 0,
-        "color_scheme": "background-1",
-        "stack_images_on_mobile": true,
-        "show_text_below": true
-      }
     }
   },
   "order": [
+    "163899179357ab03e6",
     "rich_text",
     "image_banner",
     "featured_products",
     "1638986059856353eb",
     "multi_column",
-    "collage",
-    "163899179357ab03e6"
+    "collage"
   ]
 }
