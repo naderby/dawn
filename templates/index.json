@@ -183,10 +183,11 @@
         "column2": {
           "type": "column",
           "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "link_label": "",
-            "link": ""
+            "image": "shopify:\/\/shop_images\/agv.jpg",
+            "title": "Budget Helmets",
+            "text": "<p>Lower prices does not mean lower protection. Sometimes a lid is just a lid.<\/p>",
+            "link_label": "Shop Budget Helmets",
+            "link": "shopify:\/\/collections\/arai"
           }
         },
         "column3": {
