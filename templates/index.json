@@ -1,5 +1,24 @@
 {
   "sections": {
+    "rich_text": {
+      "type": "rich-text",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "The UK's best prices for Motorcycle Helmets, Gloves, Boots & Clothing",
+            "heading_size": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "heading"
+      ],
+      "settings": {
+        "color_scheme": "background-1",
+        "full_width": true
+      }
+    },
     "image_banner": {
       "type": "image-banner",
       "blocks": {
@@ -38,48 +57,13 @@
         "show_text_below": true
       }
     },
-    "rich_text": {
-      "type": "rich-text",
-      "blocks": {
-        "heading": {
-          "type": "heading",
-          "settings": {
-            "heading": "Talk about your brand",
-            "heading_size": "h1"
-          }
-        },
-        "text": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>"
-          }
-        },
-        "button": {
-          "type": "button",
-          "settings": {
-            "button_label": "Button label",
-            "button_link": "",
-            "button_style_secondary": false
-          }
-        }
-      },
-      "block_order": [
-        "heading",
-        "text",
-        "button"
-      ],
-      "settings": {
-        "color_scheme": "background-1",
-        "full_width": true
-      }
-    },
     "featured_products": {
       "type": "featured-collection",
       "settings": {
         "title": "Popular Motorcycle Helmets",
         "collection": "frontpage",
-        "products_to_show": 8,
-        "show_view_all": true,
+        "products_to_show": 4,
+        "show_view_all": false,
         "swipe_on_mobile": true,
         "image_ratio": "square",
         "show_secondary_image": false,
@@ -87,6 +71,42 @@
         "show_image_outline": true,
         "show_vendor": true,
         "show_rating": false
+      }
+    },
+    "1638986059856353eb": {
+      "type": "collection-list",
+      "blocks": {
+        "16389860590a2174ad-0": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "arai"
+          }
+        },
+        "16389860590a2174ad-1": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "rx-7v"
+          }
+        },
+        "16389860590a2174ad-2": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "motorcycle-boots"
+          }
+        }
+      },
+      "block_order": [
+        "16389860590a2174ad-0",
+        "16389860590a2174ad-1",
+        "16389860590a2174ad-2"
+      ],
+      "settings": {
+        "title": "Favourite Collections",
+        "image_ratio": "square",
+        "color_scheme": "background-1",
+        "swipe_on_mobile": true,
+        "image_padding": false,
+        "show_view_all": false
       }
     },
     "multi_column": {
@@ -178,9 +198,10 @@
     }
   },
   "order": [
-    "image_banner",
     "rich_text",
+    "image_banner",
     "featured_products",
+    "1638986059856353eb",
     "multi_column",
     "collage"
   ]
