@@ -93,12 +93,19 @@
           "settings": {
             "collection": "motorcycle-boots"
           }
+        },
+        "ec5f50af-a176-489d-9f67-e58ff6838ff4": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "winter-riding"
+          }
         }
       },
       "block_order": [
         "16389860590a2174ad-0",
         "16389860590a2174ad-1",
-        "16389860590a2174ad-2"
+        "16389860590a2174ad-2",
+        "ec5f50af-a176-489d-9f67-e58ff6838ff4"
       ],
       "settings": {
         "title": "Favourite Collections",
