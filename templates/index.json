@@ -95,10 +95,10 @@
         "column1": {
           "type": "column",
           "settings": {
-            "title": "Column",
+            "title": "PRICE DEALS",
             "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
             "link_label": "",
-            "link": ""
+            "link": "shopify:\/\/pages\/about-us"
           }
         },
         "column2": {
@@ -133,7 +133,7 @@
         "background_style": "primary",
         "button_label": "Button label",
         "button_link": "",
-        "swipe_on_mobile": false
+        "swipe_on_mobile": true
       }
     },
     "collage": {
@@ -175,21 +175,6 @@
         "desktop_layout": "right",
         "mobile_layout": "collage"
       }
-    },
-    "video": {
-      "type": "video",
-      "settings": {
-        "heading": "Video",
-        "video_url": "https:\/\/player.vimeo.com\/video\/133037180?color=cbd2d4&title=0&byline=0&portrait=0&autoplay=1",
-        "description": "",
-        "full_width": false
-      }
-    },
-    "1638983400bb78128b": {
-      "type": "page",
-      "settings": {
-        "page": "about-us"
-      }
     }
   },
   "order": [
@@ -197,8 +182,6 @@
     "rich_text",
     "featured_products",
     "multi_column",
-    "collage",
-    "video",
-    "1638983400bb78128b"
+    "collage"
   ]
 }
