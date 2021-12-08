@@ -184,6 +184,12 @@
         "description": "",
         "full_width": false
       }
+    },
+    "1638983400bb78128b": {
+      "type": "page",
+      "settings": {
+        "page": "about-us"
+      }
     }
   },
   "order": [
@@ -192,6 +198,7 @@
     "featured_products",
     "multi_column",
     "collage",
-    "video"
+    "video",
+    "1638983400bb78128b"
   ]
 }
