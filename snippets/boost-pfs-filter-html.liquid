@@ -9,6 +9,8 @@
         {{itemVendor}}
         <p><img style="max-width:10rem; background:rgba(var(--color-foreground),.04);padding:1rem;border-radius:1rem;" src="{{ product.vendor | prepend: "vendor-" | handle | append: ".svg" | downcase | asset_url }}"></p>
         <p>{{ product.vendor | prepend: "vendor-" | handle | append: ".svg" | downcase | asset_url }}</p>
+        <p><img style="max-width:10rem; background:rgba(var(--color-foreground),.04);padding:1rem;border-radius:1rem;" src="vendor-{{product.vendor}}.svg"></p>
+        <p>{{product.vendor | downcase}}</p>
         <h3 class="card-information__text h5">
           <a href="{{itemUrl}}" class="full-unstyled-link">
             {{itemTitle}}
