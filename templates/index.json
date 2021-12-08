@@ -97,7 +97,7 @@
           "settings": {
             "title": "PRICE DEALS",
             "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "link_label": "",
+            "link_label": "Chat for deals",
             "link": "shopify:\/\/pages\/about-us"
           }
         },
