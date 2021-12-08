@@ -7,7 +7,7 @@
     <div class="card-information">
       <div class="card-information__wrapper">
         {{itemVendor}}
-        <p>{{product.vendor}}>PNG</p>
+        <p><a href="{{ product.vendor | url_for_vendor }}"><img style="max-width:10rem; background:rgba(var(--color-foreground),.04);padding:1rem;border-radius:1rem;" src="{{ product.vendor | prepend: "vendor-" | handle | append: ".svg" | downcase | asset_url }}"></a></p>
         <h3 class="card-information__text h5">
           <a href="{{itemUrl}}" class="full-unstyled-link">
             {{itemTitle}}
