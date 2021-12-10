@@ -1,32 +1,24 @@
 {
   "sections": {
-    "banner": {
-      "type": "main-collection-banner",
-      "settings": {
-        "show_collection_description": true,
-        "show_collection_image": true
-      }
-    },
     "16333520410b464cef": {
       "type": "collection-list",
-      "disabled": true,
       "blocks": {
         "16333520410b464cef-0": {
           "type": "featured_collection",
           "settings": {
-            "collection": ""
+            "collection": "motorcycle-helmets"
           }
         },
         "16333520410b464cef-1": {
           "type": "featured_collection",
           "settings": {
-            "collection": ""
+            "collection": "motorcycle-helmet-parts-accessories"
           }
         },
         "16333520410b464cef-2": {
           "type": "featured_collection",
           "settings": {
-            "collection": ""
+            "collection": "motorcycle-helmet-visors"
           }
         }
       },
@@ -36,12 +28,19 @@
         "16333520410b464cef-2"
       ],
       "settings": {
-        "title": "Collections",
+        "title": "",
         "image_ratio": "square",
         "color_scheme": "background-1",
-        "swipe_on_mobile": false,
+        "swipe_on_mobile": true,
         "image_padding": false,
         "show_view_all": false
+      }
+    },
+    "banner": {
+      "type": "main-collection-banner",
+      "settings": {
+        "show_collection_description": true,
+        "show_collection_image": false
       }
     },
     "product-grid": {
@@ -61,8 +60,8 @@
     }
   },
   "order": [
-    "banner",
     "16333520410b464cef",
+    "banner",
     "product-grid"
   ]
 }

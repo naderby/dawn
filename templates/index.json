@@ -1,5 +1,76 @@
 {
   "sections": {
+    "163899179357ab03e6": {
+      "type": "image-banner",
+      "blocks": {
+        "16389917923d4e93eb-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "WINTER RIDING",
+            "heading_size": "medium"
+          }
+        },
+        "16389917923d4e93eb-1": {
+          "type": "text",
+          "settings": {
+            "text": "Survive any weather. Nothing stops a ride!"
+          }
+        },
+        "16389917923d4e93eb-2": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Shop Winter Riding",
+            "button_link_1": "shopify:\/\/collections\/winter-riding",
+            "button_style_secondary_1": true,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "16389917923d4e93eb-0",
+        "16389917923d4e93eb-1",
+        "16389917923d4e93eb-2"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/heatedgloves.jpg",
+        "image_height": "small",
+        "adapt_height_first_image": false,
+        "desktop_text_box_position": "center",
+        "show_text_box": false,
+        "image_overlay_opacity": 0,
+        "color_scheme": "accent-1",
+        "stack_images_on_mobile": false,
+        "show_text_below": false
+      }
+    },
+    "rich_text": {
+      "type": "rich-text",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "The UK's best prices for Motorcycle Helmets, Gloves, Boots & Clothing",
+            "heading_size": "h1"
+          }
+        },
+        "17c7ff3a-c589-4d3c-a4e3-a28e66854a80": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Chat with us. Ask us for our best prices, or any technical\/size advice.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "17c7ff3a-c589-4d3c-a4e3-a28e66854a80"
+      ],
+      "settings": {
+        "color_scheme": "background-1",
+        "full_width": true
+      }
+    },
     "image_banner": {
       "type": "image-banner",
       "blocks": {
@@ -28,58 +99,23 @@
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/Urban_Jacket_Stratos_URban_pageUrban_Jacket_Stratos_1500x700_crop_right_1c6047ff-8f6b-4aa8-8de3-2b1866319a68.jpg",
-        "image_height": "medium",
+        "image_height": "small",
         "adapt_height_first_image": false,
         "desktop_text_box_position": "flex-end",
         "show_text_box": false,
         "image_overlay_opacity": 0,
         "color_scheme": "accent-1",
         "stack_images_on_mobile": true,
-        "show_text_below": true
-      }
-    },
-    "rich_text": {
-      "type": "rich-text",
-      "blocks": {
-        "heading": {
-          "type": "heading",
-          "settings": {
-            "heading": "Talk about your brand",
-            "heading_size": "h1"
-          }
-        },
-        "text": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>"
-          }
-        },
-        "button": {
-          "type": "button",
-          "settings": {
-            "button_label": "Button label",
-            "button_link": "",
-            "button_style_secondary": false
-          }
-        }
-      },
-      "block_order": [
-        "heading",
-        "text",
-        "button"
-      ],
-      "settings": {
-        "color_scheme": "background-1",
-        "full_width": true
+        "show_text_below": false
       }
     },
     "featured_products": {
       "type": "featured-collection",
       "settings": {
-        "title": "Featured products",
+        "title": "Popular Motorcycle Helmets",
         "collection": "frontpage",
-        "products_to_show": 8,
-        "show_view_all": true,
+        "products_to_show": 12,
+        "show_view_all": false,
         "swipe_on_mobile": true,
         "image_ratio": "square",
         "show_secondary_image": false,
@@ -89,25 +125,69 @@
         "show_rating": false
       }
     },
+    "1638986059856353eb": {
+      "type": "collection-list",
+      "blocks": {
+        "16389860590a2174ad-0": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "arai"
+          }
+        },
+        "16389860590a2174ad-1": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "rx-7v"
+          }
+        },
+        "16389860590a2174ad-2": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "motorcycle-boots"
+          }
+        },
+        "ec5f50af-a176-489d-9f67-e58ff6838ff4": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "winter-riding"
+          }
+        }
+      },
+      "block_order": [
+        "16389860590a2174ad-0",
+        "16389860590a2174ad-1",
+        "16389860590a2174ad-2",
+        "ec5f50af-a176-489d-9f67-e58ff6838ff4"
+      ],
+      "settings": {
+        "title": "Favourite Collections",
+        "image_ratio": "square",
+        "color_scheme": "background-1",
+        "swipe_on_mobile": true,
+        "image_padding": false,
+        "show_view_all": false
+      }
+    },
     "multi_column": {
       "type": "multicolumn",
       "blocks": {
         "column1": {
           "type": "column",
           "settings": {
-            "title": "Column",
+            "title": "PRICE DEALS",
             "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "link_label": "",
-            "link": ""
+            "link_label": "Chat for deals",
+            "link": "shopify:\/\/pages\/about-us"
           }
         },
         "column2": {
           "type": "column",
           "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "link_label": "",
-            "link": ""
+            "image": "shopify:\/\/shop_images\/agv.jpg",
+            "title": "Budget Helmets",
+            "text": "<p>Lower prices does not mean lower protection. Sometimes a lid is just a lid.<\/p>",
+            "link_label": "Shop Budget Helmets",
+            "link": "shopify:\/\/collections\/arai"
           }
         },
         "column3": {
@@ -128,10 +208,10 @@
       "settings": {
         "title": "Multicolumn",
         "image_width": "full",
-        "image_ratio": "adapt",
-        "column_alignment": "left",
-        "background_style": "primary",
-        "button_label": "Button label",
+        "image_ratio": "square",
+        "column_alignment": "center",
+        "background_style": "secondary",
+        "button_label": "",
         "button_link": "",
         "swipe_on_mobile": false
       }
@@ -175,23 +255,15 @@
         "desktop_layout": "right",
         "mobile_layout": "collage"
       }
-    },
-    "video": {
-      "type": "video",
-      "settings": {
-        "heading": "Video",
-        "video_url": "https:\/\/player.vimeo.com\/video\/133037180?color=cbd2d4&title=0&byline=0&portrait=0&autoplay=1",
-        "description": "",
-        "full_width": false
-      }
     }
   },
   "order": [
-    "image_banner",
+    "163899179357ab03e6",
     "rich_text",
+    "image_banner",
     "featured_products",
+    "1638986059856353eb",
     "multi_column",
-    "collage",
-    "video"
+    "collage"
   ]
 }
