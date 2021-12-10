@@ -27,26 +27,12 @@
           "settings": {
             "collection": "motorcycle-helmet-visors"
           }
-        },
-        "fcbf26f7-64aa-4ab3-9923-f3fb25b1ca0d": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "quantic"
-          }
-        },
-        "365427e8-f140-42ee-836b-2ae606e6ea42": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "motorcycle-boots"
-          }
         }
       },
       "block_order": [
         "16333520410b464cef-0",
         "16333520410b464cef-1",
-        "16333520410b464cef-2",
-        "fcbf26f7-64aa-4ab3-9923-f3fb25b1ca0d",
-        "365427e8-f140-42ee-836b-2ae606e6ea42"
+        "16333520410b464cef-2"
       ],
       "settings": {
         "title": "Collections",
