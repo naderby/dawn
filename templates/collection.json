@@ -57,11 +57,18 @@
         "enable_sorting": true,
         "collapse_on_larger_devices": false
       }
+    },
+    "163941104158a911d4": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "{% if collection.current_type %}\n  Currently viewing {{ collection.current_type | downcase }}.\n{% endif %}"
+      }
     }
   },
   "order": [
     "16333520410b464cef",
     "banner",
-    "product-grid"
+    "product-grid",
+    "163941104158a911d4"
   ]
 }
