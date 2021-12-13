@@ -3,7 +3,7 @@
     "163941104158a911d4": {
       "type": "custom-liquid",
       "settings": {
-        "custom_liquid": "<p>{% if collection.current_type %}\n  Currently viewing {{ collection.current_type | downcase }}.\n{% endif %} - fg<\/p>"
+        "custom_liquid": "{% for product_type in collection.all_types %}\n  {{ product_type | link_to_type }}\n{% endfor %}"
       }
     },
     "16333520410b464cef": {
