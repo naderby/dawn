@@ -2,6 +2,7 @@
   "sections": {
     "163941104158a911d4": {
       "type": "custom-liquid",
+      "disabled": true,
       "settings": {
         "custom_liquid": "{% for product_type in collection.all_types %}\n  {{ product_type | link_to_type }}\n{% endfor %}"
       }
