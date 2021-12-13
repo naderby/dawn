@@ -9,6 +9,7 @@
     },
     "16333520410b464cef": {
       "type": "collection-list",
+      "disabled": true,
       "blocks": {
         "16333520410b464cef-0": {
           "type": "featured_collection",
