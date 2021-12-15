@@ -10,6 +10,12 @@
     "16333520410b464cef": {
       "type": "collection-list",
       "blocks": {
+        "ceef1c89-16ef-42a3-bb24-b8b4f899a1a1": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "arai"
+          }
+        },
         "16333520410b464cef-0": {
           "type": "featured_collection",
           "settings": {
@@ -18,6 +24,7 @@
         },
         "16333520410b464cef-1": {
           "type": "featured_collection",
+          "disabled": true,
           "settings": {
             "collection": "motorcycle-helmet-parts-accessories"
           }
@@ -27,19 +34,13 @@
           "settings": {
             "collection": "motorcycle-helmet-visors"
           }
-        },
-        "ceef1c89-16ef-42a3-bb24-b8b4f899a1a1": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "arai"
-          }
         }
       },
       "block_order": [
+        "ceef1c89-16ef-42a3-bb24-b8b4f899a1a1",
         "16333520410b464cef-0",
         "16333520410b464cef-1",
-        "16333520410b464cef-2",
-        "ceef1c89-16ef-42a3-bb24-b8b4f899a1a1"
+        "16333520410b464cef-2"
       ],
       "settings": {
         "title": "",
