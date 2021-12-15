@@ -2,4 +2,5 @@
   display: flex;
   background: var(--color-background);
   background: var(--gradient-background);
+  justify-content: center;
 }
