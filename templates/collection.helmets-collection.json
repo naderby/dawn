@@ -27,12 +27,19 @@
           "settings": {
             "collection": "motorcycle-helmet-visors"
           }
+        },
+        "ceef1c89-16ef-42a3-bb24-b8b4f899a1a1": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "arai"
+          }
         }
       },
       "block_order": [
         "16333520410b464cef-0",
         "16333520410b464cef-1",
-        "16333520410b464cef-2"
+        "16333520410b464cef-2",
+        "ceef1c89-16ef-42a3-bb24-b8b4f899a1a1"
       ],
       "settings": {
         "title": "",
