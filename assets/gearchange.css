@@ -1,3 +1,5 @@
-h1 {
-  color:red !important
+#shopify-section-announcement-bar {
+  display: flex;
+  background: var(--color-background);
+  background: var(--gradient-background);
 }
