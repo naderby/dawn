@@ -1,7 +1,15 @@
 {
   "sections": {
+    "163941104158a911d4": {
+      "type": "custom-liquid",
+      "disabled": true,
+      "settings": {
+        "custom_liquid": "{% for product_type in collection.all_types %}\n  {{ product_type | link_to_type }}\n{% endfor %}"
+      }
+    },
     "16333520410b464cef": {
       "type": "collection-list",
+      "disabled": true,
       "blocks": {
         "16333520410b464cef-0": {
           "type": "featured_collection",
@@ -60,6 +68,7 @@
     }
   },
   "order": [
+    "163941104158a911d4",
     "16333520410b464cef",
     "banner",
     "product-grid"

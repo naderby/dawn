@@ -1,58 +1,49 @@
 {
   "sections": {
-    "banner": {
-      "type": "main-collection-banner",
+    "163941104158a911d4": {
+      "type": "custom-liquid",
+      "disabled": true,
       "settings": {
-        "show_collection_description": true,
-        "show_collection_image": true
+        "custom_liquid": "{% for product_type in collection.all_types %}\n  {{ product_type | link_to_type }}\n{% endfor %}"
       }
     },
-    "163273619058e0de8b": {
+    "16333520410b464cef": {
       "type": "collection-list",
       "blocks": {
-        "163273619058e0de8b-0": {
+        "ceef1c89-16ef-42a3-bb24-b8b4f899a1a1": {
           "type": "featured_collection",
           "settings": {
             "collection": "arai"
           }
         },
-        "163273619058e0de8b-1": {
+        "9d667ef4-bd23-4b66-ba8d-4f16f1bcf238": {
           "type": "featured_collection",
           "settings": {
-            "collection": "agv"
+            "collection": "motorcycle-helmet-clearance"
           }
         },
-        "163273619058e0de8b-2": {
+        "16333520410b464cef-1": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "motorcycle-helmet-parts-accessories"
+          }
+        },
+        "16333520410b464cef-0": {
           "type": "featured_collection",
           "disabled": true,
           "settings": {
-            "collection": ""
-          }
-        },
-        "5a28c23e-f37a-41e9-9ce5-dc41e30ce6f9": {
-          "type": "featured_collection",
-          "disabled": true,
-          "settings": {
-            "collection": ""
-          }
-        },
-        "10f205ed-1ff3-43d8-b416-78f68ad79607": {
-          "type": "featured_collection",
-          "disabled": true,
-          "settings": {
-            "collection": ""
+            "collection": "motorcycle-helmets"
           }
         }
       },
       "block_order": [
-        "163273619058e0de8b-0",
-        "163273619058e0de8b-1",
-        "163273619058e0de8b-2",
-        "5a28c23e-f37a-41e9-9ce5-dc41e30ce6f9",
-        "10f205ed-1ff3-43d8-b416-78f68ad79607"
+        "ceef1c89-16ef-42a3-bb24-b8b4f899a1a1",
+        "9d667ef4-bd23-4b66-ba8d-4f16f1bcf238",
+        "16333520410b464cef-1",
+        "16333520410b464cef-0"
       ],
       "settings": {
-        "title": "Featured Brands",
+        "title": "",
         "image_ratio": "square",
         "color_scheme": "background-1",
         "swipe_on_mobile": true,
@@ -60,12 +51,19 @@
         "show_view_all": false
       }
     },
+    "banner": {
+      "type": "main-collection-banner",
+      "settings": {
+        "show_collection_description": true,
+        "show_collection_image": false
+      }
+    },
     "product-grid": {
       "type": "main-collection-product-grid",
       "settings": {
         "products_per_page": 20,
         "image_ratio": "square",
-        "show_secondary_image": true,
+        "show_secondary_image": false,
         "add_image_padding": false,
         "show_image_outline": true,
         "show_vendor": true,
@@ -74,62 +72,12 @@
         "enable_sorting": true,
         "collapse_on_larger_devices": false
       }
-    },
-    "1633548445cb2943ef": {
-      "type": "multicolumn",
-      "disabled": true,
-      "blocks": {
-        "1633548445cb2943ef-0": {
-          "type": "column",
-          "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
-          }
-        },
-        "1633548445cb2943ef-1": {
-          "type": "column",
-          "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
-          }
-        },
-        "1633548445cb2943ef-2": {
-          "type": "column",
-          "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
-          }
-        }
-      },
-      "block_order": [
-        "1633548445cb2943ef-0",
-        "1633548445cb2943ef-1",
-        "1633548445cb2943ef-2"
-      ],
-      "settings": {
-        "title": "Multicolumn",
-        "image_width": "full",
-        "image_ratio": "adapt",
-        "column_alignment": "left",
-        "background_style": "primary",
-        "button_label": "Button label",
-        "button_link": "",
-        "swipe_on_mobile": false
-      }
-    },
-    "16335486202ebdcd0b": {
-      "type": "page",
-      "disabled": true,
-      "settings": {
-        "page": "delivery-returns"
-      }
     }
   },
   "order": [
+    "163941104158a911d4",
+    "16333520410b464cef",
     "banner",
-    "163273619058e0de8b",
-    "product-grid",
-    "1633548445cb2943ef",
-    "16335486202ebdcd0b"
+    "product-grid"
   ]
 }
