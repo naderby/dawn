@@ -1,6 +1,5 @@
 #shopify-section-announcement-bar {
   display: flex;
-  background: var(--color-background);
-  background: var(--gradient-background);
+  background: var(--gradient-base-accent-1);
   justify-content: center;
 }
