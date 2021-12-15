@@ -16,31 +16,24 @@
             "collection": "arai"
           }
         },
-        "16333520410b464cef-0": {
-          "type": "featured_collection",
-          "disabled": true,
-          "settings": {
-            "collection": "motorcycle-helmets"
-          }
-        },
         "16333520410b464cef-1": {
           "type": "featured_collection",
           "settings": {
             "collection": "motorcycle-helmet-parts-accessories"
           }
         },
-        "16333520410b464cef-2": {
+        "16333520410b464cef-0": {
           "type": "featured_collection",
+          "disabled": true,
           "settings": {
-            "collection": "motorcycle-helmet-visors"
+            "collection": "motorcycle-helmets"
           }
         }
       },
       "block_order": [
         "ceef1c89-16ef-42a3-bb24-b8b4f899a1a1",
-        "16333520410b464cef-0",
         "16333520410b464cef-1",
-        "16333520410b464cef-2"
+        "16333520410b464cef-0"
       ],
       "settings": {
         "title": "",
