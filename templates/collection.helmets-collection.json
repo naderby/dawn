@@ -18,13 +18,13 @@
         },
         "16333520410b464cef-0": {
           "type": "featured_collection",
+          "disabled": true,
           "settings": {
             "collection": "motorcycle-helmets"
           }
         },
         "16333520410b464cef-1": {
           "type": "featured_collection",
-          "disabled": true,
           "settings": {
             "collection": "motorcycle-helmet-parts-accessories"
           }
