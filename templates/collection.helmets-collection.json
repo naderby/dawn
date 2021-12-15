@@ -16,6 +16,12 @@
             "collection": "arai"
           }
         },
+        "9d667ef4-bd23-4b66-ba8d-4f16f1bcf238": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "motorcycle-helmet-clearance"
+          }
+        },
         "16333520410b464cef-1": {
           "type": "featured_collection",
           "settings": {
@@ -32,6 +38,7 @@
       },
       "block_order": [
         "ceef1c89-16ef-42a3-bb24-b8b4f899a1a1",
+        "9d667ef4-bd23-4b66-ba8d-4f16f1bcf238",
         "16333520410b464cef-1",
         "16333520410b464cef-0"
       ],
