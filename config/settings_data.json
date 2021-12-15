@@ -23,23 +23,41 @@
           "1a500d03-e802-4d91-b2dd-71062ae5c8ec": {
             "type": "announcement",
             "settings": {
-              "text": "Chat with us for the best prices",
-              "color_scheme": "accent-1",
-              "link": "shopify:\/\/pages\/about-us"
+              "text": "Black Friday",
+              "color_scheme": "inverse",
+              "link": "shopify:\/\/collections\/motorcycle-helmet-clearance"
             }
           },
           "f8e391d0-0152-4014-8ecc-c9e2300e684d": {
             "type": "announcement",
             "settings": {
-              "text": "Welcome to our store",
+              "text": "Price Deals",
               "color_scheme": "accent-1",
-              "link": ""
+              "link": "shopify:\/\/pages\/about-us"
+            }
+          },
+          "a9fd834d-b107-4a91-80e2-07cbff896aa6": {
+            "type": "announcement",
+            "settings": {
+              "text": "Technical Advice",
+              "color_scheme": "accent-1",
+              "link": "shopify:\/\/pages\/about-us"
+            }
+          },
+          "7abd1e12-af08-40d8-adcf-e2af1d868309": {
+            "type": "announcement",
+            "settings": {
+              "text": "FREE Size Exchange",
+              "color_scheme": "accent-1",
+              "link": "shopify:\/\/pages\/about-us"
             }
           }
         },
         "block_order": [
           "1a500d03-e802-4d91-b2dd-71062ae5c8ec",
-          "f8e391d0-0152-4014-8ecc-c9e2300e684d"
+          "f8e391d0-0152-4014-8ecc-c9e2300e684d",
+          "a9fd834d-b107-4a91-80e2-07cbff896aa6",
+          "7abd1e12-af08-40d8-adcf-e2af1d868309"
         ],
         "settings": {
         }
