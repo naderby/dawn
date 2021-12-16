@@ -3,3 +3,14 @@
   background: var(--gradient-base-accent-1);
   justify-content: center;
 }
+
+#slider-component {
+  background: #ebebeb;
+  padding: 1rem 0;
+}
+
+.card--media {
+  height: 100%;
+  padding: 1rem;
+  background: white;
+}
