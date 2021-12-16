@@ -16,6 +16,8 @@
   padding: 1rem;
   background: white;
 }
-#shopify-section-template--15187523174574__16333520410b464cef  .collection-list.grid--3-col-tablet .grid__item {
-  max-width: 25%;
+@media screen and (min-width: 750px) {
+  #shopify-section-template--15187523174574__16333520410b464cef  .collection-list.grid--3-col-tablet .grid__item {
+    max-width: 25%;
+  }
 }
