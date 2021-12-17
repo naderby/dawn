@@ -215,10 +215,10 @@
         "image_width": "full",
         "image_ratio": "square",
         "column_alignment": "center",
-        "background_style": "secondary",
+        "background_style": "primary",
         "button_label": "",
         "button_link": "",
-        "swipe_on_mobile": false
+        "swipe_on_mobile": true
       }
     },
     "collage": {
