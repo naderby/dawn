@@ -71,6 +71,11 @@
         "full_width": true
       }
     },
+    "16397610750ddd1714": {
+      "type": "gearchange-usps",
+      "settings": {
+      }
+    },
     "image_banner": {
       "type": "image-banner",
       "blocks": {
@@ -260,6 +265,7 @@
   "order": [
     "163899179357ab03e6",
     "rich_text",
+    "16397610750ddd1714",
     "image_banner",
     "featured_products",
     "1638986059856353eb",
