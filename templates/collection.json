@@ -65,12 +65,18 @@
         "enable_sorting": true,
         "collapse_on_larger_devices": false
       }
+    },
+    "163976124091c01d6a": {
+      "type": "gearchange-usps",
+      "settings": {
+      }
     }
   },
   "order": [
     "163941104158a911d4",
     "16333520410b464cef",
     "banner",
-    "product-grid"
+    "product-grid",
+    "163976124091c01d6a"
   ]
 }
