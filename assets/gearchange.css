@@ -3,6 +3,13 @@
   background: var(--gradient-base-accent-1);
   justify-content: center;
 }
+#shopify-section-announcement-bar .announcement-bar {
+  border-right: red;  
+}
+#shopify-section-announcement-bar .announcement-bar:last-child {
+  border-right: none;
+}
+
 
 // EXPERIMENTING COLLECTION SHELF
 #shopify-section-template--15187523174574__16333520410b464cef {
