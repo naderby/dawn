@@ -255,6 +255,12 @@
         "desktop_layout": "right",
         "mobile_layout": "collage"
       }
+    },
+    "163975843510448b45": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<div class=\"page-width\"><p>Customer Liq<\/p><\/div>"
+      }
     }
   },
   "order": [
@@ -264,6 +270,7 @@
     "featured_products",
     "1638986059856353eb",
     "multi_column",
-    "collage"
+    "collage",
+    "163975843510448b45"
   ]
 }
