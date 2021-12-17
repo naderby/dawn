@@ -4,7 +4,7 @@
   justify-content: center;
 }
 #shopify-section-announcement-bar .announcement-bar {
-  border-right: .25rem solid var(--gradient-background);
+  border-right: .25rem solid var(--gradient-base-background-2);
 }
 #shopify-section-announcement-bar .announcement-bar:last-child {
   border-right: none;
