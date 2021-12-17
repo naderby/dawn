@@ -259,7 +259,7 @@
     "163975843510448b45": {
       "type": "custom-liquid",
       "settings": {
-        "custom_liquid": "<p>Customer Liq<\/p>"
+        "custom_liquid": "<div class=\"page-width\"><p>Customer Liq<\/p><\/div>"
       }
     }
   },
