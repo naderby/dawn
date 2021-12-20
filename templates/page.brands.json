@@ -4,9 +4,52 @@
       "type": "main-page",
       "settings": {
       }
+    },
+    "1640006222e16ca9d6": {
+      "type": "collection-list",
+      "blocks": {
+        "164000622221906035-0": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "arai"
+          }
+        },
+        "164000622221906035-1": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": ""
+          }
+        },
+        "164000622221906035-2": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": ""
+          }
+        }
+      },
+      "block_order": [
+        "164000622221906035-0",
+        "164000622221906035-1",
+        "164000622221906035-2"
+      ],
+      "settings": {
+        "title": "Collections",
+        "image_ratio": "square",
+        "color_scheme": "background-1",
+        "swipe_on_mobile": false,
+        "image_padding": false,
+        "show_view_all": false
+      }
+    },
+    "164000623549e15286": {
+      "type": "gearchange-usps",
+      "settings": {
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "1640006222e16ca9d6",
+    "164000623549e15286"
   ]
 }
