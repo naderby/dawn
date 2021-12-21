@@ -1,4 +1,5 @@
-#shopify-section-announcement-bar {
+/* EXPERIMENTAL ANNOUCEMENT BAR TABS
+ #shopify-section-announcement-bar {
   display: flex;
   background: var(--gradient-base-accent-1);
   justify-content: center;
@@ -8,12 +9,10 @@
 }
 #shopify-section-announcement-bar .announcement-bar:last-child {
   border-right: none;
-}
+} */
 
 
-// EXPERIMENTING COLLECTION SHELF
-#shopify-section-template--15187523174574__16333520410b464cef {
-}
+/* EXPERIMENTING COLLECTION SHELF */
 #shopify-section-template--15187523174574__16333520410b464cef slider-component {
   background: #ebebeb;
   padding: 1rem 0;
