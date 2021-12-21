@@ -23,13 +23,14 @@
           "1a500d03-e802-4d91-b2dd-71062ae5c8ec": {
             "type": "announcement",
             "settings": {
-              "text": "Black Friday",
+              "text": "2021 Clearance deals",
               "color_scheme": "inverse",
               "link": "shopify:\/\/collections\/motorcycle-helmet-clearance"
             }
           },
           "f8e391d0-0152-4014-8ecc-c9e2300e684d": {
             "type": "announcement",
+            "disabled": true,
             "settings": {
               "text": "Price Deals",
               "color_scheme": "accent-1",
@@ -38,6 +39,7 @@
           },
           "a9fd834d-b107-4a91-80e2-07cbff896aa6": {
             "type": "announcement",
+            "disabled": true,
             "settings": {
               "text": "Technical Advice",
               "color_scheme": "accent-1",
@@ -46,6 +48,7 @@
           },
           "7abd1e12-af08-40d8-adcf-e2af1d868309": {
             "type": "announcement",
+            "disabled": true,
             "settings": {
               "text": "FREE Size Exchange",
               "color_scheme": "accent-1",
