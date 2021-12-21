@@ -13,10 +13,18 @@
 
 
 /* EXPERIMENTING COLLECTION SHELF */
-#shopify-section-template--15187523174574__16333520410b464cef slider-component {
-  background: #ebebeb;
+#shopify-section-template--15187523174574__16333520410b464cef {
+  background: var(--gradient-base-accent-1);
   padding: 1rem 0;
 }
+
+#shopify-section-template--15187523174574__16333520410b464cef .title-wrapper-with-link {
+  margin: 0;
+}
+#shopify-section-template--15187523174574__16333520410b464cef .title-wrapper-with-link h2 {
+  padding: 2rem 0;
+}
+
 #shopify-section-template--15187523174574__16333520410b464cef .card--media {
   height: 100%;
   padding: 1rem;
