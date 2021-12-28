@@ -50,6 +50,15 @@
             "text_style": "body"
           }
         },
+        "1fb33593-9366-4e04-9a55-0192d7f3c2c9": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Price Deals",
+            "content": "",
+            "page": "price-deals",
+            "icon": "check_mark"
+          }
+        },
         "9ee8db31-91e6-4b9d-8a1a-525454dd7b60": {
           "type": "popup",
           "settings": {
@@ -91,13 +100,11 @@
             "icon": "pants"
           }
         },
-        "1fb33593-9366-4e04-9a55-0192d7f3c2c9": {
-          "type": "collapsible_tab",
+        "621be244-a6fa-463a-8bee-fb6a9ec2fc3d": {
+          "type": "popup",
           "settings": {
-            "heading": "Price Deals",
-            "content": "",
-            "page": "price-deals",
-            "icon": "check_mark"
+            "text": "Pop-up link text",
+            "page": ""
           }
         }
       },
@@ -110,13 +117,14 @@
         "quantity_selector",
         "buy_buttons",
         "vendor",
+        "1fb33593-9366-4e04-9a55-0192d7f3c2c9",
         "9ee8db31-91e6-4b9d-8a1a-525454dd7b60",
         "01beff47-295d-4d60-a82d-7969f08df5f8",
         "8eb97334-589b-4417-b60c-3479d103deb0",
         "description",
         "share",
         "e908019b-f2c3-4993-a63c-837ce1ce6992",
-        "1fb33593-9366-4e04-9a55-0192d7f3c2c9"
+        "621be244-a6fa-463a-8bee-fb6a9ec2fc3d"
       ],
       "settings": {
         "enable_sticky_info": true,
