@@ -81,6 +81,15 @@
           "settings": {
             "share_label": "Share"
           }
+        },
+        "e908019b-f2c3-4993-a63c-837ce1ce6992": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Collapsible tab",
+            "content": "<p>Part of the {{ product.metafields.my_fields.range.value }}<\/p>",
+            "page": "",
+            "icon": "pants"
+          }
         }
       },
       "block_order": [
@@ -96,7 +105,8 @@
         "01beff47-295d-4d60-a82d-7969f08df5f8",
         "8eb97334-589b-4417-b60c-3479d103deb0",
         "description",
-        "share"
+        "share",
+        "e908019b-f2c3-4993-a63c-837ce1ce6992"
       ],
       "settings": {
         "enable_sticky_info": true,
