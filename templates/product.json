@@ -90,6 +90,15 @@
             "page": "",
             "icon": "pants"
           }
+        },
+        "1fb33593-9366-4e04-9a55-0192d7f3c2c9": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Price Deals",
+            "content": "",
+            "page": "price-deals",
+            "icon": "check_mark"
+          }
         }
       },
       "block_order": [
@@ -106,7 +115,8 @@
         "8eb97334-589b-4417-b60c-3479d103deb0",
         "description",
         "share",
-        "e908019b-f2c3-4993-a63c-837ce1ce6992"
+        "e908019b-f2c3-4993-a63c-837ce1ce6992",
+        "1fb33593-9366-4e04-9a55-0192d7f3c2c9"
       ],
       "settings": {
         "enable_sticky_info": true,
