@@ -139,6 +139,12 @@
             "collection": "arai"
           }
         },
+        "ec5f50af-a176-489d-9f67-e58ff6838ff4": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "winter-riding"
+          }
+        },
         "16389860590a2174ad-1": {
           "type": "featured_collection",
           "settings": {
@@ -151,22 +157,16 @@
           "settings": {
             "collection": "adventures-gear"
           }
-        },
-        "ec5f50af-a176-489d-9f67-e58ff6838ff4": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "winter-riding"
-          }
         }
       },
       "block_order": [
         "16389860590a2174ad-0",
+        "ec5f50af-a176-489d-9f67-e58ff6838ff4",
         "16389860590a2174ad-1",
-        "16389860590a2174ad-2",
-        "ec5f50af-a176-489d-9f67-e58ff6838ff4"
+        "16389860590a2174ad-2"
       ],
       "settings": {
-        "title": "Favourite Collections",
+        "title": "Popular Collections",
         "image_ratio": "square",
         "color_scheme": "background-1",
         "swipe_on_mobile": true,
