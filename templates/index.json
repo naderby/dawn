@@ -76,6 +76,42 @@
       "settings": {
       }
     },
+    "1640778944e11ccff8": {
+      "type": "collection-list",
+      "blocks": {
+        "164077894425b81f3d-0": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "adventures-gear"
+          }
+        },
+        "164077894425b81f3d-1": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "sports-racing-gear"
+          }
+        },
+        "164077894425b81f3d-2": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "mx-off-road-gear"
+          }
+        }
+      },
+      "block_order": [
+        "164077894425b81f3d-0",
+        "164077894425b81f3d-1",
+        "164077894425b81f3d-2"
+      ],
+      "settings": {
+        "title": "Gear by Rider Style",
+        "image_ratio": "square",
+        "color_scheme": "background-1",
+        "swipe_on_mobile": true,
+        "image_padding": false,
+        "show_view_all": false
+      }
+    },
     "image_banner": {
       "type": "image-banner",
       "blocks": {
@@ -117,16 +153,16 @@
     "featured_products": {
       "type": "featured-collection",
       "settings": {
-        "title": "Popular Motorcycle Helmets",
+        "title": "Popular Gear",
         "collection": "frontpage",
         "products_to_show": 12,
         "show_view_all": false,
         "swipe_on_mobile": true,
         "image_ratio": "square",
         "show_secondary_image": false,
-        "add_image_padding": true,
+        "add_image_padding": false,
         "show_image_outline": true,
-        "show_vendor": true,
+        "show_vendor": false,
         "show_rating": false
       }
     },
@@ -167,42 +203,6 @@
       ],
       "settings": {
         "title": "Popular Collections",
-        "image_ratio": "square",
-        "color_scheme": "background-1",
-        "swipe_on_mobile": true,
-        "image_padding": false,
-        "show_view_all": false
-      }
-    },
-    "1640778944e11ccff8": {
-      "type": "collection-list",
-      "blocks": {
-        "164077894425b81f3d-0": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "adventures-gear"
-          }
-        },
-        "164077894425b81f3d-1": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "sports-racing-gear"
-          }
-        },
-        "164077894425b81f3d-2": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "mx-off-road-gear"
-          }
-        }
-      },
-      "block_order": [
-        "164077894425b81f3d-0",
-        "164077894425b81f3d-1",
-        "164077894425b81f3d-2"
-      ],
-      "settings": {
-        "title": "Gear by Rider Style",
         "image_ratio": "square",
         "color_scheme": "background-1",
         "swipe_on_mobile": true,
@@ -303,10 +303,10 @@
     "163899179357ab03e6",
     "rich_text",
     "16397610750ddd1714",
+    "1640778944e11ccff8",
     "image_banner",
     "featured_products",
     "1638986059856353eb",
-    "1640778944e11ccff8",
     "multi_column",
     "collage"
   ]
