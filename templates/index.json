@@ -58,7 +58,7 @@
         "17c7ff3a-c589-4d3c-a4e3-a28e66854a80": {
           "type": "text",
           "settings": {
-            "text": "<p>Chat with us. Ask us for our best prices, or any technical\/size advice.<\/p>"
+            "text": "<p>We are a motorcycle helmet, clothing and accessories store, with a big difference! We specialise in helping you choose the gear that’s right for you, at the best possible prices.<\/p>"
           }
         }
       },
@@ -139,6 +139,12 @@
             "collection": "arai"
           }
         },
+        "ec5f50af-a176-489d-9f67-e58ff6838ff4": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "winter-riding"
+          }
+        },
         "16389860590a2174ad-1": {
           "type": "featured_collection",
           "settings": {
@@ -147,25 +153,56 @@
         },
         "16389860590a2174ad-2": {
           "type": "featured_collection",
+          "disabled": true,
           "settings": {
             "collection": "adventures-gear"
-          }
-        },
-        "ec5f50af-a176-489d-9f67-e58ff6838ff4": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "winter-riding"
           }
         }
       },
       "block_order": [
         "16389860590a2174ad-0",
+        "ec5f50af-a176-489d-9f67-e58ff6838ff4",
         "16389860590a2174ad-1",
-        "16389860590a2174ad-2",
-        "ec5f50af-a176-489d-9f67-e58ff6838ff4"
+        "16389860590a2174ad-2"
       ],
       "settings": {
-        "title": "Favourite Collections",
+        "title": "Popular Collections",
+        "image_ratio": "square",
+        "color_scheme": "background-1",
+        "swipe_on_mobile": true,
+        "image_padding": false,
+        "show_view_all": false
+      }
+    },
+    "1640778944e11ccff8": {
+      "type": "collection-list",
+      "blocks": {
+        "164077894425b81f3d-0": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "adventures-gear"
+          }
+        },
+        "164077894425b81f3d-1": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "sports-racing-gear"
+          }
+        },
+        "164077894425b81f3d-2": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "mx-off-road-gear"
+          }
+        }
+      },
+      "block_order": [
+        "164077894425b81f3d-0",
+        "164077894425b81f3d-1",
+        "164077894425b81f3d-2"
+      ],
+      "settings": {
+        "title": "Gear by Rider Style",
         "image_ratio": "square",
         "color_scheme": "background-1",
         "swipe_on_mobile": true,
@@ -269,6 +306,7 @@
     "image_banner",
     "featured_products",
     "1638986059856353eb",
+    "1640778944e11ccff8",
     "multi_column",
     "collage"
   ]

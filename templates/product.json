@@ -32,13 +32,6 @@
             "picker_type": "button"
           }
         },
-        "9ee8db31-91e6-4b9d-8a1a-525454dd7b60": {
-          "type": "popup",
-          "settings": {
-            "text": "Size guide",
-            "page": "{{ product.metafields.my_fields.size_guide.value }}"
-          }
-        },
         "quantity_selector": {
           "type": "quantity_selector",
           "settings": {
@@ -55,6 +48,36 @@
           "settings": {
             "text": "Range: {{ product.metafields.my_fields.range.value }}",
             "text_style": "body"
+          }
+        },
+        "1fb33593-9366-4e04-9a55-0192d7f3c2c9": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Price Deals",
+            "content": "",
+            "page": "price-deals",
+            "icon": "check_mark"
+          }
+        },
+        "9ee8db31-91e6-4b9d-8a1a-525454dd7b60": {
+          "type": "popup",
+          "settings": {
+            "text": "Size guide",
+            "page": "{{ product.metafields.my_fields.size_guide.value }}"
+          }
+        },
+        "01beff47-295d-4d60-a82d-7969f08df5f8": {
+          "type": "popup",
+          "settings": {
+            "text": "Price Deals",
+            "page": ""
+          }
+        },
+        "8eb97334-589b-4417-b60c-3479d103deb0": {
+          "type": "popup",
+          "settings": {
+            "text": "Technical Advice",
+            "page": ""
           }
         },
         "description": {
@@ -75,10 +98,13 @@
         "subtitle",
         "price",
         "variant_picker",
-        "9ee8db31-91e6-4b9d-8a1a-525454dd7b60",
         "quantity_selector",
         "buy_buttons",
         "vendor",
+        "1fb33593-9366-4e04-9a55-0192d7f3c2c9",
+        "9ee8db31-91e6-4b9d-8a1a-525454dd7b60",
+        "01beff47-295d-4d60-a82d-7969f08df5f8",
+        "8eb97334-589b-4417-b60c-3479d103deb0",
         "description",
         "share"
       ],
