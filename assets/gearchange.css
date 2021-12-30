@@ -43,3 +43,15 @@
     max-width: 25% !important;
   }
 }
+
+.collection-grid-section {
+  color: rgba(var(--color-foreground), 0.75);
+  background-color: rgb(var(--color-background));
+}
+.card-wrapper {
+  height: 100%;
+  background-color: white;
+}
+.price .price__sale .price-item--sale {
+  color: red;
+}
