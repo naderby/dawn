@@ -45,9 +45,9 @@
 }
 
 /* Product Grid */
-/* .collection-grid-section {
+.collection-grid-section {
   background: var(--gradient-base-background-2);
-} */
+}
 
 .product-grid .grid__item {
   padding-bottom: .5rem !important;
