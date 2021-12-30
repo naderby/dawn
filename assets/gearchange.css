@@ -96,3 +96,26 @@
 .card__badge {
   display: none !important;
 }
+
+
+
+
+@media screen and (min-width: 750px) {
+  section[id$="wrapper_text"] .slider.slider--tablet {
+    position: relative;
+    flex-wrap: inherit;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    scroll-padding-left: 1rem;
+    -webkit-overflow-scrolling: touch;
+    margin-bottom: 1rem;
+  }
+
+  section[id$="wrapper_text"] .slider.slider--tablet .slider__slide {
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+}
+
+
