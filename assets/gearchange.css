@@ -72,6 +72,9 @@
     padding: 0 1rem 1rem;
   }
 }
+.card-wrapper .card-information .card-information__text {
+  padding-right: 0 !important;
+}
 .price .price__sale .price-item--sale {
   color: red;
 }
