@@ -67,6 +67,8 @@
 }
 .card-wrapper .card-information .card-information__wrapper {
   height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 @media screen and (min-width: 750px) {
   .card-wrapper {
