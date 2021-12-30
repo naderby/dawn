@@ -45,8 +45,7 @@
 }
 
 .collection-grid-section {
-  color: rgba(var(--color-foreground), 0.75);
-  background-color: rgb(var(--color-background));
+  background: var(--gradient-base-background-2:);
 }
 .card-wrapper {
   height: 100%;
