@@ -101,7 +101,7 @@
 
 
 @media screen and (min-width: 750px) {
-  section[id$="wrapper_text"] .slider.slider--tablet {
+  section[id$="featured_products"] .slider.slider--tablet {
     position: relative;
     flex-wrap: inherit;
     overflow-x: auto;
@@ -112,7 +112,7 @@
     margin-bottom: 1rem;
   }
 
-  section[id$="wrapper_text"] .slider.slider--tablet .slider__slide {
+  section[id$="featured_products"] .slider.slider--tablet .slider__slide {
     margin-bottom: 0;
     padding-bottom: 0;
   }
