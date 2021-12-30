@@ -83,7 +83,7 @@
 }
 
 .price {
-  margin-top: auto;
+  margin-top: auto !important;
 }
 .price .price__sale .price-item--sale {
   color: red;
