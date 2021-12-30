@@ -65,6 +65,9 @@
   .card-wrapper {
     padding: 2rem;
   }
+  .card-wrapper .card-information {
+    padding: 0 1rem 1rem;
+  }
 }
 .price .price__sale .price-item--sale {
   color: red;
