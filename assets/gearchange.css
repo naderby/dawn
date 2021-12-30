@@ -45,9 +45,9 @@
 }
 
 /* Product Grid */
-.collection-grid-section {
+/* .collection-grid-section {
   background: var(--gradient-base-background-2);
-}
+} */
 
 .product-grid .grid__item {
   padding-bottom: .5rem !important;
@@ -61,6 +61,7 @@
   height: 100%;
   background-color: white;
   padding: .5rem;
+  box-shadow: 0 0.5rem 1rem #e6e6e6;
 }
 .card-wrapper .card-information {
   padding: 0 .5rem .5rem;
@@ -81,6 +82,8 @@
 }
 .card-wrapper .card-information .card-information__text {
   padding-right: 0 !important;
+  max-height: 55px;
+  overflow: hidden;
 }
 
 .price {
