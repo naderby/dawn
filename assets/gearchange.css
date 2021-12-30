@@ -59,11 +59,14 @@
 .card-wrapper {
   height: 100%;
   background-color: white;
-  padding: 1rem;
+  padding: .5rem;
+}
+.card-wrapper .card-information {
+  padding: 0 .5rem .5rem;
 }
 @media screen and (min-width: 750px) {
   .card-wrapper {
-    padding: 2rem;
+    padding: 1rem;
   }
   .card-wrapper .card-information {
     padding: 0 1rem 1rem;
