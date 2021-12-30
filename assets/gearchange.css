@@ -45,11 +45,20 @@
 }
 
 .collection-grid-section {
-  background: var(--gradient-base-background-2:);
+  background: var(--gradient-base-background-2);
+}
+.product-grid .grid__item {
+  padding-bottom: .5rem;
+}
+@media screen and (min-width: 750px) {
+  .product-grid .grid__item {
+    padding-bottom: 1rem;
+  }
 }
 .card-wrapper {
   height: 100%;
   background-color: white;
+  padding: 1rem;
 }
 .price .price__sale .price-item--sale {
   color: red;
