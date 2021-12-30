@@ -49,11 +49,11 @@
 }
 
 .product-grid .grid__item {
-  padding-bottom: .5rem;
+  padding-bottom: .5rem !important;
 }
 @media screen and (min-width: 750px) {
   .product-grid .grid__item {
-    padding-bottom: 1rem;
+    padding-bottom: 1rem !important;
   }
 }
 .card-wrapper {
