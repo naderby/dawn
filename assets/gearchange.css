@@ -44,6 +44,7 @@
   }
 }
 
+/* Product Grid */
 .collection-grid-section {
   background: var(--gradient-base-background-2);
 }
@@ -87,4 +88,7 @@
 }
 .price .price__sale .price-item--sale {
   color: red;
+}
+.card__badge {
+  display: none !important;
 }
