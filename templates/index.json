@@ -189,9 +189,14 @@
         },
         "16389860590a2174ad-2": {
           "type": "featured_collection",
-          "disabled": true,
           "settings": {
             "collection": "adventures-gear"
+          }
+        },
+        "8fafa89d-d924-408f-bfff-da4c4ae84b10": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "motorcycle-helmets"
           }
         }
       },
@@ -199,7 +204,8 @@
         "16389860590a2174ad-0",
         "ec5f50af-a176-489d-9f67-e58ff6838ff4",
         "16389860590a2174ad-1",
-        "16389860590a2174ad-2"
+        "16389860590a2174ad-2",
+        "8fafa89d-d924-408f-bfff-da4c4ae84b10"
       ],
       "settings": {
         "title": "Popular Collections",
