@@ -34,13 +34,20 @@
           "settings": {
             "collection": "motorcycle-helmets"
           }
+        },
+        "65899345-f13c-4d9f-b97e-becf2cd269f6": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "agv"
+          }
         }
       },
       "block_order": [
         "ceef1c89-16ef-42a3-bb24-b8b4f899a1a1",
         "9d667ef4-bd23-4b66-ba8d-4f16f1bcf238",
         "16333520410b464cef-1",
-        "16333520410b464cef-0"
+        "16333520410b464cef-0",
+        "65899345-f13c-4d9f-b97e-becf2cd269f6"
       ],
       "settings": {
         "title": "Top Helmet Collections",
