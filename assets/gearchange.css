@@ -119,3 +119,9 @@
 }
 
 
+/* PRODUCT PAGE */
+
+/* remove SALE pill from price area */
+.product .price .badge {
+  display: none !important;
+}
