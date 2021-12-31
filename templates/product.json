@@ -6,7 +6,7 @@
         "b3823b51-5d12-4c31-a0c6-0c29676ea18d": {
           "type": "custom_liquid",
           "settings": {
-            "custom_liquid": "<div><a href=\"{{ product.vendor | url_for_vendor }}\"><img style=\"max-width:10rem; background:rgba(var(--color-foreground),.04);padding:1rem;border-radius:1rem;\" src=\"{{ product.vendor | prepend: \"vendor-\" | handle | append: \".svg\" | downcase | asset_url }}\" onerror=\"parentNode.remove()\"\/><\/a><\/div>\n<div><a href=\"{{ product.vendor | url_for_vendor }}\"><img style=\"max-width:10rem; background:rgba(var(--color-foreground),.04);padding:1rem;border-radius:1rem;\" src=\"{{ product.vendor | prepend: \"vendor-\" | handle | append: \".svg\" | asset_url }}\" onerror=\"parentNode.remove()\"\/><\/a><\/div>"
+            "custom_liquid": "<div><a href=\"{{ product.vendor | url_for_vendor }}\"><img style=\"max-width:10rem; background:rgba(var(--color-foreground),.04);padding:1rem;border-radius:1rem;\" src=\"{{ product.vendor | prepend: \"vendor-\" | handle | append: \".svg\" | downcase | asset_url }}\" onerror=\"parentNode.remove()\"\/><\/a><\/div>\n<div><a href=\"{{ product.vendor | url_for_vendor }}\"><img style=\"max-width:10rem; background:rgba(var(--color-foreground),.04);padding:1rem;border-radius:1rem;\" src=\"{{ product.vendor | prepend: \"vendor-\" | handle | append: \".svg\" | asset_url }}\" \/><\/a><\/div>"
           }
         },
         "title": {
