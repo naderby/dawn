@@ -96,12 +96,26 @@
           "settings": {
             "collection": "mx-off-road-gear"
           }
+        },
+        "f10d1acc-e0b9-4770-bc0f-831e612dfadb": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "touring"
+          }
+        },
+        "f10dfb6e-7223-43e9-919a-7df622bda1af": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "urban-retro"
+          }
         }
       },
       "block_order": [
         "164077894425b81f3d-0",
         "164077894425b81f3d-1",
-        "164077894425b81f3d-2"
+        "164077894425b81f3d-2",
+        "f10d1acc-e0b9-4770-bc0f-831e612dfadb",
+        "f10dfb6e-7223-43e9-919a-7df622bda1af"
       ],
       "settings": {
         "title": "Gear by Rider Style",
