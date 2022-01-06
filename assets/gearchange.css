@@ -97,7 +97,10 @@
   display: none !important;
 }
 
-
+.card-wrapper .card.card--product {
+  margin-bottom: 0.5rem
+ !important;
+}
 
 
 @media screen and (min-width: 750px) {
