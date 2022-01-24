@@ -45,6 +45,7 @@
         },
         "vendor": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "text": "Range: {{ product.metafields.my_fields.range.value }}",
             "text_style": "body"
@@ -54,7 +55,7 @@
           "type": "collapsible_tab",
           "settings": {
             "heading": "Price Deals",
-            "content": "",
+            "content": "<p>ghjgj<\/p>",
             "page": "price-deals",
             "icon": "check_mark"
           }
@@ -62,7 +63,7 @@
         "9ee8db31-91e6-4b9d-8a1a-525454dd7b60": {
           "type": "popup",
           "settings": {
-            "text": "Size guide",
+            "text": "Size guide popup",
             "page": "{{ product.metafields.my_fields.size_guide.value }}"
           }
         },
