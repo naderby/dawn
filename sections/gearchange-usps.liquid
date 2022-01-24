@@ -1,37 +1,43 @@
 <style>
     .gc-usps__wrapper {
-        background: var(--gradient-base-accent-1);
-        padding: 1rem;
+        {% comment %} background: var(--gradient-base-accent-1); {% endcomment %}
+        {% comment %} padding: 1rem; {% endcomment %}
+        margin: 2rem 0;
     }
     .gc-usp-item__wrapper {
         display: flex;
+        justify-content: space-between;
     }
     .gc-usp-item__wrapper .gc-usp-item__item {
-        width: 33.333333%;
+        width: 32%;
         padding: 1rem;
+        background: var(--gradient-base-accent-1);
     }
-
+    .gc-usp-item__wrapper .gc-usp-item__item h3 {
+        margin: 0;
+    }
+    
 </style>
 
-<div class="gc-usps__wrapper center">
+<div class="gc-usps__wrapper">
     <div class="gc-usps__inner page-width">
         {% comment %} <h2>Talk to us, before us buy</h2>
         <p>We are a motorcycle helmet, clothing and accessories store, with a big difference! We specialise in helping you choose the gear that’s right for you, at the best possible prices.</p>  {% endcomment %}
         <div class="gc-usp-item__wrapper">
             <div class="gc-usp-item__item">
                 <h3>Price Deals</h3>
-                <p>Talk to us for our best price deals, before you buy. Put us to the test - we always try our best and you might be surprised!</p>
-                <p>MORE INFO</p>
+                {% comment %} <p>Talk to us for our best price deals, before you buy. Put us to the test - we always try our best and you might be surprised!</p> {% endcomment %}
+                <p>Always ask us for our best prices, before you buy.</p>
             </div>
             <div class="gc-usp-item__item">
                 <h3>Tech Advice</h3>
-                <p>Need some help? Just ask us! Our 20 years of product experience can help you choose the gear that’s right for your riding.</p>
-                <p>MORE INFO</p>
+                {% comment %} <p>Need some help? Just ask us! Our 20 years of product experience can help you choose the gear that’s right for your riding.</p> {% endcomment %}
+                <p>Need help? With 20yrs experience, we have the answers.</p>
             </div>
             <div class="gc-usp-item__item">
                 <h3>FREE Size Exchanges</h3>
-                <p>Choosing a size can be tricky. Ask us to recommend your size and if we get it wrong, we pay for and arrange the exchange.</p>
-                <p>MORE INFO</p>
+                {% comment %} <p>Choosing a size can be tricky. Ask us to recommend your size and if we get it wrong, we pay for and arrange the exchange.</p> {% endcomment %}
+                <p>Ask us to recommend your size, so we take the risk.</p>
             </div>
         </div>        
     </div>
