@@ -186,7 +186,7 @@
         "16389860590a2174ad-0": {
           "type": "featured_collection",
           "settings": {
-            "collection": "arai"
+            "collection": "arai-helmets"
           }
         },
         "ec5f50af-a176-489d-9f67-e58ff6838ff4": {
@@ -249,7 +249,7 @@
             "title": "Budget Helmets",
             "text": "<p>Lower prices does not mean lower protection. Sometimes a lid is just a lid.<\/p>",
             "link_label": "Shop Budget Helmets",
-            "link": "shopify:\/\/collections\/arai"
+            "link": "shopify:\/\/collections\/arai-helmets"
           }
         },
         "column3": {
