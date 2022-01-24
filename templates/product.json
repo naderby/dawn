@@ -1,5 +1,10 @@
 {
   "sections": {
+    "1639761270b5e6a9ad": {
+      "type": "gearchange-usps",
+      "settings": {
+      }
+    },
     "main": {
       "type": "main-product",
       "blocks": {
@@ -140,16 +145,11 @@
         "show_vendor": true,
         "show_rating": false
       }
-    },
-    "1639761270b5e6a9ad": {
-      "type": "gearchange-usps",
-      "settings": {
-      }
     }
   },
   "order": [
+    "1639761270b5e6a9ad",
     "main",
-    "product-recommendations",
-    "1639761270b5e6a9ad"
+    "product-recommendations"
   ]
 }
