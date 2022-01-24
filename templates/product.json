@@ -129,11 +129,6 @@
         "enable_video_looping": false
       }
     },
-    "1639761270b5e6a9ad": {
-      "type": "gearchange-usps",
-      "settings": {
-      }
-    },
     "product-recommendations": {
       "type": "product-recommendations",
       "settings": {
@@ -145,11 +140,16 @@
         "show_vendor": true,
         "show_rating": false
       }
+    },
+    "1639761270b5e6a9ad": {
+      "type": "gearchange-usps",
+      "settings": {
+      }
     }
   },
   "order": [
     "main",
-    "1639761270b5e6a9ad",
-    "product-recommendations"
+    "product-recommendations",
+    "1639761270b5e6a9ad"
   ]
 }
