@@ -1,5 +1,10 @@
 {
   "sections": {
+    "1639761270b5e6a9ad": {
+      "type": "gearchange-usps",
+      "settings": {
+      }
+    },
     "main": {
       "type": "main-product",
       "blocks": {
@@ -43,22 +48,6 @@
             "show_dynamic_checkout": true
           }
         },
-        "vendor": {
-          "type": "text",
-          "settings": {
-            "text": "Range: {{ product.metafields.my_fields.range.value }}",
-            "text_style": "body"
-          }
-        },
-        "1fb33593-9366-4e04-9a55-0192d7f3c2c9": {
-          "type": "collapsible_tab",
-          "settings": {
-            "heading": "Price Deals",
-            "content": "",
-            "page": "price-deals",
-            "icon": "check_mark"
-          }
-        },
         "9ee8db31-91e6-4b9d-8a1a-525454dd7b60": {
           "type": "popup",
           "settings": {
@@ -66,23 +55,53 @@
             "page": "{{ product.metafields.my_fields.size_guide.value }}"
           }
         },
+        "description": {
+          "type": "description",
+          "settings": {
+          }
+        },
+        "vendor": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "Range: {{ product.metafields.my_fields.range.value }}",
+            "text_style": "body"
+          }
+        },
+        "1fb33593-9366-4e04-9a55-0192d7f3c2c9": {
+          "type": "collapsible_tab",
+          "disabled": true,
+          "settings": {
+            "heading": "Price Deals",
+            "content": "<p>ghjgj<\/p>",
+            "page": "price-deals",
+            "icon": "check_mark"
+          }
+        },
         "01beff47-295d-4d60-a82d-7969f08df5f8": {
           "type": "popup",
+          "disabled": true,
           "settings": {
             "text": "Price Deals",
             "page": ""
           }
         },
+        "5dd901e6-1a37-42cb-b5a8-fe75586e0532": {
+          "type": "collapsible_tab",
+          "disabled": true,
+          "settings": {
+            "heading": "Size guide tab",
+            "content": "<p>this is a guide<\/p>",
+            "page": "arai-helmets-size-guide",
+            "icon": "ruler"
+          }
+        },
         "8eb97334-589b-4417-b60c-3479d103deb0": {
           "type": "popup",
+          "disabled": true,
           "settings": {
             "text": "Technical Advice",
             "page": ""
-          }
-        },
-        "description": {
-          "type": "description",
-          "settings": {
           }
         },
         "share": {
@@ -100,23 +119,19 @@
         "variant_picker",
         "quantity_selector",
         "buy_buttons",
+        "9ee8db31-91e6-4b9d-8a1a-525454dd7b60",
+        "description",
         "vendor",
         "1fb33593-9366-4e04-9a55-0192d7f3c2c9",
-        "9ee8db31-91e6-4b9d-8a1a-525454dd7b60",
         "01beff47-295d-4d60-a82d-7969f08df5f8",
+        "5dd901e6-1a37-42cb-b5a8-fe75586e0532",
         "8eb97334-589b-4417-b60c-3479d103deb0",
-        "description",
         "share"
       ],
       "settings": {
         "enable_sticky_info": true,
         "hide_variants": false,
         "enable_video_looping": false
-      }
-    },
-    "1639761270b5e6a9ad": {
-      "type": "gearchange-usps",
-      "settings": {
       }
     },
     "product-recommendations": {
@@ -133,8 +148,8 @@
     }
   },
   "order": [
-    "main",
     "1639761270b5e6a9ad",
+    "main",
     "product-recommendations"
   ]
 }

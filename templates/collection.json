@@ -1,5 +1,10 @@
 {
   "sections": {
+    "163976124091c01d6a": {
+      "type": "gearchange-usps",
+      "settings": {
+      }
+    },
     "163941104158a911d4": {
       "type": "custom-liquid",
       "disabled": true,
@@ -65,18 +70,13 @@
         "enable_sorting": true,
         "collapse_on_larger_devices": false
       }
-    },
-    "163976124091c01d6a": {
-      "type": "gearchange-usps",
-      "settings": {
-      }
     }
   },
   "order": [
+    "163976124091c01d6a",
     "163941104158a911d4",
     "16333520410b464cef",
     "banner",
-    "product-grid",
-    "163976124091c01d6a"
+    "product-grid"
   ]
 }
