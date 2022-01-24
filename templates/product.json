@@ -60,6 +60,15 @@
             "icon": "check_mark"
           }
         },
+        "5dd901e6-1a37-42cb-b5a8-fe75586e0532": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Size guide tab",
+            "content": "<p>this is a guide<\/p>",
+            "page": "arai-helmets-size-guide",
+            "icon": "ruler"
+          }
+        },
         "9ee8db31-91e6-4b9d-8a1a-525454dd7b60": {
           "type": "popup",
           "settings": {
@@ -103,6 +112,7 @@
         "buy_buttons",
         "vendor",
         "1fb33593-9366-4e04-9a55-0192d7f3c2c9",
+        "5dd901e6-1a37-42cb-b5a8-fe75586e0532",
         "9ee8db31-91e6-4b9d-8a1a-525454dd7b60",
         "01beff47-295d-4d60-a82d-7969f08df5f8",
         "8eb97334-589b-4417-b60c-3479d103deb0",
