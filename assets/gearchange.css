@@ -128,3 +128,16 @@
 .product .price .badge {
   display: none !important;
 }
+
+/* changes to model for size guides */
+.product-popup-modal__content-info h1 {
+  font-size: calc(var(--font-heading-scale) * 3rem) !important;
+  margin: 0 auto 1rem !important;
+}
+.product-popup-modal__content-info h2 {
+  font-size: calc(var(--font-heading-scale) * 1.5rem) !important;
+  margin: 0 auto 1rem !important;
+}
+.product-popup-modal__content-info table {
+  margin: 0 0 2rem !important;
+}
