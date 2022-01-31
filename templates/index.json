@@ -9,16 +9,16 @@
             "collection": "sports-racing-gear"
           }
         },
+        "164077894425b81f3d-0": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "adventures-gear"
+          }
+        },
         "f10d1acc-e0b9-4770-bc0f-831e612dfadb": {
           "type": "featured_collection",
           "settings": {
             "collection": "touring"
-          }
-        },
-        "164077894425b81f3d-2": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "mx-off-road-gear"
           }
         },
         "f10dfb6e-7223-43e9-919a-7df622bda1af": {
@@ -27,19 +27,19 @@
             "collection": "urban-retro"
           }
         },
-        "164077894425b81f3d-0": {
+        "164077894425b81f3d-2": {
           "type": "featured_collection",
           "settings": {
-            "collection": "adventures-gear"
+            "collection": "mx-off-road-gear"
           }
         }
       },
       "block_order": [
         "164077894425b81f3d-1",
+        "164077894425b81f3d-0",
         "f10d1acc-e0b9-4770-bc0f-831e612dfadb",
-        "164077894425b81f3d-2",
         "f10dfb6e-7223-43e9-919a-7df622bda1af",
-        "164077894425b81f3d-0"
+        "164077894425b81f3d-2"
       ],
       "settings": {
         "title": "",
