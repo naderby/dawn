@@ -50,11 +50,6 @@
         "show_view_all": false
       }
     },
-    "16397610750ddd1714": {
-      "type": "gearchange-usps",
-      "settings": {
-      }
-    },
     "rich_text": {
       "type": "rich-text",
       "blocks": {
@@ -79,6 +74,11 @@
       "settings": {
         "color_scheme": "background-1",
         "full_width": true
+      }
+    },
+    "16397610750ddd1714": {
+      "type": "gearchange-usps",
+      "settings": {
       }
     },
     "163899179357ab03e6": {
@@ -126,6 +126,22 @@
         "show_text_below": false
       }
     },
+    "featured_products": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Great Gear - Perfect Prices",
+        "collection": "frontpage",
+        "products_to_show": 12,
+        "show_view_all": false,
+        "swipe_on_mobile": true,
+        "image_ratio": "square",
+        "show_secondary_image": false,
+        "add_image_padding": false,
+        "show_image_outline": true,
+        "show_vendor": true,
+        "show_rating": false
+      }
+    },
     "image_banner": {
       "type": "image-banner",
       "blocks": {
@@ -162,22 +178,6 @@
         "color_scheme": "accent-1",
         "stack_images_on_mobile": true,
         "show_text_below": false
-      }
-    },
-    "featured_products": {
-      "type": "featured-collection",
-      "settings": {
-        "title": "Great Gear - Perfect Prices",
-        "collection": "frontpage",
-        "products_to_show": 12,
-        "show_view_all": false,
-        "swipe_on_mobile": true,
-        "image_ratio": "square",
-        "show_secondary_image": false,
-        "add_image_padding": false,
-        "show_image_outline": true,
-        "show_vendor": true,
-        "show_rating": false
       }
     },
     "1638986059856353eb": {
@@ -277,58 +277,16 @@
         "button_link": "",
         "swipe_on_mobile": true
       }
-    },
-    "collage": {
-      "type": "collage",
-      "disabled": true,
-      "blocks": {
-        "video": {
-          "type": "video",
-          "settings": {
-            "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
-            "description": "Describe the video",
-            "image_padding": false
-          }
-        },
-        "product": {
-          "type": "product",
-          "settings": {
-            "product": "",
-            "second_image": false,
-            "image_padding": false,
-            "secondary_background": false
-          }
-        },
-        "collection": {
-          "type": "collection",
-          "settings": {
-            "collection": "",
-            "image_padding": false,
-            "color_scheme": "background-1"
-          }
-        }
-      },
-      "block_order": [
-        "video",
-        "product",
-        "collection"
-      ],
-      "settings": {
-        "heading": "Multimedia collage",
-        "desktop_layout": "right",
-        "mobile_layout": "collage"
-      }
     }
   },
   "order": [
     "1640778944e11ccff8",
-    "16397610750ddd1714",
     "rich_text",
+    "16397610750ddd1714",
     "163899179357ab03e6",
-    "image_banner",
     "featured_products",
+    "image_banner",
     "1638986059856353eb",
-    "multi_column",
-    "collage"
+    "multi_column"
   ]
 }
