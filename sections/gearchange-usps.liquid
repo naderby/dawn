@@ -7,12 +7,14 @@
     .gc-usp-item__wrapper {
         display: flex;
         justify-content: space-between;
+        flex-direction: column;
     }
     .gc-usp-item__wrapper .gc-usp-item__item {
         width: 32%;
         padding: 1rem 2rem;
         background: var(--gradient-base-accent-1);
         border-radius: 0.75rem;
+        margin-bottom: 1rem;
     }
     .gc-usp-item__wrapper .gc-usp-item__item h3 {
         margin: 0;
@@ -22,7 +24,11 @@
         line-height: 1.4em;
         margin: 0.5rem 0 0;
     }
-
+    @media screen and (max-width: 989px) {
+        .gc-usp-item__wrapper {
+            flex-direction: row:
+        }
+    }
 
 </style>
 
