@@ -1,5 +1,55 @@
 {
   "sections": {
+    "1640778944e11ccff8": {
+      "type": "collection-list",
+      "blocks": {
+        "164077894425b81f3d-1": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "sports-racing-gear"
+          }
+        },
+        "f10d1acc-e0b9-4770-bc0f-831e612dfadb": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "touring"
+          }
+        },
+        "164077894425b81f3d-2": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "mx-off-road-gear"
+          }
+        },
+        "f10dfb6e-7223-43e9-919a-7df622bda1af": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "urban-retro"
+          }
+        },
+        "164077894425b81f3d-0": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "adventures-gear"
+          }
+        }
+      },
+      "block_order": [
+        "164077894425b81f3d-1",
+        "f10d1acc-e0b9-4770-bc0f-831e612dfadb",
+        "164077894425b81f3d-2",
+        "f10dfb6e-7223-43e9-919a-7df622bda1af",
+        "164077894425b81f3d-0"
+      ],
+      "settings": {
+        "title": "Gear by Rider Style",
+        "image_ratio": "square",
+        "color_scheme": "background-1",
+        "swipe_on_mobile": true,
+        "image_padding": false,
+        "show_view_all": false
+      }
+    },
     "163899179357ab03e6": {
       "type": "image-banner",
       "blocks": {
@@ -74,56 +124,6 @@
     "16397610750ddd1714": {
       "type": "gearchange-usps",
       "settings": {
-      }
-    },
-    "1640778944e11ccff8": {
-      "type": "collection-list",
-      "blocks": {
-        "164077894425b81f3d-0": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "adventures-gear"
-          }
-        },
-        "164077894425b81f3d-1": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "sports-racing-gear"
-          }
-        },
-        "f10d1acc-e0b9-4770-bc0f-831e612dfadb": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "touring"
-          }
-        },
-        "164077894425b81f3d-2": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "mx-off-road-gear"
-          }
-        },
-        "f10dfb6e-7223-43e9-919a-7df622bda1af": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "urban-retro"
-          }
-        }
-      },
-      "block_order": [
-        "164077894425b81f3d-0",
-        "164077894425b81f3d-1",
-        "f10d1acc-e0b9-4770-bc0f-831e612dfadb",
-        "164077894425b81f3d-2",
-        "f10dfb6e-7223-43e9-919a-7df622bda1af"
-      ],
-      "settings": {
-        "title": "Gear by Rider Style",
-        "image_ratio": "square",
-        "color_scheme": "background-1",
-        "swipe_on_mobile": true,
-        "image_padding": false,
-        "show_view_all": false
       }
     },
     "image_banner": {
@@ -320,10 +320,10 @@
     }
   },
   "order": [
+    "1640778944e11ccff8",
     "163899179357ab03e6",
     "rich_text",
     "16397610750ddd1714",
-    "1640778944e11ccff8",
     "image_banner",
     "featured_products",
     "1638986059856353eb",
