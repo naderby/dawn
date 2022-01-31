@@ -50,6 +50,11 @@
         "show_view_all": false
       }
     },
+    "16397610750ddd1714": {
+      "type": "gearchange-usps",
+      "settings": {
+      }
+    },
     "rich_text": {
       "type": "rich-text",
       "blocks": {
@@ -74,11 +79,6 @@
       "settings": {
         "color_scheme": "background-1",
         "full_width": true
-      }
-    },
-    "16397610750ddd1714": {
-      "type": "gearchange-usps",
-      "settings": {
       }
     },
     "163899179357ab03e6": {
@@ -321,8 +321,8 @@
   },
   "order": [
     "1640778944e11ccff8",
-    "rich_text",
     "16397610750ddd1714",
+    "rich_text",
     "163899179357ab03e6",
     "image_banner",
     "featured_products",
