@@ -50,6 +50,32 @@
         "show_view_all": false
       }
     },
+    "rich_text": {
+      "type": "rich-text",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "The UK's best prices for Motorcycle Helmets, Gloves, Boots & Clothing",
+            "heading_size": "h1"
+          }
+        },
+        "17c7ff3a-c589-4d3c-a4e3-a28e66854a80": {
+          "type": "text",
+          "settings": {
+            "text": "<p>We are a motorcycle helmet, clothing and accessories store, with a big difference! We specialise in helping you choose the gear that’s right for you, at the best possible prices.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "17c7ff3a-c589-4d3c-a4e3-a28e66854a80"
+      ],
+      "settings": {
+        "color_scheme": "background-1",
+        "full_width": true
+      }
+    },
     "163899179357ab03e6": {
       "type": "image-banner",
       "blocks": {
@@ -93,32 +119,6 @@
         "color_scheme": "accent-1",
         "stack_images_on_mobile": false,
         "show_text_below": false
-      }
-    },
-    "rich_text": {
-      "type": "rich-text",
-      "blocks": {
-        "heading": {
-          "type": "heading",
-          "settings": {
-            "heading": "The UK's best prices for Motorcycle Helmets, Gloves, Boots & Clothing",
-            "heading_size": "h1"
-          }
-        },
-        "17c7ff3a-c589-4d3c-a4e3-a28e66854a80": {
-          "type": "text",
-          "settings": {
-            "text": "<p>We are a motorcycle helmet, clothing and accessories store, with a big difference! We specialise in helping you choose the gear that’s right for you, at the best possible prices.<\/p>"
-          }
-        }
-      },
-      "block_order": [
-        "heading",
-        "17c7ff3a-c589-4d3c-a4e3-a28e66854a80"
-      ],
-      "settings": {
-        "color_scheme": "background-1",
-        "full_width": true
       }
     },
     "16397610750ddd1714": {
@@ -321,8 +321,8 @@
   },
   "order": [
     "1640778944e11ccff8",
-    "163899179357ab03e6",
     "rich_text",
+    "163899179357ab03e6",
     "16397610750ddd1714",
     "image_banner",
     "featured_products",
