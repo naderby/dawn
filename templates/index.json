@@ -1,5 +1,86 @@
 {
   "sections": {
+    "1640778944e11ccff8": {
+      "type": "collection-list",
+      "blocks": {
+        "164077894425b81f3d-1": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "sports-racing-gear"
+          }
+        },
+        "164077894425b81f3d-0": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "adventures-gear"
+          }
+        },
+        "f10d1acc-e0b9-4770-bc0f-831e612dfadb": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "touring"
+          }
+        },
+        "f10dfb6e-7223-43e9-919a-7df622bda1af": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "urban-retro"
+          }
+        },
+        "164077894425b81f3d-2": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "mx-off-road-gear"
+          }
+        }
+      },
+      "block_order": [
+        "164077894425b81f3d-1",
+        "164077894425b81f3d-0",
+        "f10d1acc-e0b9-4770-bc0f-831e612dfadb",
+        "f10dfb6e-7223-43e9-919a-7df622bda1af",
+        "164077894425b81f3d-2"
+      ],
+      "settings": {
+        "title": "",
+        "image_ratio": "square",
+        "color_scheme": "background-1",
+        "swipe_on_mobile": true,
+        "image_padding": false,
+        "show_view_all": false
+      }
+    },
+    "rich_text": {
+      "type": "rich-text",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "The UK's best prices for Motorcycle Helmets, Gloves, Boots & Clothing",
+            "heading_size": "h1"
+          }
+        },
+        "17c7ff3a-c589-4d3c-a4e3-a28e66854a80": {
+          "type": "text",
+          "settings": {
+            "text": "<p>We specialise in helping you choose motorcycle gear that’s right for you, at the best possible prices.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "17c7ff3a-c589-4d3c-a4e3-a28e66854a80"
+      ],
+      "settings": {
+        "color_scheme": "background-1",
+        "full_width": true
+      }
+    },
+    "16397610750ddd1714": {
+      "type": "gearchange-usps",
+      "settings": {
+      }
+    },
     "163899179357ab03e6": {
       "type": "image-banner",
       "blocks": {
@@ -45,85 +126,20 @@
         "show_text_below": false
       }
     },
-    "rich_text": {
-      "type": "rich-text",
-      "blocks": {
-        "heading": {
-          "type": "heading",
-          "settings": {
-            "heading": "The UK's best prices for Motorcycle Helmets, Gloves, Boots & Clothing",
-            "heading_size": "h1"
-          }
-        },
-        "17c7ff3a-c589-4d3c-a4e3-a28e66854a80": {
-          "type": "text",
-          "settings": {
-            "text": "<p>We are a motorcycle helmet, clothing and accessories store, with a big difference! We specialise in helping you choose the gear that’s right for you, at the best possible prices.<\/p>"
-          }
-        }
-      },
-      "block_order": [
-        "heading",
-        "17c7ff3a-c589-4d3c-a4e3-a28e66854a80"
-      ],
+    "featured_products": {
+      "type": "featured-collection",
       "settings": {
-        "color_scheme": "background-1",
-        "full_width": true
-      }
-    },
-    "16397610750ddd1714": {
-      "type": "gearchange-usps",
-      "settings": {
-      }
-    },
-    "1640778944e11ccff8": {
-      "type": "collection-list",
-      "blocks": {
-        "164077894425b81f3d-0": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "adventures-gear"
-          }
-        },
-        "164077894425b81f3d-1": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "sports-racing-gear"
-          }
-        },
-        "f10d1acc-e0b9-4770-bc0f-831e612dfadb": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "touring"
-          }
-        },
-        "164077894425b81f3d-2": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "mx-off-road-gear"
-          }
-        },
-        "f10dfb6e-7223-43e9-919a-7df622bda1af": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "urban-retro"
-          }
-        }
-      },
-      "block_order": [
-        "164077894425b81f3d-0",
-        "164077894425b81f3d-1",
-        "f10d1acc-e0b9-4770-bc0f-831e612dfadb",
-        "164077894425b81f3d-2",
-        "f10dfb6e-7223-43e9-919a-7df622bda1af"
-      ],
-      "settings": {
-        "title": "Gear by Rider Style",
-        "image_ratio": "square",
-        "color_scheme": "background-1",
+        "title": "Great Gear - Perfect Prices",
+        "collection": "frontpage",
+        "products_to_show": 12,
+        "show_view_all": false,
         "swipe_on_mobile": true,
-        "image_padding": false,
-        "show_view_all": false
+        "image_ratio": "square",
+        "show_secondary_image": false,
+        "add_image_padding": false,
+        "show_image_outline": true,
+        "show_vendor": true,
+        "show_rating": false
       }
     },
     "image_banner": {
@@ -162,22 +178,6 @@
         "color_scheme": "accent-1",
         "stack_images_on_mobile": true,
         "show_text_below": false
-      }
-    },
-    "featured_products": {
-      "type": "featured-collection",
-      "settings": {
-        "title": "Great Gear - Perfect Prices",
-        "collection": "frontpage",
-        "products_to_show": 12,
-        "show_view_all": false,
-        "swipe_on_mobile": true,
-        "image_ratio": "square",
-        "show_secondary_image": false,
-        "add_image_padding": false,
-        "show_image_outline": true,
-        "show_vendor": true,
-        "show_rating": false
       }
     },
     "1638986059856353eb": {
@@ -277,57 +277,16 @@
         "button_link": "",
         "swipe_on_mobile": true
       }
-    },
-    "collage": {
-      "type": "collage",
-      "blocks": {
-        "video": {
-          "type": "video",
-          "settings": {
-            "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
-            "description": "Describe the video",
-            "image_padding": false
-          }
-        },
-        "product": {
-          "type": "product",
-          "settings": {
-            "product": "",
-            "second_image": false,
-            "image_padding": false,
-            "secondary_background": false
-          }
-        },
-        "collection": {
-          "type": "collection",
-          "settings": {
-            "collection": "",
-            "image_padding": false,
-            "color_scheme": "background-1"
-          }
-        }
-      },
-      "block_order": [
-        "video",
-        "product",
-        "collection"
-      ],
-      "settings": {
-        "heading": "Multimedia collage",
-        "desktop_layout": "right",
-        "mobile_layout": "collage"
-      }
     }
   },
   "order": [
-    "163899179357ab03e6",
+    "1640778944e11ccff8",
     "rich_text",
     "16397610750ddd1714",
-    "1640778944e11ccff8",
-    "image_banner",
+    "163899179357ab03e6",
     "featured_products",
+    "image_banner",
     "1638986059856353eb",
-    "multi_column",
-    "collage"
+    "multi_column"
   ]
 }
