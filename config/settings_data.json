@@ -87,16 +87,25 @@
               "menu": "footer"
             }
           },
+          "ee3c1ca1-3140-44b5-9c7d-3297628cd0b8": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Screen_Shot_2022-02-01_at_11.10.32.png",
+              "image_width": 200,
+              "alignment": "center"
+            }
+          },
           "footer-1": {
             "type": "text",
             "settings": {
-              "heading": "Heading",
+              "heading": "Visit our store",
               "subtext": "<p>Share store details, promotions, or brand content with your customers.<\/p>"
             }
           }
         },
         "block_order": [
           "footer-0",
+          "ee3c1ca1-3140-44b5-9c7d-3297628cd0b8",
           "footer-1"
         ],
         "settings": {
