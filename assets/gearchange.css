@@ -138,6 +138,9 @@
   font-size: calc(var(--font-heading-scale) * 2rem) !important;
   margin: 0 auto 1rem !important;
 }
+.product-popup-modal__content-info h3 {
+  margin: 0 auto 1rem !important;
+}
 .product-popup-modal__content-info table {
   margin: 0 0 2rem !important;
 }
