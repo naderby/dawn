@@ -8,16 +8,10 @@
     "1640006222e16ca9d6": {
       "type": "collection-list",
       "blocks": {
-        "164000622221906035-0": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "arai-helmets"
-          }
-        },
         "164000622221906035-1": {
           "type": "featured_collection",
           "settings": {
-            "collection": ""
+            "collection": "agv-helmets"
           }
         },
         "164000622221906035-2": {
@@ -26,73 +20,7 @@
             "collection": ""
           }
         },
-        "1b71f5bd-545d-4320-873b-c61c9cd64cea": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": ""
-          }
-        },
-        "331fa6e1-a91b-4b4c-9d5a-4869d762b0b9": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": ""
-          }
-        },
-        "3c9ade0f-a624-47be-8958-3a44285cbe3f": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": ""
-          }
-        },
-        "ec027cc1-d502-4c09-ad4b-6bf86ff93f1d": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": ""
-          }
-        },
-        "e74cc557-8d21-4a5b-925e-942cae65a5d6": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": ""
-          }
-        },
-        "5050d2a7-cc81-45db-bba5-3ec62d34fdfa": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": ""
-          }
-        },
-        "0f044835-cd21-43ef-88e2-f5aefb4d18b3": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": ""
-          }
-        },
-        "4285419d-b92e-4ebf-9504-d191cb4195d9": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": ""
-          }
-        },
-        "6b86aa74-469b-47e3-8251-3be3398e1ff4": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": ""
-          }
-        },
-        "0f870c15-9956-42dc-be0e-ddb0ad5c2014": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": ""
-          }
-        },
-        "37872ce9-34e5-40da-bd2c-8da9def14f8b": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": ""
-          }
-        },
-        "7db70851-76a8-4c95-adb9-43db8f3b6b85": {
+        "164000622221906035-0": {
           "type": "featured_collection",
           "settings": {
             "collection": ""
@@ -100,21 +28,9 @@
         }
       },
       "block_order": [
-        "164000622221906035-0",
         "164000622221906035-1",
         "164000622221906035-2",
-        "1b71f5bd-545d-4320-873b-c61c9cd64cea",
-        "331fa6e1-a91b-4b4c-9d5a-4869d762b0b9",
-        "3c9ade0f-a624-47be-8958-3a44285cbe3f",
-        "ec027cc1-d502-4c09-ad4b-6bf86ff93f1d",
-        "e74cc557-8d21-4a5b-925e-942cae65a5d6",
-        "5050d2a7-cc81-45db-bba5-3ec62d34fdfa",
-        "0f044835-cd21-43ef-88e2-f5aefb4d18b3",
-        "4285419d-b92e-4ebf-9504-d191cb4195d9",
-        "6b86aa74-469b-47e3-8251-3be3398e1ff4",
-        "0f870c15-9956-42dc-be0e-ddb0ad5c2014",
-        "37872ce9-34e5-40da-bd2c-8da9def14f8b",
-        "7db70851-76a8-4c95-adb9-43db8f3b6b85"
+        "164000622221906035-0"
       ],
       "settings": {
         "title": "",
