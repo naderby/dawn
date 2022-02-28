@@ -2,6 +2,7 @@
   "sections": {
     "1639761270b5e6a9ad": {
       "type": "gearchange-usps",
+      "disabled": true,
       "settings": {
       }
     },
@@ -34,7 +35,7 @@
         "507543d3-5e9d-4243-9d75-a02b818238df": {
           "type": "custom_liquid",
           "settings": {
-            "custom_liquid": "{% assign percentage_discount = product.compare_at_price_max | minus: product.price | times: 100.0 | divided_by: product.compare_at_price_max | money_without_currency | times: 100 | remove: '.0' %}\n<div class=\"gc-calls__wrapper\">\n    <div class=\"gc-calls-item__wrapper\">\n        {% if percentage_discount == \"0\" %}\n            <div class=\"gc-calls-item__item\">\n                <h3>Price Deals<\/h3>\n                <p>Chat with us for an unbeatable price and discount code.<\/p>\n            <\/div>\n        {% elsif percentage_discount <= \"20\" %}\n            <div class=\"gc-calls-item__item\">\n                <h3>Price Deals<\/h3>\n                <p>Chat with us for a further discount on this item.<\/p>\n            <\/div>\n        {% else %}\n        {% endif %}\n    <\/div>\n<\/div>"
+            "custom_liquid": "{% assign percentage_discount = product.compare_at_price_max | minus: product.price | times: 100.0 | divided_by: product.compare_at_price_max | money_without_currency | times: 100 | remove: '.0' %}\n<div class=\"gc-calls__wrapper\">\n    <div class=\"gc-calls-item__wrapper\">\n        {% if percentage_discount == \"0\" %}\n            <div class=\"gc-calls-item__item\">\n                <h3>Want a discount?<\/h3>\n                <p>An unbeatable discount is available on this item. Chat with us get it, now.<\/p>\n            <\/div>\n        {% elsif percentage_discount <= \"20\" %}\n            <div class=\"gc-calls-item__item\">\n                <h3>Want a discount?<\/h3>\n                <p>A further discount is available on this item. Chat with us get it, now.<\/p>\n            <\/div>\n        {% else %}\n        {% endif %}\n    <\/div>\n<\/div>"
           }
         },
         "variant_picker": {
@@ -61,6 +62,12 @@
             "page": "{{ product.metafields.my_fields.size_guide.value }}"
           }
         },
+        "83f99808-282f-46bc-91f8-f527b4bed392": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "<div class=\"gc-calls__wrapper\">\n    <div class=\"gc-calls-item__wrapper\">\n        <div class=\"gc-calls-item__item\">\n            <h3>Need technical advice?<\/h3>\n            <p>With 20yrs experience, we have the answers. Just ask!<\/p>\n        <\/div>\n        <div class=\"gc-calls-item__item\">\n            <h3>FREE Size exchanges<\/h3>\n            <p>Let us recommend your size\/fit. If wrong, we pay for the exchange.<\/p>\n        <\/div>\n    <\/div>\n<\/div>"
+          }
+        },
         "6d458955-9a20-4240-8a05-2ce0392d34f1": {
           "type": "popup",
           "settings": {
@@ -79,16 +86,6 @@
           "settings": {
             "text": "Range: {{ product.metafields.my_fields.range.value }}",
             "text_style": "body"
-          }
-        },
-        "1fb33593-9366-4e04-9a55-0192d7f3c2c9": {
-          "type": "collapsible_tab",
-          "disabled": true,
-          "settings": {
-            "heading": "Price Deals",
-            "content": "<p>ghjgj<\/p>",
-            "page": "price-deals",
-            "icon": "check_mark"
           }
         },
         "5dd901e6-1a37-42cb-b5a8-fe75586e0532": {
@@ -126,10 +123,10 @@
         "quantity_selector",
         "buy_buttons",
         "9ee8db31-91e6-4b9d-8a1a-525454dd7b60",
+        "83f99808-282f-46bc-91f8-f527b4bed392",
         "6d458955-9a20-4240-8a05-2ce0392d34f1",
         "description",
         "vendor",
-        "1fb33593-9366-4e04-9a55-0192d7f3c2c9",
         "5dd901e6-1a37-42cb-b5a8-fe75586e0532",
         "8eb97334-589b-4417-b60c-3479d103deb0",
         "share"
