@@ -11,7 +11,7 @@
         "b3823b51-5d12-4c31-a0c6-0c29676ea18d": {
           "type": "custom_liquid",
           "settings": {
-            "custom_liquid": "<div><a href=\"{{ product.vendor | url_for_vendor }}\"><img style=\"max-width:10rem; background:rgba(var(--color-foreground),.04);padding:1rem;border-radius:1rem;\" src=\"{{ product.vendor | prepend: \"vendor-\" | append: \".svg\" | asset_url }}\" onerror=\"parentNode.parentNode.remove()\"\/><\/a><\/div>"
+            "custom_liquid": "{% assign percentage_discount = product.compare_at_price_max | minus: product.price | times: 100.0 | divided_by: product.compare_at_price_max | money_without_currency | times: 100 | remove: '.0' %}\n\n{% if percentage_discount <= 20 %}\n    Percentage is less than or equal to! ({{percentage_discount}})\n{% endif %}"
           }
         },
         "title": {
