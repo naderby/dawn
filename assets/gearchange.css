@@ -144,3 +144,58 @@
 .product-popup-modal__content-info table {
   margin: 0 0 2rem !important;
 }
+
+
+
+
+/* standalone UPS call outs */
+.gc-calls__wrapper {
+  /* background: var(--gradient-base-accent-1);
+  padding: 1rem;
+  margin: 2rem 0; */
+}
+.gc-calls-item__wrapper {
+  /* display: flex; */
+  justify-content: space-between;
+  flex-direction: column;
+}
+.gc-calls-item__wrapper .gc-calls-item__item {
+  width: 100%;
+  padding: .75rem;
+  background: #bed63b30;
+  border-radius: .5rem;
+  margin-bottom: .5rem;
+}
+.gc-calls-item__wrapper .gc-calls-item__item h3 {
+  font-size: 1.2rem;
+  float: left;
+  margin-right: 1rem;
+  background: var(--gradient-base-accent-1);
+  color: black;
+  padding: .75rem .5rem 0 .75rem;
+  margin: -.75rem .5rem 0rem -.75rem;
+  border-top-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.25rem;
+}
+.gc-calls-item__wrapper .gc-calls-item__item p {
+  line-height: 1.4em;
+  margin: 0;
+  font-size: 1.2rem;
+}
+@media screen and (min-width: 750px) {
+  .gc-calls-item__wrapper {
+      flex-direction: row;
+  }
+  .gc-calls-item__wrapper .gc-calls-item__item {
+      margin-bottom: 0;
+  }
+  .gc-callsitem__wrapper .gc-calls-item__item:not(:first-child, :last-child) {
+      margin-left: 1rem;
+      margin-right: 1rem;
+  }
+  .gc-calls-item__wrapper .gc-calls-item__item h3 {
+  }
+  .gc-calls-item__wrapper .gc-calls-item__item p {
+  }
+}
+
