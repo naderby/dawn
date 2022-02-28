@@ -31,6 +31,12 @@
           "settings": {
           }
         },
+        "507543d3-5e9d-4243-9d75-a02b818238df": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "{% if product.compare_at_price_max > product.price %}\n    Percentage off {{ product.compare_at_price_max | minus: product.price | times: 100.0 | divided_by: product.compare_at_price_max | money_without_currency | times: 100 | remove: '.0'}}\n{% endif %}"
+          }
+        },
         "variant_picker": {
           "type": "variant_picker",
           "settings": {
@@ -85,14 +91,6 @@
             "icon": "check_mark"
           }
         },
-        "01beff47-295d-4d60-a82d-7969f08df5f8": {
-          "type": "popup",
-          "disabled": true,
-          "settings": {
-            "text": "Price Deals",
-            "page": ""
-          }
-        },
         "5dd901e6-1a37-42cb-b5a8-fe75586e0532": {
           "type": "collapsible_tab",
           "disabled": true,
@@ -123,6 +121,7 @@
         "title",
         "subtitle",
         "price",
+        "507543d3-5e9d-4243-9d75-a02b818238df",
         "variant_picker",
         "quantity_selector",
         "buy_buttons",
@@ -131,7 +130,6 @@
         "description",
         "vendor",
         "1fb33593-9366-4e04-9a55-0192d7f3c2c9",
-        "01beff47-295d-4d60-a82d-7969f08df5f8",
         "5dd901e6-1a37-42cb-b5a8-fe75586e0532",
         "8eb97334-589b-4417-b60c-3479d103deb0",
         "share"
