@@ -34,7 +34,7 @@
         "507543d3-5e9d-4243-9d75-a02b818238df": {
           "type": "custom_liquid",
           "settings": {
-            "custom_liquid": "{% assign percentage_discount = product.compare_at_price_max | minus: product.price | times: 100.0 | divided_by: product.compare_at_price_max | money_without_currency | times: 100 | remove: '.0' %}\n{% if percentage_discount == \"0\" %}\n    <div class=\"gcusp__potential_discount\">A discount code is available for this item?<\/div>\n{% elsif percentage_discount <= \"20\" %}\n    <div class=\"gcusp__potential_discount\">Want more discount?<\/div>\n{% else %}\n{% endif %}"
+            "custom_liquid": "{% assign percentage_discount = product.compare_at_price_max | minus: product.price | times: 100.0 | divided_by: product.compare_at_price_max | money_without_currency | times: 100 | remove: '.0' %}\n{% if percentage_discount == \"0\" %}\n    <div style=\"background: #bed63b30\" class=\"gcusp__potential_discount\">A discount code is available for this item?<\/div>\n{% elsif percentage_discount <= \"20\" %}\n    <div style=\"background: #bed63b30\" class=\"gcusp__potential_discount\">Want more discount?<\/div>\n{% else %}\n{% endif %}"
           }
         },
         "variant_picker": {
