@@ -15,20 +15,20 @@
 
   
 <ul class="block-grid mobile four-up product-collection">    
-{% for link in linklist.links %} //Here we are saying use the links in the linklist we created and assign them to the below code
+{% for link in linklist.links %}
 <li>
   <div class="product">
   {% comment %}
  You can connect collections, products, pages, & even blogs. By default it will use the first product that appears on a collection or you can pick a featured image.
   {% endcomment %}
 
-  {% assign link_item = link.object %} //Creates a new variable for link_item using link.object which in-turn can access any of the attributes that are available (product, collection, page or blog)
-  {% assign link_image = '' %}//creates a new variable for link_image which assigns 
-  {% capture link_title %}{{ link.title | escape }}{% endcapture %}//grab the link title and assign it as the link.title 
+  {% assign link_item = link.object %}
+  {% assign link_image = '' %}
+  {% capture link_title %}{{ link.title | escape }}{% endcapture %}
 
-  {% if link.type == 'collection_link' %}//if the link type is a collection then use this set of rules
-    {% if link_item.image %}//if there is a link_item image then proceed to the next step
-      {% assign link_image = link_item.image.src | collection_img_url: 'medium' %}//if there is a featured collection image use that and size it as a medium image 
+  {% if link.type == 'collection_link' %}
+    {% if link_item.image %}
+      {% assign link_image = link_item.image.src | collection_img_url: 'medium' %} 
     {% else %}//Otherwise
       {% assign link_image = link_item.products.first.featured_image | product_img_url: 'medium' %}//Grab the first product image and use that as the image
     {% endif %}
