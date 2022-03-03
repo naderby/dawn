@@ -21,7 +21,8 @@
 {% assign collections_per_row = settings.frontpage_collections_per_row %}
 
   
-<ul class="collection-list grid grid--1-col grid--3-col-tablet collection-list--3-items negative-margin--small">    
+<ul class="collection-list grid grid--2-col grid--3-col-tablet grid--one-third-max grid--4-col-desktop grid--quarter-max collection-list--3-items negative-margin--small">
+
 {% for link in linklist.links %}
 <li class="collection-list__item grid__item">
   {% assign link_item = link.object %}
