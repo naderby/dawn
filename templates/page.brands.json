@@ -5,8 +5,14 @@
       "settings": {
       }
     },
+    "164000623549e15286": {
+      "type": "gearchange-usps",
+      "settings": {
+      }
+    },
     "1640006222e16ca9d6": {
       "type": "collection-list",
+      "disabled": true,
       "blocks": {
         "164000622221906035-1": {
           "type": "featured_collection",
@@ -276,22 +282,17 @@
         "image_padding": false,
         "show_view_all": false
       }
-    },
-    "164000623549e15286": {
-      "type": "gearchange-usps",
-      "settings": {
-      }
     }
   },
   "order": [
     "main",
+    "164000623549e15286",
     "1640006222e16ca9d6",
     "16457074670db00355",
     "1645711931dc6ec0aa",
     "16457120297decaf61",
     "164571212518863653",
     "1645712193cd6f44c2",
-    "164571227565e81b23",
-    "164000623549e15286"
+    "164571227565e81b23"
   ]
 }
