@@ -9,10 +9,54 @@
       "type": "gearchange-usps",
       "settings": {
       }
+    },
+    "1646336208214d7605": {
+      "type": "collection-list",
+      "blocks": {
+        "16463362081e91bf83-0": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "agv-helmets"
+          }
+        },
+        "16463362081e91bf83-1": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "airoh-helmets"
+          }
+        },
+        "16463362081e91bf83-2": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "arai-helmets"
+          }
+        },
+        "3d55bb46-b6d2-49be-b619-c858fa804819": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "bell-helmets"
+          }
+        }
+      },
+      "block_order": [
+        "16463362081e91bf83-0",
+        "16463362081e91bf83-1",
+        "16463362081e91bf83-2",
+        "3d55bb46-b6d2-49be-b619-c858fa804819"
+      ],
+      "settings": {
+        "title": "Collections",
+        "image_ratio": "square",
+        "color_scheme": "background-1",
+        "swipe_on_mobile": false,
+        "image_padding": false,
+        "show_view_all": false
+      }
     }
   },
   "order": [
     "main",
-    "164000623549e15286"
+    "164000623549e15286",
+    "1646336208214d7605"
   ]
 }
