@@ -52,15 +52,15 @@
     {% endif %}
   {% endif %}
 
-<a href="{{ link_item.url }}" title="{{ link_title }}">//Here is where it all comes together make the link_item.url click-able and link to the content and add the title using link_title 
+<a href="{{ link_item.url }}" title="{{ link_title }}"> 
     <span class="thumbnail">
-      {% if link_image != '' %} //if link_image does not equal '' then continue to the next step 
-        <img {% if settings.align_height %}style="max-height:{{ settings.collection_height }}px"{% endif %} src="{{ link_image }}" alt="{{ link_title }}" />//check if there are settings for align_height if so add it to the style otherwise just get the link_image and make the alt tag the link title
+      {% if link_image != '' %}
+        <img {% if settings.align_height %}style="max-height:{{ settings.collection_height }}px"{% endif %} src="{{ link_image }}" alt="{{ link_title }}" />
       {% endif %}
     </span>
 
     <span class="product-title">
-      {{ link_title }} //add the link title  (it's click-able)
+      {{ link_title }}
     </span>
   </a>
 
