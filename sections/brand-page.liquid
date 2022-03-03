@@ -59,7 +59,7 @@
     <div class="card--stretch card-colored color-background-1">
         <div>
             <div class="media media--square media--hover-effect overflow-hidden" style="background-size:cover;background-position:center;background-image:url({{ link_image }});">
-  <div style="background-color:#f7fae6d4"><img style="max-width:100%;position:absolute;top:0;left:0;height:100%;width:100%;background:rgba(var(--color-foreground),.04);padding:1rem;border-radius:1rem;" src="{{ link_title | prepend: "vendor-" | append: ".svg" | asset_url }}" onerror="parentNode.parentNode.remove()"/></div>
+  				<div style="background-color:#f7fae6d4"><img style="max-width:100%;position:absolute;top:0;left:0;height:100%;width:100%;background:rgba(var(--color-foreground),.04);padding:1rem" src="{{ link_title | prepend: "vendor-" | append: ".svg" | asset_url }}" onerror="parentNode.parentNode.remove()"/></div>
                 {% if link_image != '' %}
                     <img style="display:none" {% if settings.align_height %}style="max-height:{{ settings.collection_height }}px"{% endif %} src="{{ link_image }}" alt="{{ link_title }}" />
                 {% endif %}
