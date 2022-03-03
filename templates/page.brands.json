@@ -27,6 +27,7 @@
         },
         "16463362081e91bf83-2": {
           "type": "featured_collection",
+          "disabled": true,
           "settings": {
             "collection": "arai-helmets"
           }
