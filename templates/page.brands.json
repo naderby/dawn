@@ -7,6 +7,7 @@
     },
     "1640006222e16ca9d6": {
       "type": "collection-list",
+      "disabled": true,
       "blocks": {
         "164000622221906035-1": {
           "type": "featured_collection",
@@ -43,6 +44,7 @@
     },
     "16457074670db00355": {
       "type": "collection-list",
+      "disabled": true,
       "blocks": {
         "164570746762859628-0": {
           "type": "featured_collection",
@@ -79,6 +81,7 @@
     },
     "1645711931dc6ec0aa": {
       "type": "collection-list",
+      "disabled": true,
       "blocks": {
         "164571193101d372f4-0": {
           "type": "featured_collection",
@@ -115,6 +118,7 @@
     },
     "16457120297decaf61": {
       "type": "collection-list",
+      "disabled": true,
       "blocks": {
         "16457120296d4ec964-0": {
           "type": "featured_collection",
@@ -151,6 +155,7 @@
     },
     "164571212518863653": {
       "type": "collection-list",
+      "disabled": true,
       "blocks": {
         "164571212575da286e-0": {
           "type": "featured_collection",
@@ -187,6 +192,7 @@
     },
     "1645712193cd6f44c2": {
       "type": "collection-list",
+      "disabled": true,
       "blocks": {
         "16457121939a3d8e6e-0": {
           "type": "featured_collection",
@@ -223,6 +229,7 @@
     },
     "164571227565e81b23": {
       "type": "collection-list",
+      "disabled": true,
       "blocks": {
         "1645712275f86228cd-0": {
           "type": "featured_collection",
