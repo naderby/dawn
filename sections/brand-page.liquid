@@ -5,7 +5,17 @@
 <noscript>{{ 'component-rte.css' | asset_url | stylesheet_tag }}</noscript>
 
 <div class="page-width page-width--narrow">
-  <p>whoooooo</p>
+
+{% assign linklist = linklists["brands"] %}
+{% assign collections_per_row = settings.frontpage_collections_per_row %}
+
+<div class="twelve columns collection-list">
+  <h1 class="page-title">{{page.title | escape}}</h1>
+    {{ page.content }}
+    {% include 'collection-within-collection' %}
+</div>
+  
+  
   <h1 class="main-page-title page-title h0">
     {{ page.title | escape }}
   </h1>
