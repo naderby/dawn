@@ -116,6 +116,9 @@ body .collection-hero__title + .collection-hero__description {
 }
 
 
+section[id$="featured_products"] .slider.slider--tablet {
+  padding: 2rem 0;
+}
 @media screen and (min-width: 750px) {
   section[id$="featured_products"] .slider.slider--tablet {
     /* position: relative;
@@ -126,7 +129,6 @@ body .collection-hero__title + .collection-hero__description {
     scroll-padding-left: 1rem;
     -webkit-overflow-scrolling: touch;
     margin-bottom: 1rem; */
-    padding: 2rem 0;
   }
 
   section[id$="featured_products"] .slider.slider--tablet .slider__slide {
