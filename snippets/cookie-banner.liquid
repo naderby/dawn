@@ -11,12 +11,18 @@
     border-top: 1px solid #dcdcdc;
     z-index: 9999;
   }
+  .button--green {
+    font-size: 1.2rem;
+    padding: 1rem 1.5rem;
+    min-width: 9rem;
+    min-height: 3.5rem;
+  }
 </style>
 
 <div id="cookies-banner">
   <span>This website uses cookies to ensure you get the best experience on our website.</span>
-  <button class="button" style="margin-left: 1em;" onclick="handleDecline()">Decline</button>
-  <button class="button" style="margin-left: 1em;" onclick="handleAccept()">Accept</button>
+  <button class="button--tertiary button" style="margin-left: 1em;" onclick="handleDecline()">Decline</button>
+  <button class="button--green button" style="margin-left: 1em;" onclick="handleAccept()">Accept</button>
 </div>
 
 <script>
