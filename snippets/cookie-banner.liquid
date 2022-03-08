@@ -5,7 +5,7 @@
     align-items: center;
     padding: 1em;
     position: fixed;
-    bottom: 0px;
+    {% comment %} bottom: 0px; {% endcomment %}
     width: 100%;
     background: #fff;
     border-top: 1px solid #dcdcdc;
@@ -14,8 +14,8 @@
 
 <div id="cookies-banner">
   <span>This website uses cookies to ensure you get the best experience on our website.</span>
-  <button style="margin-left: 1em;" onclick="handleDecline()">Decline</button>
-  <button style="margin-left: 1em;" onclick="handleAccept()">Accept</button>
+  <button class="button" style="margin-left: 1em;" onclick="handleDecline()">Decline</button>
+  <button class="button" style="margin-left: 1em;" onclick="handleAccept()">Accept</button>
 </div>
 
 <script>

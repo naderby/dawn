@@ -175,6 +175,7 @@
   margin: -1rem .75rem 0rem -1.5rem;
   border-top-left-radius: 0.5rem;
   border-bottom-right-radius: 0.25rem;
+  line-height: 1.4em;
 }
 .gc-calls-item__wrapper .gc-calls-item__item p {
   line-height: 1.4em;
