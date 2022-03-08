@@ -1,0 +1,93 @@
+{% comment %} https://www.shopify.com/partners/blog/72313091-how-to-make-a-brands-or-trends-page-in-an-ecommerce-store-using-link-lists {% endcomment %}
+
+<link rel="stylesheet" href="{{ 'section-main-page.css' | asset_url }}" media="print" onload="this.media='all'">
+<link rel="stylesheet" href="{{ 'component-rte.css' | asset_url }}" media="print" onload="this.media='all'">
+{{ 'component-card.css' | asset_url | stylesheet_tag }}
+{{ 'section-collection-list.css' | asset_url | stylesheet_tag }}
+
+
+<noscript>{{ 'section-main-page.css' | asset_url | stylesheet_tag }}</noscript>
+<noscript>{{ 'component-rte.css' | asset_url | stylesheet_tag }}</noscript>
+
+<div class="page-width">
+    <h1 class="main-page-title page-title h0">
+      {{ page.title | escape }}
+    </h1>
+    <div class="rte">
+      {{ page.content }}
+    </div>
+  
+{% assign linklist = linklists["brands"] %}
+{% assign collections_per_row = settings.frontpage_collections_per_row %}
+
+  
+<ul class="collection-list grid grid--2-col grid--3-col-tablet grid--one-third-max grid--4-col-desktop grid--quarter-max collection-list--3-items negative-margin--small">
+
+{% for link in linklist.links %}
+<li class="collection-list__item grid__item">
+  {% assign link_item = link.object %}
+  {% assign link_image = '' %}
+  {% capture link_title %}{{ link.title | escape }}{% endcapture %}
+
+  {% if link.type == 'collection_link' %}
+    {% if link_item.image %}
+      {% assign link_image = link_item.image.src | collection_img_url: 'medium' %} 
+    {% else %}//Otherwise
+      {% assign link_image = link_item.products.first.featured_image | product_img_url: 'medium' %}//Grab the first product image and use that as the image
+    {% endif %}
+  {% elsif link.type == 'product_link' %}
+    {% assign link_image = link_item.featured_image | product_img_url: 'medium' %}
+  {% elsif link.type == 'page_link' %}
+    {% if link_item.content contains "<img" %}
+      {% assign src = link_item.content | split: 'src="' %}
+      {% assign src = src[1] | split: '"' | first | replace: '//cdn', 'http://cdn' | replace: 'http:http://', 'http://' | remove: 'https:'  %}
+      {% if src %}//if there is a src 
+        {% assign link_image = src %}
+      {% endif %}
+    {% endif %}
+  {% elsif link.type == 'blog_link' %}//Otherwise if link.type is a blog link
+    {% if link_item.articles.first.content contains "<img" %}//And if the blog content contains an image tag
+      {% assign src = link_item.articles.first.content | split: 'src="' %}//Then create a new variable to src 
+      {% assign src = src[1] | split: '"' | first | replace: '//cdn', 'http://cdn' | replace: 'http:http://', 'http://' | remove: 'https:'  %}//Create a new variable for src[1] use '"' substring as a parameter and replace '//cdn' with 'http://cdn' then replace 'http:http://' then finally remove 'https:'
+      {% if src %}//if src is present 
+        {% assign link_image = src %}//then create a new variable for link_image using src
+      {% endif %}
+    {% endif %}
+  {% endif %}
+
+<a class="card animate-arrow link card--media card--light-border" href="{{ link_item.url }}" title="{{ link_title }}">
+    <div class="card--stretch card-colored color-background-1">
+        <div>
+            <div class="media media--square media--hover-effect overflow-hidden" style="background-size:cover;background-position:center;background-image:url({{ link_image }});">
+  				<div><img style="max-width:100%;position:absolute;top:0;left:0;height:100%;width:100%;background:#f7fae6d4;padding:1rem" src="{{ link_title | prepend: "vendor-" | append: ".svg" | asset_url }}" onerror="parentNode.parentNode.remove()"/></div>
+                {% if link_image != '' %}
+                    <img style="display:none" {% if settings.align_height %}style="max-height:{{ settings.collection_height }}px"{% endif %} src="{{ link_image }}" alt="{{ link_title }}" />
+                {% endif %}
+            </div>
+        </div>
+    </div>
+    <div class="card__text card__text-spacing card-colored card__text-hover color-background-1">
+        <div class="overlay-card"></div>
+        <h3>{{ link_title }}<span class="icon-wrap">&nbsp;<svg viewBox="0 0 14 10" fill="none" aria-hidden="true" focusable="false" role="presentation" class="icon icon-arrow" xmlns="http://www.w3.org/2000/svg"> <path fill-rule="evenodd" clip-rule="evenodd" d="M8.537.808a.5.5 0 01.817-.162l4 4a.5.5 0 010 .708l-4 4a.5.5 0 11-.708-.708L11.793 5.5H1a.5.5 0 010-1h10.793L8.646 1.354a.5.5 0 01-.109-.546z" fill="currentColor"></path></svg>
+</span></h3>
+    </div>
+
+  </a>
+
+</li>
+{% endfor %}
+</ul>
+  
+  
+  </div>
+  
+  
+</div>
+
+{% schema %}
+{
+  "name": "t:sections.brand-page.name",
+  "tag": "section",
+  "class": "spaced-section"
+}
+{% endschema %}

@@ -1,291 +1,64 @@
 {
   "sections": {
     "main": {
-      "type": "main-page",
+      "type": "brand-page",
       "settings": {
-      }
-    },
-    "1640006222e16ca9d6": {
-      "type": "collection-list",
-      "blocks": {
-        "164000622221906035-1": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "agv-helmets"
-          }
-        },
-        "164000622221906035-2": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "airoh"
-          }
-        },
-        "164000622221906035-0": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "alpinestars"
-          }
-        }
-      },
-      "block_order": [
-        "164000622221906035-1",
-        "164000622221906035-2",
-        "164000622221906035-0"
-      ],
-      "settings": {
-        "title": "",
-        "image_ratio": "square",
-        "color_scheme": "background-1",
-        "swipe_on_mobile": false,
-        "image_padding": false,
-        "show_view_all": false
-      }
-    },
-    "16457074670db00355": {
-      "type": "collection-list",
-      "blocks": {
-        "164570746762859628-0": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "arai-helmets"
-          }
-        },
-        "164570746762859628-1": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "bell"
-          }
-        },
-        "164570746762859628-2": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "caberg"
-          }
-        }
-      },
-      "block_order": [
-        "164570746762859628-0",
-        "164570746762859628-1",
-        "164570746762859628-2"
-      ],
-      "settings": {
-        "title": "",
-        "image_ratio": "square",
-        "color_scheme": "background-1",
-        "swipe_on_mobile": false,
-        "image_padding": false,
-        "show_view_all": false
-      }
-    },
-    "1645711931dc6ec0aa": {
-      "type": "collection-list",
-      "blocks": {
-        "164571193101d372f4-0": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "dainese"
-          }
-        },
-        "164571193101d372f4-1": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "drift"
-          }
-        },
-        "164571193101d372f4-2": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "garmin"
-          }
-        }
-      },
-      "block_order": [
-        "164571193101d372f4-0",
-        "164571193101d372f4-1",
-        "164571193101d372f4-2"
-      ],
-      "settings": {
-        "title": "",
-        "image_ratio": "square",
-        "color_scheme": "background-1",
-        "swipe_on_mobile": false,
-        "image_padding": false,
-        "show_view_all": false
-      }
-    },
-    "16457120297decaf61": {
-      "type": "collection-list",
-      "blocks": {
-        "16457120296d4ec964-0": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "hjc"
-          }
-        },
-        "16457120296d4ec964-1": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "interphone"
-          }
-        },
-        "16457120296d4ec964-2": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "midland-1"
-          }
-        }
-      },
-      "block_order": [
-        "16457120296d4ec964-0",
-        "16457120296d4ec964-1",
-        "16457120296d4ec964-2"
-      ],
-      "settings": {
-        "title": "",
-        "image_ratio": "square",
-        "color_scheme": "background-1",
-        "swipe_on_mobile": false,
-        "image_padding": false,
-        "show_view_all": false
-      }
-    },
-    "164571212518863653": {
-      "type": "collection-list",
-      "blocks": {
-        "164571212575da286e-0": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "midland"
-          }
-        },
-        "164571212575da286e-1": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": ""
-          }
-        },
-        "164571212575da286e-2": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "rst"
-          }
-        }
-      },
-      "block_order": [
-        "164571212575da286e-0",
-        "164571212575da286e-1",
-        "164571212575da286e-2"
-      ],
-      "settings": {
-        "title": "",
-        "image_ratio": "square",
-        "color_scheme": "background-1",
-        "swipe_on_mobile": false,
-        "image_padding": false,
-        "show_view_all": false
-      }
-    },
-    "1645712193cd6f44c2": {
-      "type": "collection-list",
-      "blocks": {
-        "16457121939a3d8e6e-0": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "schuberth"
-          }
-        },
-        "16457121939a3d8e6e-1": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "sena"
-          }
-        },
-        "16457121939a3d8e6e-2": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "shark-helmets"
-          }
-        }
-      },
-      "block_order": [
-        "16457121939a3d8e6e-0",
-        "16457121939a3d8e6e-1",
-        "16457121939a3d8e6e-2"
-      ],
-      "settings": {
-        "title": "",
-        "image_ratio": "square",
-        "color_scheme": "background-1",
-        "swipe_on_mobile": false,
-        "image_padding": false,
-        "show_view_all": false
-      }
-    },
-    "164571227565e81b23": {
-      "type": "collection-list",
-      "blocks": {
-        "1645712275f86228cd-0": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "shoei-helmets"
-          }
-        },
-        "1645712275f86228cd-1": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "sidi"
-          }
-        },
-        "1645712275f86228cd-2": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "tcx"
-          }
-        },
-        "dccf1100-6071-4633-acf3-f6dcc03ac377": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "vcan"
-          }
-        },
-        "423c2e89-2562-4025-af4e-2a43a2ae3698": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "wolf"
-          }
-        }
-      },
-      "block_order": [
-        "1645712275f86228cd-0",
-        "1645712275f86228cd-1",
-        "1645712275f86228cd-2",
-        "dccf1100-6071-4633-acf3-f6dcc03ac377",
-        "423c2e89-2562-4025-af4e-2a43a2ae3698"
-      ],
-      "settings": {
-        "title": "",
-        "image_ratio": "square",
-        "color_scheme": "background-1",
-        "swipe_on_mobile": false,
-        "image_padding": false,
-        "show_view_all": false
       }
     },
     "164000623549e15286": {
       "type": "gearchange-usps",
       "settings": {
       }
+    },
+    "1646336208214d7605": {
+      "type": "collection-list",
+      "disabled": true,
+      "blocks": {
+        "16463362081e91bf83-0": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "agv-helmets"
+          }
+        },
+        "16463362081e91bf83-1": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "airoh-helmets"
+          }
+        },
+        "16463362081e91bf83-2": {
+          "type": "featured_collection",
+          "disabled": true,
+          "settings": {
+            "collection": "arai-helmets"
+          }
+        },
+        "3d55bb46-b6d2-49be-b619-c858fa804819": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "bell-helmets"
+          }
+        }
+      },
+      "block_order": [
+        "16463362081e91bf83-0",
+        "16463362081e91bf83-1",
+        "16463362081e91bf83-2",
+        "3d55bb46-b6d2-49be-b619-c858fa804819"
+      ],
+      "settings": {
+        "title": "Collections",
+        "image_ratio": "square",
+        "color_scheme": "background-1",
+        "swipe_on_mobile": false,
+        "image_padding": false,
+        "show_view_all": false
+      }
     }
   },
   "order": [
     "main",
-    "1640006222e16ca9d6",
-    "16457074670db00355",
-    "1645711931dc6ec0aa",
-    "16457120297decaf61",
-    "164571212518863653",
-    "1645712193cd6f44c2",
-    "164571227565e81b23",
-    "164000623549e15286"
+    "164000623549e15286",
+    "1646336208214d7605"
   ]
 }
