@@ -196,8 +196,8 @@
 }
 
 .gc-usps__wrapper {
-  {% comment %} background: var(--gradient-base-accent-1); {% endcomment %}
-  {% comment %} padding: 1rem; {% endcomment %}
+  /* background: var(--gradient-base-accent-1);
+  padding: 1rem; */
   margin: 2rem 0;
 }
 .gc-usp-item__wrapper {
