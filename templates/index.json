@@ -131,8 +131,8 @@
       "settings": {
         "title": "Great Gear - Perfect Prices",
         "collection": "frontpage",
-        "products_to_show": 12,
-        "show_view_all": false,
+        "products_to_show": 8,
+        "show_view_all": true,
         "swipe_on_mobile": true,
         "image_ratio": "square",
         "show_secondary_image": false,
