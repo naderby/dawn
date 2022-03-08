@@ -1,3 +1,37 @@
+<style>
+    #big.gc-calls__wrapper {
+        margin: 2rem 0;
+    }
+    #big.gc-calls__wrapper .gc-calls-item__wrapper {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+    #big.gc-calls__wrapper .gc-calls-item__wrapper .gc-calls-item__item {
+        width: 100%;
+    }
+    #big.gc-calls__wrapper .gc-calls-item__wrapper .gc-calls-item__item h3 {
+    }
+    #big.gc-calls__wrapper .gc-calls-item__wrapper .gc-calls-item__item p {
+    }
+    @media screen and (min-width: 750px) {
+        #big.gc-calls__wrapper .gc-calls-item__wrapper {
+            flex-direction: row;
+        }
+        #big.gc-calls__wrapper .gc-calls-item__wrapper .gc-calls-item__item {
+            margin-bottom: 0;
+        }
+        #big.gc-calls__wrapper .gc-calls-item__wrapper .gc-calls-item__item:not(:first-child, :last-child) {
+            margin-left: 1rem;
+            margin-right: 1rem;
+        }
+        #big.gc-calls__wrapper .gc-calls-item__wrapper .gc-calls-item__item h3 {
+        }
+        #big.gc-calls__wrapper .gc-calls-item__wrapper .gc-calls-item__item p {
+        }
+    }  
+</style>
+
 <div id="big" class="gc-calls__wrapper">
     <div class="gc-calls__inner page-width">
         {% comment %} <h2>Talk to us, before us buy</h2>
