@@ -1,72 +1,19 @@
-<style>
-    .gc-usps__wrapper {
-        {% comment %} background: var(--gradient-base-accent-1); {% endcomment %}
-        {% comment %} padding: 1rem; {% endcomment %}
-        margin: 2rem 0;
-    }
-    .gc-usp-item__wrapper {
-        display: flex;
-        justify-content: space-between;
-        flex-direction: column;
-    }
-    .gc-usp-item__wrapper .gc-usp-item__item {
-        width: 100%;
-        padding: 1rem 1.5rem;
-        background: #bed63b30;
-        border-radius: .5rem;
-        margin-bottom: 1rem;
-    }
-    .gc-usp-item__wrapper .gc-usp-item__item h3 {
-        font-size: 1.2rem;
-        float: left;
-        margin-right: 1rem;
-        background: var(--gradient-base-accent-1);
-        color: black;
-        padding: .75rem .5rem 0 .75rem;
-        margin: -.75rem .5rem 0rem -.75rem;
-        border-top-left-radius: 0.5rem;
-        border-bottom-right-radius: 0.25rem;
-    }
-    .gc-usp-item__wrapper .gc-usp-item__item p {
-        line-height: 1.4em;
-        margin: 0;
-        font-size: 1.2rem;
-    }
-    @media screen and (min-width: 750px) {
-        .gc-usp-item__wrapper {
-            flex-direction: row;
-        }
-        .gc-usp-item__wrapper .gc-usp-item__item {
-            margin-bottom: 0;
-        }
-        .gc-usp-item__wrapper .gc-usp-item__item:not(:first-child, :last-child) {
-            margin-left: 1rem;
-            margin-right: 1rem;
-        }
-        .gc-usp-item__wrapper .gc-usp-item__item h3 {
-        }
-        .gc-usp-item__wrapper .gc-usp-item__item p {
-        }
-    }
-
-</style>
-
-<div class="gc-usps__wrapper">
-    <div class="gc-usps__inner page-width">
+<div class="gc-calls__wrapper">
+    <div class="gc-calls__inner page-width">
         {% comment %} <h2>Talk to us, before us buy</h2>
         <p>We are a motorcycle helmet, clothing and accessories store, with a big difference! We specialise in helping you choose the gear that’s right for you, at the best possible prices.</p>  {% endcomment %}
-        <div class="gc-usp-item__wrapper">
-            <div class="gc-usp-item__item">
+        <div class="gc-calls-item__wrapper">
+            <div class="gc-calls-item__item">
                 <h3>Price Deals</h3>
                 {% comment %} <p>Talk to us for our best price deals, before you buy. Put us to the test - we always try our best and you might be surprised!</p> {% endcomment %}
                 <p>Ask for the best prices, before you buy. It's always worthwhile!</p>
             </div>
-            <div class="gc-usp-item__item">
+            <div class="gc-calls-item__item">
                 <h3>Tech Advice</h3>
                 {% comment %} <p>Need some help? Just ask us! Our 20 years of product experience can help you choose the gear that’s right for your riding.</p> {% endcomment %}
                 <p>Need help? With 20yrs experience, we have the answers. Just ask!</p>
             </div>
-            <div class="gc-usp-item__item">
+            <div class="gc-calls-item__item">
                 <h3>FREE Size Exchanges</h3>
                 {% comment %} <p>Choosing a size can be tricky. Ask us to recommend your size and if we get it wrong, we pay for and arrange the exchange.</p> {% endcomment %}
                 <p>Let us recommend your size/fit. If wrong, we pay for the exchange.</p>
