@@ -116,7 +116,7 @@ body .collection-hero__title + .collection-hero__description {
 }
 
 
-@media screen and (min-width: 750px) {
+/* @media screen and (min-width: 750px) {
   section[id$="featured_products"] .slider.slider--tablet {
     position: relative;
     flex-wrap: inherit;
@@ -132,7 +132,7 @@ body .collection-hero__title + .collection-hero__description {
     margin-bottom: 0;
     padding-bottom: 0;
   }
-}
+} */
 
 
 /* PRODUCT PAGE */
