@@ -41,13 +41,13 @@ h1.collection-hero__title {
   margin: 0;
 }
 body .collection-hero__title + .collection-hero__description {
-  margin-top: 1rem;
+  margin-top: 0;
   font-size: 1rem;
 }
 @media screen and (min-width: 750px) {
   body .collection-hero__title + .collection-hero__description {
     font-size: 1.2rem;
-    margin-top: 1rem;
+    margin-top: .5rem;
   }
 }
 
