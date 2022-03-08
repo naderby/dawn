@@ -37,6 +37,10 @@
   padding-left: inherit !important;
 }
 
+.collection-hero__title {
+  margin: 0;
+  color: purple;
+}
 
 @media screen and (min-width: 750px) {
   #shopify-section-template--15187523174574__16333520410b464cef  .collection-list.grid--3-col-tablet .grid__item {
