@@ -116,23 +116,24 @@ body .collection-hero__title + .collection-hero__description {
 }
 
 
-/* @media screen and (min-width: 750px) {
+@media screen and (min-width: 750px) {
   section[id$="featured_products"] .slider.slider--tablet {
-    position: relative;
+    /* position: relative;
     flex-wrap: inherit;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
     scroll-padding-left: 1rem;
     -webkit-overflow-scrolling: touch;
-    margin-bottom: 1rem;
+    margin-bottom: 1rem; */
+    padding: 2rem 0;
   }
 
   section[id$="featured_products"] .slider.slider--tablet .slider__slide {
-    margin-bottom: 0;
-    padding-bottom: 0;
+    /* margin-bottom: 0;
+    padding-bottom: 0; */
   }
-} */
+}
 
 
 /* PRODUCT PAGE */
