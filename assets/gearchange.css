@@ -37,7 +37,7 @@
   padding-left: inherit !important;
 }
 
-.collection-hero__title {
+h1.collection-hero__title {
   margin: 0;
   color: purple;
 }
