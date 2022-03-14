@@ -1,10 +1,59 @@
 {
   "sections": {
     "main": {
-      "type": "main-page"
+      "type": "main-page",
+      "settings": {
+      }
+    },
+    "16472532710d7e9e5c": {
+      "type": "rich-text",
+      "blocks": {
+        "1647253271a8d8e34f-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "",
+            "heading_size": "h1"
+          }
+        },
+        "1647253271a8d8e34f-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Welcome to Gearchange-Instore.<\/p><p>We offer 2500 square feet of floor space packed with the<br\/>world`s leading brands of motorcycle clothing and accessories. We carry a huge<br\/>depth of stock so a visit to us here in Scunthorpe will not be a waste of<br\/>time.  <\/p><p>On display are full collections of Arai and Shoei helmets<br\/>plus many other brands. Our helmet area  is one of <br\/>the best in the country and Im sure we have something  for everyone.<\/p><p>In-store we focus on what we consider to be the best<br\/>clothing brands ….Alpinestars and Rst are our two most prevalent brands of<br\/>clothing and we stock everything from suits to leather jacket and jeans to<br\/>textiles and boots and gloves. We are a one stop shop for everything and can<br\/>kit you out from head to toe.<\/p><p>Our friendly experienced staff are always happy to answer<br\/>your questions and most of all we will always try to do the best deal we can on<br\/>the day.<\/p><p>We open 7 days a week and we look forward to seeing you<br\/>soon.<\/p>"
+          }
+        },
+        "1647253271a8d8e34f-2": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "1647253271a8d8e34f-0",
+        "1647253271a8d8e34f-1",
+        "1647253271a8d8e34f-2"
+      ],
+      "settings": {
+        "color_scheme": "background-1",
+        "full_width": true
+      }
+    },
+    "1647252831b428130f": {
+      "type": "video",
+      "settings": {
+        "heading": "Tour of Store",
+        "video_url": "https:\/\/player.vimeo.com\/video\/133037180?",
+        "description": "",
+        "full_width": false
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "16472532710d7e9e5c",
+    "1647252831b428130f"
   ]
 }
