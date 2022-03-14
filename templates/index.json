@@ -87,21 +87,21 @@
         "16389917923d4e93eb-0": {
           "type": "heading",
           "settings": {
-            "heading": "WINTER RIDING",
+            "heading": "Gearchange-instore",
             "heading_size": "medium"
           }
         },
         "16389917923d4e93eb-1": {
           "type": "text",
           "settings": {
-            "text": "Survive any weather. Nothing stops a ride!"
+            "text": "We're not only online!"
           }
         },
         "16389917923d4e93eb-2": {
           "type": "buttons",
           "settings": {
-            "button_label_1": "Shop Winter Riding",
-            "button_link_1": "shopify:\/\/collections\/winter-riding",
+            "button_label_1": "Click For More Details",
+            "button_link_1": "shopify:\/\/pages\/gearchange-instore",
             "button_style_secondary_1": true,
             "button_label_2": "",
             "button_link_2": "",
@@ -115,7 +115,8 @@
         "16389917923d4e93eb-2"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/heatedgloves.jpg",
+        "image": "shopify:\/\/shop_images\/IMG_1679.jpg",
+        "image_2": "shopify:\/\/shop_images\/IMG_1674.jpg",
         "image_height": "small",
         "adapt_height_first_image": false,
         "desktop_text_box_position": "center",
