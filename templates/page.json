@@ -7,6 +7,7 @@
     },
     "1647252831b428130f": {
       "type": "video",
+      "disabled": true,
       "settings": {
         "heading": "Take a tour of our store",
         "cover_image": "shopify:\/\/shop_images\/Shop_2000_x_650.png",
@@ -17,6 +18,7 @@
     },
     "1647258224a7ff45c5": {
       "type": "collage",
+      "disabled": true,
       "blocks": {
         "8e5615b4-fdf8-4d09-be4d-c85db27a2d98": {
           "type": "image",
@@ -56,6 +58,7 @@
     },
     "164726333123f66714": {
       "type": "page",
+      "disabled": true,
       "settings": {
         "page": "how-to-find-us"
       }
