@@ -2,13 +2,11 @@
   "sections": {
     "main": {
       "type": "main-page",
-      "disabled": true,
       "settings": {
       }
     },
     "1647252831b428130f": {
       "type": "video",
-      "disabled": true,
       "settings": {
         "heading": "Take a tour of our store",
         "cover_image": "shopify:\/\/shop_images\/Shop_2000_x_650.png",
@@ -19,7 +17,6 @@
     },
     "1647258224a7ff45c5": {
       "type": "collage",
-      "disabled": true,
       "blocks": {
         "8e5615b4-fdf8-4d09-be4d-c85db27a2d98": {
           "type": "image",
@@ -59,44 +56,8 @@
     },
     "164726333123f66714": {
       "type": "page",
-      "disabled": true,
       "settings": {
         "page": "how-to-find-us"
-      }
-    },
-    "1647275470fc546a6c": {
-      "type": "image-with-text",
-      "blocks": {
-        "1647275470fe18c000-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "Looking for a deal?"
-          }
-        },
-        "1647275470fe18c000-1": {
-          "type": "text",
-          "settings": {
-            "text": "<p>If you're buying more than one item either <a href=\"\/pages\/contact\" title=\"Contact\">email<\/a> or live chat us now for the best deal possible. Just list the items and sizes that you want and we'll reply with a great price.<\/p>"
-          }
-        },
-        "1647275470fe18c000-2": {
-          "type": "button",
-          "settings": {
-            "button_label": "Contact Us",
-            "button_link": "shopify:\/\/pages\/contact"
-          }
-        }
-      },
-      "block_order": [
-        "1647275470fe18c000-0",
-        "1647275470fe18c000-1",
-        "1647275470fe18c000-2"
-      ],
-      "settings": {
-        "image": "shopify:\/\/shop_images\/Multibuy_Discounts.png",
-        "height": "adapt",
-        "color_scheme": "background-1",
-        "layout": "image_first"
       }
     }
   },
@@ -104,7 +65,6 @@
     "main",
     "1647252831b428130f",
     "1647258224a7ff45c5",
-    "164726333123f66714",
-    "1647275470fc546a6c"
+    "164726333123f66714"
   ]
 }

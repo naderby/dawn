@@ -57,7 +57,7 @@
           "type": "heading",
           "settings": {
             "heading": "The UK's best prices for Motorcycle Helmets, Gloves, Boots & Clothing",
-            "heading_size": "h1"
+            "heading_size": "h2"
           }
         },
         "17c7ff3a-c589-4d3c-a4e3-a28e66854a80": {
@@ -81,27 +81,72 @@
       "settings": {
       }
     },
+    "164726124261e0c5d8": {
+      "type": "image-banner",
+      "blocks": {
+        "1647261242ac6e1e9b-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "",
+            "heading_size": "medium"
+          }
+        },
+        "1647261242ac6e1e9b-1": {
+          "type": "text",
+          "settings": {
+            "text": ""
+          }
+        },
+        "1647261242ac6e1e9b-2": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Click For More Details",
+            "button_link_1": "shopify:\/\/pages\/multibuy-discounts",
+            "button_style_secondary_1": true,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "1647261242ac6e1e9b-0",
+        "1647261242ac6e1e9b-1",
+        "1647261242ac6e1e9b-2"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Multibuy_Discounts.png",
+        "image_height": "small",
+        "adapt_height_first_image": true,
+        "desktop_text_box_position": "flex-end",
+        "show_text_box": false,
+        "image_overlay_opacity": 0,
+        "color_scheme": "accent-1",
+        "stack_images_on_mobile": false,
+        "show_text_below": false
+      }
+    },
     "163899179357ab03e6": {
       "type": "image-banner",
       "blocks": {
         "16389917923d4e93eb-0": {
           "type": "heading",
           "settings": {
-            "heading": "WINTER RIDING",
+            "heading": "Gearchange-instore",
             "heading_size": "medium"
           }
         },
         "16389917923d4e93eb-1": {
           "type": "text",
           "settings": {
-            "text": "Survive any weather. Nothing stops a ride!"
+            "text": "We're not only online!"
           }
         },
         "16389917923d4e93eb-2": {
           "type": "buttons",
           "settings": {
-            "button_label_1": "Shop Winter Riding",
-            "button_link_1": "shopify:\/\/collections\/winter-riding",
+            "button_label_1": "Click For More Details",
+            "button_link_1": "shopify:\/\/pages\/gearchange-instore",
             "button_style_secondary_1": true,
             "button_label_2": "",
             "button_link_2": "",
@@ -115,7 +160,8 @@
         "16389917923d4e93eb-2"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/heatedgloves.jpg",
+        "image": "shopify:\/\/shop_images\/IMG_1679.jpg",
+        "image_2": "shopify:\/\/shop_images\/IMG_1674.jpg",
         "image_height": "small",
         "adapt_height_first_image": false,
         "desktop_text_box_position": "center",
@@ -126,30 +172,20 @@
         "show_text_below": false
       }
     },
-    "featured_products": {
-      "type": "featured-collection",
-      "settings": {
-        "title": "Great Gear - Perfect Prices",
-        "collection": "frontpage",
-        "products_to_show": 12,
-        "show_view_all": false,
-        "swipe_on_mobile": true,
-        "image_ratio": "square",
-        "show_secondary_image": false,
-        "add_image_padding": false,
-        "show_image_outline": true,
-        "show_vendor": true,
-        "show_rating": false
-      }
-    },
     "image_banner": {
       "type": "image-banner",
       "blocks": {
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "Alpinestars 2022 - the latest from the greatest",
+            "heading": "Alpinestars 2022",
             "heading_size": "medium"
+          }
+        },
+        "91a99002-d344-4129-97fd-3768987f81b8": {
+          "type": "text",
+          "settings": {
+            "text": "Latest from the greatest"
           }
         },
         "button": {
@@ -166,22 +202,85 @@
       },
       "block_order": [
         "heading",
+        "91a99002-d344-4129-97fd-3768987f81b8",
         "button"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/Urban_Jacket_Stratos_URban_pageUrban_Jacket_Stratos_1500x700_crop_right_1c6047ff-8f6b-4aa8-8de3-2b1866319a68.jpg",
+        "image": "shopify:\/\/shop_images\/Large-ANDES_5.jpg",
         "image_height": "small",
         "adapt_height_first_image": false,
-        "desktop_text_box_position": "flex-end",
+        "desktop_text_box_position": "center",
         "show_text_box": false,
-        "image_overlay_opacity": 0,
-        "color_scheme": "accent-1",
+        "image_overlay_opacity": 10,
+        "color_scheme": "inverse",
         "stack_images_on_mobile": true,
         "show_text_below": false
       }
     },
+    "16472676393a60a1d6": {
+      "type": "image-banner",
+      "blocks": {
+        "1647267639bb077406-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "RST 2022",
+            "heading_size": "medium"
+          }
+        },
+        "1647267639bb077406-1": {
+          "type": "text",
+          "settings": {
+            "text": "Top gear at great prices"
+          }
+        },
+        "1647267639bb077406-2": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Shop RST",
+            "button_link_1": "shopify:\/\/collections\/rst",
+            "button_style_secondary_1": true,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "1647267639bb077406-0",
+        "1647267639bb077406-1",
+        "1647267639bb077406-2"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Bihr-39.jpg",
+        "image_height": "small",
+        "adapt_height_first_image": false,
+        "desktop_text_box_position": "center",
+        "show_text_box": true,
+        "image_overlay_opacity": 0,
+        "color_scheme": "background-1",
+        "stack_images_on_mobile": false,
+        "show_text_below": false
+      }
+    },
+    "featured_products": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Great Gear - Perfect Prices",
+        "collection": "frontpage",
+        "products_to_show": 12,
+        "show_view_all": true,
+        "swipe_on_mobile": true,
+        "image_ratio": "square",
+        "show_secondary_image": false,
+        "add_image_padding": false,
+        "show_image_outline": false,
+        "show_vendor": false,
+        "show_rating": false
+      }
+    },
     "1638986059856353eb": {
       "type": "collection-list",
+      "disabled": true,
       "blocks": {
         "16389860590a2174ad-0": {
           "type": "featured_collection",
@@ -235,9 +334,11 @@
     "1640778944e11ccff8",
     "rich_text",
     "16397610750ddd1714",
+    "164726124261e0c5d8",
     "163899179357ab03e6",
-    "featured_products",
     "image_banner",
+    "16472676393a60a1d6",
+    "featured_products",
     "1638986059856353eb"
   ]
 }
