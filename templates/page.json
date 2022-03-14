@@ -5,6 +5,15 @@
       "settings": {
       }
     },
+    "1647252831b428130f": {
+      "type": "video",
+      "settings": {
+        "heading": "Tour of Store",
+        "video_url": "https:\/\/player.vimeo.com\/video\/133037180?",
+        "description": "",
+        "full_width": false
+      }
+    },
     "16472532710d7e9e5c": {
       "type": "rich-text",
       "blocks": {
@@ -40,20 +49,11 @@
         "color_scheme": "background-1",
         "full_width": true
       }
-    },
-    "1647252831b428130f": {
-      "type": "video",
-      "settings": {
-        "heading": "Tour of Store",
-        "video_url": "https:\/\/player.vimeo.com\/video\/133037180?",
-        "description": "",
-        "full_width": false
-      }
     }
   },
   "order": [
     "main",
-    "16472532710d7e9e5c",
-    "1647252831b428130f"
+    "1647252831b428130f",
+    "16472532710d7e9e5c"
   ]
 }
