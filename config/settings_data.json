@@ -22,6 +22,7 @@
         "blocks": {
           "1a500d03-e802-4d91-b2dd-71062ae5c8ec": {
             "type": "announcement",
+            "disabled": true,
             "settings": {
               "text": "2021 Clearance deals",
               "color_scheme": "accent-1",
