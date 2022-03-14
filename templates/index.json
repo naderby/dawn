@@ -133,8 +133,14 @@
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "Alpinestars 2022 - the latest from the greatest",
+            "heading": "Alpinestars 2022",
             "heading_size": "medium"
+          }
+        },
+        "91a99002-d344-4129-97fd-3768987f81b8": {
+          "type": "text",
+          "settings": {
+            "text": "LATEST FROM THE GREATEST"
           }
         },
         "button": {
@@ -151,13 +157,14 @@
       },
       "block_order": [
         "heading",
+        "91a99002-d344-4129-97fd-3768987f81b8",
         "button"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/Alpinestars_Banner.png",
+        "image": "shopify:\/\/shop_images\/Alpinestars_Banner_zoomed.png",
         "image_height": "small",
-        "adapt_height_first_image": false,
-        "desktop_text_box_position": "flex-end",
+        "adapt_height_first_image": true,
+        "desktop_text_box_position": "center",
         "show_text_box": false,
         "image_overlay_opacity": 0,
         "color_scheme": "accent-1",
