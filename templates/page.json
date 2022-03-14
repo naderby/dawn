@@ -1,19 +1,19 @@
 {
   "sections": {
-    "main": {
-      "type": "main-page",
-      "disabled": true,
-      "settings": {
-      }
-    },
     "1647252831b428130f": {
       "type": "video",
+      "disabled": true,
       "settings": {
         "heading": "Tour of Gearchange Instore",
         "cover_image": "shopify:\/\/shop_images\/IMG_1679.jpg",
         "video_url": "https:\/\/player.vimeo.com\/video\/133037180?",
         "description": "",
         "full_width": false
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "settings": {
       }
     },
     "16472532710d7e9e5c": {
@@ -55,6 +55,7 @@
     },
     "164725543346be2748": {
       "type": "image-with-text",
+      "disabled": true,
       "blocks": {
         "16472554334ea27fac-0": {
           "type": "heading",
@@ -92,8 +93,8 @@
     }
   },
   "order": [
-    "main",
     "1647252831b428130f",
+    "main",
     "16472532710d7e9e5c",
     "164725543346be2748"
   ]
