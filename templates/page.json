@@ -69,6 +69,7 @@
       "blocks": {
         "1647275470fe18c000-0": {
           "type": "heading",
+          "disabled": true,
           "settings": {
             "heading": "Looking for a deal?"
           }
@@ -76,7 +77,7 @@
         "1647275470fe18c000-1": {
           "type": "text",
           "settings": {
-            "text": "<p>If you're buying more than one item either <a href=\"\/pages\/contact\" title=\"Contact\">email<\/a> or live chat us now for the best deal possible. Just list the items and sizes that you want and we'll reply with a great price.<\/p>"
+            "text": "<p>If you're buying more than one item either Live Chat or <a href=\"\/pages\/contact\" title=\"Contact\">email<\/a> now for the best deal possible. <\/p><p>The easiest way is to add the items to the basket and then screenshot us the list, alternatively list the items with the sizes that you want and we'll reply with a great price.<\/p><p><\/p>"
           }
         },
         "1647275470fe18c000-2": {
