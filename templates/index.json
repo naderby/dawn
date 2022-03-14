@@ -57,7 +57,7 @@
           "type": "heading",
           "settings": {
             "heading": "The UK's best prices for Motorcycle Helmets, Gloves, Boots & Clothing",
-            "heading_size": "h1"
+            "heading_size": "h2"
           }
         },
         "17c7ff3a-c589-4d3c-a4e3-a28e66854a80": {
@@ -275,6 +275,15 @@
         "image_padding": false,
         "show_view_all": false
       }
+    },
+    "1647262421f52744d9": {
+      "type": "video",
+      "settings": {
+        "heading": "",
+        "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+        "description": "",
+        "full_width": false
+      }
     }
   },
   "order": [
@@ -285,6 +294,7 @@
     "image_banner",
     "164726124261e0c5d8",
     "featured_products",
-    "1638986059856353eb"
+    "1638986059856353eb",
+    "1647262421f52744d9"
   ]
 }
