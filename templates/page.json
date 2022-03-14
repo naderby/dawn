@@ -8,7 +8,7 @@
     "1647252831b428130f": {
       "type": "video",
       "settings": {
-        "heading": "Tour of Gearchange Instore",
+        "heading": "Take a tour of our store",
         "cover_image": "shopify:\/\/shop_images\/Shop_2000_x_650.png",
         "video_url": "https:\/\/player.vimeo.com\/video\/133037180?",
         "description": "",
@@ -135,6 +135,42 @@
         "stack_images_on_mobile": true,
         "show_text_below": false
       }
+    },
+    "1647258224a7ff45c5": {
+      "type": "collage",
+      "blocks": {
+        "8e5615b4-fdf8-4d09-be4d-c85db27a2d98": {
+          "type": "image",
+          "settings": {
+            "image_padding": false,
+            "color_scheme": "background-1"
+          }
+        },
+        "40dfcf01-47b2-421b-8058-5755bb21f827": {
+          "type": "image",
+          "settings": {
+            "image_padding": false,
+            "color_scheme": "background-1"
+          }
+        },
+        "5da1a625-1854-4c8f-ac79-4c770c06d749": {
+          "type": "image",
+          "settings": {
+            "image_padding": false,
+            "color_scheme": "background-1"
+          }
+        }
+      },
+      "block_order": [
+        "8e5615b4-fdf8-4d09-be4d-c85db27a2d98",
+        "40dfcf01-47b2-421b-8058-5755bb21f827",
+        "5da1a625-1854-4c8f-ac79-4c770c06d749"
+      ],
+      "settings": {
+        "heading": "Multimedia collage",
+        "desktop_layout": "left",
+        "mobile_layout": "collage"
+      }
     }
   },
   "order": [
@@ -142,6 +178,7 @@
     "1647252831b428130f",
     "16472532710d7e9e5c",
     "164725543346be2748",
-    "1647258200e99ce062"
+    "1647258200e99ce062",
+    "1647258224a7ff45c5"
   ]
 }
