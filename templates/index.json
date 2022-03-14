@@ -81,6 +81,50 @@
       "settings": {
       }
     },
+    "164726124261e0c5d8": {
+      "type": "image-banner",
+      "blocks": {
+        "1647261242ac6e1e9b-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Multi Buy",
+            "heading_size": "medium"
+          }
+        },
+        "1647261242ac6e1e9b-1": {
+          "type": "text",
+          "settings": {
+            "text": "Give customers details about the banner image(s) or content on the template."
+          }
+        },
+        "1647261242ac6e1e9b-2": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Button label",
+            "button_link_1": "",
+            "button_style_secondary_1": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "1647261242ac6e1e9b-0",
+        "1647261242ac6e1e9b-1",
+        "1647261242ac6e1e9b-2"
+      ],
+      "settings": {
+        "image_height": "small",
+        "adapt_height_first_image": false,
+        "desktop_text_box_position": "center",
+        "show_text_box": false,
+        "image_overlay_opacity": 0,
+        "color_scheme": "background-1",
+        "stack_images_on_mobile": false,
+        "show_text_below": false
+      }
+    },
     "163899179357ab03e6": {
       "type": "image-banner",
       "blocks": {
@@ -172,23 +216,23 @@
         "show_text_below": false
       }
     },
-    "164726124261e0c5d8": {
+    "16472676393a60a1d6": {
       "type": "image-banner",
       "blocks": {
-        "1647261242ac6e1e9b-0": {
+        "1647267639bb077406-0": {
           "type": "heading",
           "settings": {
-            "heading": "Multi Buy",
+            "heading": "RST 2022",
             "heading_size": "medium"
           }
         },
-        "1647261242ac6e1e9b-1": {
+        "1647267639bb077406-1": {
           "type": "text",
           "settings": {
-            "text": "Give customers details about the banner image(s) or content on the template."
+            "text": ""
           }
         },
-        "1647261242ac6e1e9b-2": {
+        "1647267639bb077406-2": {
           "type": "buttons",
           "settings": {
             "button_label_1": "Button label",
@@ -201,18 +245,18 @@
         }
       },
       "block_order": [
-        "1647261242ac6e1e9b-0",
-        "1647261242ac6e1e9b-1",
-        "1647261242ac6e1e9b-2"
+        "1647267639bb077406-0",
+        "1647267639bb077406-1",
+        "1647267639bb077406-2"
       ],
       "settings": {
-        "image_height": "small",
+        "image_height": "medium",
         "adapt_height_first_image": false,
         "desktop_text_box_position": "center",
         "show_text_box": true,
         "image_overlay_opacity": 0,
         "color_scheme": "background-1",
-        "stack_images_on_mobile": false,
+        "stack_images_on_mobile": true,
         "show_text_below": false
       }
     },
@@ -282,26 +326,17 @@
         "image_padding": false,
         "show_view_all": false
       }
-    },
-    "1647262421f52744d9": {
-      "type": "video",
-      "settings": {
-        "heading": "",
-        "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
-        "description": "",
-        "full_width": false
-      }
     }
   },
   "order": [
     "1640778944e11ccff8",
     "rich_text",
     "16397610750ddd1714",
+    "164726124261e0c5d8",
     "163899179357ab03e6",
     "image_banner",
-    "164726124261e0c5d8",
+    "16472676393a60a1d6",
     "featured_products",
-    "1638986059856353eb",
-    "1647262421f52744d9"
+    "1638986059856353eb"
   ]
 }
