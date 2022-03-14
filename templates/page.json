@@ -9,6 +9,7 @@
       "type": "video",
       "settings": {
         "heading": "Tour of Store",
+        "cover_image": "shopify:\/\/shop_images\/IMG_1679.jpg",
         "video_url": "https:\/\/player.vimeo.com\/video\/133037180?",
         "description": "",
         "full_width": false
@@ -16,6 +17,7 @@
     },
     "16472532710d7e9e5c": {
       "type": "rich-text",
+      "disabled": true,
       "blocks": {
         "1647253271a8d8e34f-0": {
           "type": "heading",
