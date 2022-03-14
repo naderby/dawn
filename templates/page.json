@@ -9,7 +9,7 @@
       "type": "video",
       "settings": {
         "heading": "Tour of Gearchange Instore",
-        "cover_image": "shopify:\/\/shop_images\/IMG_1679.jpg",
+        "cover_image": "shopify:\/\/shop_images\/Shop_2000_x_650.png",
         "video_url": "https:\/\/player.vimeo.com\/video\/133037180?",
         "description": "",
         "full_width": true
@@ -92,6 +92,7 @@
     },
     "1647258200e99ce062": {
       "type": "image-banner",
+      "disabled": true,
       "blocks": {
         "1647258200d07439f2-0": {
           "type": "heading",
