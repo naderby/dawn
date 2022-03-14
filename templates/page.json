@@ -15,127 +15,6 @@
         "full_width": true
       }
     },
-    "16472532710d7e9e5c": {
-      "type": "rich-text",
-      "disabled": true,
-      "blocks": {
-        "1647253271a8d8e34f-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "",
-            "heading_size": "h1"
-          }
-        },
-        "1647253271a8d8e34f-1": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Welcome to Gearchange-Instore.<\/p><p>We offer 2500 square feet of floor space packed with the<br\/>world`s leading brands of motorcycle clothing and accessories. We carry a huge<br\/>depth of stock so a visit to us here in Scunthorpe will not be a waste of<br\/>time.  <\/p><p>On display are full collections of Arai and Shoei helmets<br\/>plus many other brands. Our helmet area  is one of <br\/>the best in the country and Im sure we have something  for everyone.<\/p><p>In-store we focus on what we consider to be the best<br\/>clothing brands ….Alpinestars and Rst are our two most prevalent brands of<br\/>clothing and we stock everything from suits to leather jacket and jeans to<br\/>textiles and boots and gloves. We are a one stop shop for everything and can<br\/>kit you out from head to toe.<\/p><p>Our friendly experienced staff are always happy to answer<br\/>your questions and most of all we will always try to do the best deal we can on<br\/>the day.<\/p><p>We open 7 days a week and we look forward to seeing you<br\/>soon.<\/p>"
-          }
-        },
-        "1647253271a8d8e34f-2": {
-          "type": "button",
-          "disabled": true,
-          "settings": {
-            "button_label": "Button label",
-            "button_link": "",
-            "button_style_secondary": false
-          }
-        }
-      },
-      "block_order": [
-        "1647253271a8d8e34f-0",
-        "1647253271a8d8e34f-1",
-        "1647253271a8d8e34f-2"
-      ],
-      "settings": {
-        "color_scheme": "background-1",
-        "full_width": true
-      }
-    },
-    "164725543346be2748": {
-      "type": "image-with-text",
-      "disabled": true,
-      "blocks": {
-        "16472554334ea27fac-0": {
-          "type": "heading",
-          "settings": {
-            "heading": ""
-          }
-        },
-        "16472554334ea27fac-1": {
-          "type": "text",
-          "disabled": true,
-          "settings": {
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
-          }
-        },
-        "16472554334ea27fac-2": {
-          "type": "button",
-          "disabled": true,
-          "settings": {
-            "button_label": "Button label",
-            "button_link": ""
-          }
-        }
-      },
-      "block_order": [
-        "16472554334ea27fac-0",
-        "16472554334ea27fac-1",
-        "16472554334ea27fac-2"
-      ],
-      "settings": {
-        "image": "shopify:\/\/shop_images\/Gearchange_Instore.png",
-        "height": "adapt",
-        "color_scheme": "background-1",
-        "layout": "image_first"
-      }
-    },
-    "1647258200e99ce062": {
-      "type": "image-banner",
-      "disabled": true,
-      "blocks": {
-        "1647258200d07439f2-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "RST Collection",
-            "heading_size": "medium"
-          }
-        },
-        "1647258200d07439f2-1": {
-          "type": "text",
-          "settings": {
-            "text": "Top gear at low prices!"
-          }
-        },
-        "1647258200d07439f2-2": {
-          "type": "buttons",
-          "settings": {
-            "button_label_1": "View The Collection",
-            "button_link_1": "shopify:\/\/collections\/rst",
-            "button_style_secondary_1": false,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
-        }
-      },
-      "block_order": [
-        "1647258200d07439f2-0",
-        "1647258200d07439f2-1",
-        "1647258200d07439f2-2"
-      ],
-      "settings": {
-        "image": "shopify:\/\/shop_images\/Bihr-39.jpg",
-        "image_height": "small",
-        "adapt_height_first_image": false,
-        "desktop_text_box_position": "center",
-        "show_text_box": true,
-        "image_overlay_opacity": 0,
-        "color_scheme": "background-1",
-        "stack_images_on_mobile": true,
-        "show_text_below": false
-      }
-    },
     "1647258224a7ff45c5": {
       "type": "collage",
       "blocks": {
@@ -174,14 +53,18 @@
         "desktop_layout": "left",
         "mobile_layout": "collage"
       }
+    },
+    "164726333123f66714": {
+      "type": "page",
+      "settings": {
+        "page": "how-to-find-us"
+      }
     }
   },
   "order": [
     "main",
     "1647252831b428130f",
-    "16472532710d7e9e5c",
-    "164725543346be2748",
-    "1647258200e99ce062",
-    "1647258224a7ff45c5"
+    "1647258224a7ff45c5",
+    "164726333123f66714"
   ]
 }
