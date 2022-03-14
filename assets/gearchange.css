@@ -198,4 +198,5 @@ section[id$="featured_products"] .slider.slider--tablet {
 
 #shopify-privacy-banner-div {
   top: 0% !important;
+  bottom: unset !important;
 }
