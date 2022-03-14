@@ -1,19 +1,18 @@
 {
   "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+      }
+    },
     "1647252831b428130f": {
       "type": "video",
-      "disabled": true,
       "settings": {
         "heading": "Tour of Gearchange Instore",
         "cover_image": "shopify:\/\/shop_images\/IMG_1679.jpg",
         "video_url": "https:\/\/player.vimeo.com\/video\/133037180?",
         "description": "",
         "full_width": false
-      }
-    },
-    "main": {
-      "type": "main-page",
-      "settings": {
       }
     },
     "16472532710d7e9e5c": {
@@ -90,12 +89,58 @@
         "color_scheme": "background-1",
         "layout": "image_first"
       }
+    },
+    "1647258200e99ce062": {
+      "type": "image-banner",
+      "blocks": {
+        "1647258200d07439f2-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "RST Collection",
+            "heading_size": "medium"
+          }
+        },
+        "1647258200d07439f2-1": {
+          "type": "text",
+          "settings": {
+            "text": "Top gear at low prices!"
+          }
+        },
+        "1647258200d07439f2-2": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "View The Collection",
+            "button_link_1": "shopify:\/\/collections\/rst",
+            "button_style_secondary_1": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "1647258200d07439f2-0",
+        "1647258200d07439f2-1",
+        "1647258200d07439f2-2"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Bihr-39.jpg",
+        "image_height": "small",
+        "adapt_height_first_image": false,
+        "desktop_text_box_position": "center",
+        "show_text_box": true,
+        "image_overlay_opacity": 0,
+        "color_scheme": "background-1",
+        "stack_images_on_mobile": true,
+        "show_text_below": false
+      }
     }
   },
   "order": [
-    "1647252831b428130f",
     "main",
+    "1647252831b428130f",
     "16472532710d7e9e5c",
-    "164725543346be2748"
+    "164725543346be2748",
+    "1647258200e99ce062"
   ]
 }
