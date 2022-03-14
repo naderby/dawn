@@ -99,11 +99,10 @@
         },
         "1647261242ac6e1e9b-2": {
           "type": "buttons",
-          "disabled": true,
           "settings": {
             "button_label_1": "Click For More Details",
             "button_link_1": "shopify:\/\/collections\/all",
-            "button_style_secondary_1": false,
+            "button_style_secondary_1": true,
             "button_label_2": "",
             "button_link_2": "",
             "button_style_secondary_2": false
@@ -268,7 +267,7 @@
       "settings": {
         "title": "Great Gear - Perfect Prices",
         "collection": "frontpage",
-        "products_to_show": 8,
+        "products_to_show": 12,
         "show_view_all": true,
         "swipe_on_mobile": true,
         "image_ratio": "square",
