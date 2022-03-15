@@ -55,13 +55,22 @@
               "color_scheme": "accent-1",
               "link": "shopify:\/\/pages\/about-us"
             }
+          },
+          "e7b61ee4-09a2-4749-abb9-7ed12862656c": {
+            "type": "announcement",
+            "settings": {
+              "text": "Welcome to our new website",
+              "color_scheme": "accent-1",
+              "link": ""
+            }
           }
         },
         "block_order": [
           "1a500d03-e802-4d91-b2dd-71062ae5c8ec",
           "f8e391d0-0152-4014-8ecc-c9e2300e684d",
           "a9fd834d-b107-4a91-80e2-07cbff896aa6",
-          "7abd1e12-af08-40d8-adcf-e2af1d868309"
+          "7abd1e12-af08-40d8-adcf-e2af1d868309",
+          "e7b61ee4-09a2-4749-abb9-7ed12862656c"
         ],
         "settings": {
         }
