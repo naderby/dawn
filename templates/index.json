@@ -115,10 +115,10 @@
         "1647261242ac6e1e9b-2"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/Multibuy_Discounts.png",
+        "image": "shopify:\/\/shop_images\/Multibuy_Discounts_2x1_be3ef91c-eda2-415b-9f95-96fcf9b48fe5.png",
         "image_height": "small",
         "adapt_height_first_image": true,
-        "desktop_text_box_position": "flex-end",
+        "desktop_text_box_position": "center",
         "show_text_box": false,
         "image_overlay_opacity": 0,
         "color_scheme": "accent-1",
@@ -163,7 +163,7 @@
         "image": "shopify:\/\/shop_images\/IMG_1679.jpg",
         "image_2": "shopify:\/\/shop_images\/IMG_1674.jpg",
         "image_height": "small",
-        "adapt_height_first_image": false,
+        "adapt_height_first_image": true,
         "desktop_text_box_position": "center",
         "show_text_box": false,
         "image_overlay_opacity": 0,
@@ -206,13 +206,13 @@
         "button"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/Large-ANDES_5.jpg",
+        "image": "shopify:\/\/shop_images\/Alpinestars_Lifestyle.png",
         "image_height": "small",
-        "adapt_height_first_image": false,
+        "adapt_height_first_image": true,
         "desktop_text_box_position": "center",
         "show_text_box": false,
         "image_overlay_opacity": 10,
-        "color_scheme": "inverse",
+        "color_scheme": "background-2",
         "stack_images_on_mobile": true,
         "show_text_below": false
       }
@@ -251,11 +251,11 @@
         "1647267639bb077406-2"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/RST_Lifestyle.png",
+        "image": "shopify:\/\/shop_images\/RST_Lifestyle_2000_x_1450.png",
         "image_height": "small",
-        "adapt_height_first_image": false,
+        "adapt_height_first_image": true,
         "desktop_text_box_position": "center",
-        "show_text_box": true,
+        "show_text_box": false,
         "image_overlay_opacity": 0,
         "color_scheme": "background-1",
         "stack_images_on_mobile": false,
