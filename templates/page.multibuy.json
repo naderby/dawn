@@ -2,6 +2,7 @@
   "sections": {
     "main": {
       "type": "main-page",
+      "disabled": true,
       "settings": {
       }
     },
@@ -65,7 +66,6 @@
     },
     "1647275470fc546a6c": {
       "type": "image-with-text",
-      "disabled": true,
       "blocks": {
         "1647275470fe18c000-0": {
           "type": "heading",
@@ -94,7 +94,7 @@
         "1647275470fe18c000-2"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/Multibuy_Discounts.png",
+        "image": "shopify:\/\/shop_images\/multibuy_2x2_3e794884-62cc-430f-b29f-8eb7b56712b8.png",
         "height": "adapt",
         "color_scheme": "background-1",
         "layout": "image_first"

@@ -1,6 +1,7 @@
 <script type='text/javascript'>let shop ='gearchangeonline.myshopify.com'; let code = 'dc4f58a30c9cd81430a578425d78ee0d61adbc88';</script>﻿<!-- Start : BrokenLink Redirect -->
 <script type="text/javascript">
-window.fetch("https://api-brokenlinkmanager.giraffly.com/api/v1/receive_url?shop="+shop+"&code="+code+"&url="+window.location.pathname+window.location.search)
+var location_search = window.location.search.replace('&',"-@-");
+window.fetch("https://api-brokenlinkmanager.giraffly.com/api/v1/receive_url?shop="+shop+"&code="+code+"&url="+window.location.pathname+location_search)
 .then(response => response.json())
 .then(data => {
   if(data.code == 200){
