@@ -238,7 +238,7 @@
           "settings": {
             "button_label_1": "Shop RST",
             "button_link_1": "shopify:\/\/collections\/rst",
-            "button_style_secondary_1": true,
+            "button_style_secondary_1": false,
             "button_label_2": "",
             "button_link_2": "",
             "button_style_secondary_2": false
