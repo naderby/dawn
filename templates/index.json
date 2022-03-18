@@ -328,6 +328,12 @@
         "image_padding": false,
         "show_view_all": false
       }
+    },
+    "16476315551a53182a": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<div class=\"collection-list-wrapper page-width page-width-desktop no-heading no-mobile-link\"><div style=\"padding-bottom: 43%; position: relative; display: block; height: 0; overflow: hidden;\"><iframe style=\"position: absolute; top: 0; bottom: 0; left: 0; width: 100%; height: 100%; border: 0;\" src=\"https:\/\/player.vimeo.com\/video\/133037180?color=cbd2d4&amp;title=0&amp;byline=0&amp;portrait=0&amp;autoplay=1\" height=\"240\" width=\"320\"><\/iframe><\/div><\/div>"
+      }
     }
   },
   "order": [
@@ -339,6 +345,7 @@
     "16472676393a60a1d6",
     "featured_products",
     "image_banner",
-    "1638986059856353eb"
+    "1638986059856353eb",
+    "16476315551a53182a"
   ]
 }
