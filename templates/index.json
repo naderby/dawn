@@ -172,51 +172,6 @@
         "show_text_below": false
       }
     },
-    "image_banner": {
-      "type": "image-banner",
-      "blocks": {
-        "heading": {
-          "type": "heading",
-          "settings": {
-            "heading": "Alpinestars 2022",
-            "heading_size": "large"
-          }
-        },
-        "91a99002-d344-4129-97fd-3768987f81b8": {
-          "type": "text",
-          "settings": {
-            "text": "Latest from the greatest"
-          }
-        },
-        "button": {
-          "type": "buttons",
-          "settings": {
-            "button_label_1": "Shop Alpinestars",
-            "button_link_1": "shopify:\/\/collections\/alpinestars",
-            "button_style_secondary_1": false,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
-        }
-      },
-      "block_order": [
-        "heading",
-        "91a99002-d344-4129-97fd-3768987f81b8",
-        "button"
-      ],
-      "settings": {
-        "image": "shopify:\/\/shop_images\/Alpinestars_Lifestyle.png",
-        "image_height": "medium",
-        "adapt_height_first_image": false,
-        "desktop_text_box_position": "center",
-        "show_text_box": false,
-        "image_overlay_opacity": 30,
-        "color_scheme": "accent-1",
-        "stack_images_on_mobile": true,
-        "show_text_below": false
-      }
-    },
     "16472676393a60a1d6": {
       "type": "image-banner",
       "blocks": {
@@ -278,6 +233,51 @@
         "show_rating": false
       }
     },
+    "image_banner": {
+      "type": "image-banner",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "Alpinestars 2022",
+            "heading_size": "large"
+          }
+        },
+        "91a99002-d344-4129-97fd-3768987f81b8": {
+          "type": "text",
+          "settings": {
+            "text": "Latest from the greatest"
+          }
+        },
+        "button": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Shop Alpinestars",
+            "button_link_1": "shopify:\/\/collections\/alpinestars",
+            "button_style_secondary_1": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "91a99002-d344-4129-97fd-3768987f81b8",
+        "button"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Alpinestars_Lifestyle.png",
+        "image_height": "medium",
+        "adapt_height_first_image": false,
+        "desktop_text_box_position": "center",
+        "show_text_box": false,
+        "image_overlay_opacity": 30,
+        "color_scheme": "accent-1",
+        "stack_images_on_mobile": true,
+        "show_text_below": false
+      }
+    },
     "1638986059856353eb": {
       "type": "collection-list",
       "disabled": true,
@@ -336,9 +336,9 @@
     "16397610750ddd1714",
     "164726124261e0c5d8",
     "163899179357ab03e6",
-    "image_banner",
     "16472676393a60a1d6",
     "featured_products",
+    "image_banner",
     "1638986059856353eb"
   ]
 }
