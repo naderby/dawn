@@ -252,13 +252,13 @@
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/RST_Lifestyle_2000_x_1450.png",
-        "image_height": "small",
-        "adapt_height_first_image": true,
+        "image_height": "medium",
+        "adapt_height_first_image": false,
         "desktop_text_box_position": "center",
         "show_text_box": false,
-        "image_overlay_opacity": 0,
+        "image_overlay_opacity": 30,
         "color_scheme": "background-1",
-        "stack_images_on_mobile": false,
+        "stack_images_on_mobile": true,
         "show_text_below": false
       }
     },
