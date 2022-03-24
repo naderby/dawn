@@ -4,9 +4,13 @@
 <style>
   #shopify-section-{{ section.id }} .banner__buttons a  {
     background-color: {{ section.settings.button_bg_color }};
-    border-color: {{ section.settings.button_bg_color }};
+    box-shadow: 0 0 0 0.1rem {{ section.settings.button_bg_color}};
     color: {{ section.settings.button_text_color }};
   }
+  
+  #shopify-section-{{ section.id }} .banner__buttons a:hover  {
+    box-shadow: 0 0 0 0.2rem {{ section.settings.button_bg_color}};
+  }  
 </style>
 
 {%- if section.settings.adapt_height_first_image and section.settings.image != blank -%}
