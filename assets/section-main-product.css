@@ -816,3 +816,36 @@ a.product__text {
   margin: 0;
   width: 2.2rem;
 }
+
+  
+  /* Added by Mike V. @ Shopify Theme Support - March 24 2022 */
+  html:not(.no-js) .media-thumbnails .grid__item {
+  flex-grow: inherit;
+}
+
+@media screen and (min-width: 990px) {
+  html:not(.no-js) .media-thumbnails .product__media-item:not(:first-child) {
+    width: 33.33%;
+    /* width: 25%; 4 thumbnails */
+  }
+
+  html:not(.no-js) .media-thumbnails .product__media-item--full {
+    display: grid;
+  }
+}
+
+@media screen and (min-width: 750px) and (max-width: 989px) {
+  html:not(.no-js) .media-thumbnails .product__media-item:not(:first-child) {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 750px) {
+  html:not(.no-js) .media-thumbnails .product__modal-opener:not(.product__modal-opener--image) {
+    display: block;
+  }
+
+  html:not(.no-js) .media-thumbnails .deferred-media {
+    display: none;
+  }
+}
