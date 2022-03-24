@@ -77,6 +77,7 @@
         },
         "description": {
           "type": "description",
+          "disabled": true,
           "settings": {
           }
         },
@@ -137,6 +138,12 @@
         "enable_video_looping": false
       }
     },
+    "164815274588c711d2": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "{%- if product.description != blank -%}\n  <div class=\"product__description rte page-width\">\n    {{ product.description }}\n  <\/div>\n{%- endif -%}"
+      }
+    },
     "product-recommendations": {
       "type": "product-recommendations",
       "settings": {
@@ -153,6 +160,7 @@
   "order": [
     "1639761270b5e6a9ad",
     "main",
+    "164815274588c711d2",
     "product-recommendations"
   ]
 }
