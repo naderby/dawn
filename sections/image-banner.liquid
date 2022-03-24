@@ -1,5 +1,13 @@
 {{ 'section-image-banner.css' | asset_url | stylesheet_tag }}
 
+{% comment %} Added by Mike V. at Shopify Theme Support March 24 2022 {% endcomment %}
+<style>
+  .banner__buttons a  {
+    background-color: {{ section.settings.button_bg_color }};
+    color: {{ section.settings.button_text_color }};
+  }
+</style>
+
 {%- if section.settings.adapt_height_first_image and section.settings.image != blank -%}
   {%- style -%}
   @media screen and (max-width: 749px) {
