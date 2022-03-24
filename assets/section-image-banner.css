@@ -321,3 +321,9 @@
 .banner__heading {
   margin-bottom: 0;
 }
+
+  
+  /* Added by Mike V. @ Shopify Theme Support - March 24 2022 */
+  .banner__buttons--bottom {
+    margin-top: 30%;
+  }
