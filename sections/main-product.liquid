@@ -25,7 +25,8 @@
         <a class="skip-to-content-link button visually-hidden" href="#ProductInfo-{{ section.id }}">
           {{ "accessibility.skip_to_product_info" | t }}
         </a>
-        <ul class="product__media-list grid grid--peek list-unstyled slider slider--mobile" role="list">
+        {% comment %} Added by Mike V. at Shopify Theme Support March 24 2022 {% endcomment %}
+        <ul class="product__media-list grid grid--peek list-unstyled slider slider--mobile{% if section.settings.media_layout == 'thumbnails' %} media-thumbnails{% endif %}" role="list">
           {%- assign variant_images = product.images | where: 'attached_to_variant?', true | map: 'src' -%}
           {%- if product.selected_or_first_available_variant.featured_media != null -%}
             {%- assign media = product.selected_or_first_available_variant.featured_media -%}
@@ -810,6 +811,22 @@
     }
   ],
   "settings": [
+    {
+      "type": "select",
+      "id": "media_layout",
+      "label": "t:theme_support.settings.main-product.media_layout.label",
+      "default": "image",
+      "options": [
+        {
+          "value": "image",
+          "label": "t:theme_support.settings.main-product.media_layout.options__1.label"
+        },
+        {
+          "value": "thumbnails",
+          "label": "t:theme_support.settings.main-product.media_layout.options__2.label"
+        }
+      ]
+    },  
     {
       "type": "checkbox",
       "id": "enable_sticky_info",
