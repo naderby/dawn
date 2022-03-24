@@ -133,6 +133,7 @@
         "share"
       ],
       "settings": {
+        "media_layout": "thumbnails",
         "enable_sticky_info": true,
         "hide_variants": false,
         "enable_video_looping": false
