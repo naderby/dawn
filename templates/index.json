@@ -63,7 +63,7 @@
         "17c7ff3a-c589-4d3c-a4e3-a28e66854a80": {
           "type": "text",
           "settings": {
-            "text": "<p>We specialise in helping you choose motorcycle gear that’s right for you, at the best possible prices.<\/p>"
+            "text": "<p>We specialise in helping you choose motorcycle gear that’s right for you. So if it’s tech advice, or the best possible price, chat with us through the website or visit our store in North Lincolnshire - we’re ready to help.<\/p>"
           }
         }
       },
@@ -76,6 +76,12 @@
         "full_width": true
       }
     },
+    "16476315551a53182a": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<div><div class=\"collection-list-wrapper page-width page-width-desktop no-mobile-link\"><div style=\"padding-bottom: 43%; position: relative; display: block; height: 0; overflow: hidden;\"><iframe style=\"position: absolute; top: 0; bottom: 0; left: 0; width: 100%; height: 100%; border: 0;\" src=\"https:\/\/player.vimeo.com\/video\/133037180?color=cbd2d4&amp;title=0&amp;byline=0&amp;portrait=0&amp;autoplay=1;&amp;autopause=0&amp;muted=1&amp;loop=1\" height=\"240\" width=\"320\"><\/iframe><\/div><\/div><\/div>"
+      }
+    },
     "16397610750ddd1714": {
       "type": "gearchange-usps",
       "settings": {
@@ -83,6 +89,7 @@
     },
     "164726124261e0c5d8": {
       "type": "image-banner",
+      "disabled": true,
       "blocks": {
         "1647261242ac6e1e9b-0": {
           "type": "heading",
@@ -128,6 +135,7 @@
     },
     "163899179357ab03e6": {
       "type": "image-banner",
+      "disabled": true,
       "blocks": {
         "16389917923d4e93eb-0": {
           "type": "heading",
@@ -172,51 +180,6 @@
         "show_text_below": false
       }
     },
-    "image_banner": {
-      "type": "image-banner",
-      "blocks": {
-        "heading": {
-          "type": "heading",
-          "settings": {
-            "heading": "Alpinestars 2022",
-            "heading_size": "medium"
-          }
-        },
-        "91a99002-d344-4129-97fd-3768987f81b8": {
-          "type": "text",
-          "settings": {
-            "text": "Latest from the greatest"
-          }
-        },
-        "button": {
-          "type": "buttons",
-          "settings": {
-            "button_label_1": "Shop Alpinestars",
-            "button_link_1": "shopify:\/\/collections\/alpinestars",
-            "button_style_secondary_1": true,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
-        }
-      },
-      "block_order": [
-        "heading",
-        "91a99002-d344-4129-97fd-3768987f81b8",
-        "button"
-      ],
-      "settings": {
-        "image": "shopify:\/\/shop_images\/Alpinestars_Lifestyle.png",
-        "image_height": "small",
-        "adapt_height_first_image": true,
-        "desktop_text_box_position": "center",
-        "show_text_box": false,
-        "image_overlay_opacity": 10,
-        "color_scheme": "background-2",
-        "stack_images_on_mobile": true,
-        "show_text_below": false
-      }
-    },
     "16472676393a60a1d6": {
       "type": "image-banner",
       "blocks": {
@@ -224,13 +187,13 @@
           "type": "heading",
           "settings": {
             "heading": "RST 2022",
-            "heading_size": "medium"
+            "heading_size": "large"
           }
         },
         "1647267639bb077406-1": {
           "type": "text",
           "settings": {
-            "text": "Top gear at great prices"
+            "text": "The finest threads from the masters in Motorcycle Clothing"
           }
         },
         "1647267639bb077406-2": {
@@ -238,7 +201,7 @@
           "settings": {
             "button_label_1": "Shop RST",
             "button_link_1": "shopify:\/\/collections\/rst",
-            "button_style_secondary_1": true,
+            "button_style_secondary_1": false,
             "button_label_2": "",
             "button_link_2": "",
             "button_style_secondary_2": false
@@ -252,13 +215,13 @@
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/RST_Lifestyle_2000_x_1450.png",
-        "image_height": "small",
-        "adapt_height_first_image": true,
+        "image_height": "medium",
+        "adapt_height_first_image": false,
         "desktop_text_box_position": "center",
         "show_text_box": false,
-        "image_overlay_opacity": 0,
+        "image_overlay_opacity": 30,
         "color_scheme": "background-1",
-        "stack_images_on_mobile": false,
+        "stack_images_on_mobile": true,
         "show_text_below": false
       }
     },
@@ -267,7 +230,7 @@
       "settings": {
         "title": "Great Gear - Perfect Prices",
         "collection": "frontpage",
-        "products_to_show": 12,
+        "products_to_show": 8,
         "show_view_all": true,
         "swipe_on_mobile": true,
         "image_ratio": "square",
@@ -276,6 +239,51 @@
         "show_image_outline": false,
         "show_vendor": false,
         "show_rating": false
+      }
+    },
+    "image_banner": {
+      "type": "image-banner",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "Alpinestars 2022",
+            "heading_size": "large"
+          }
+        },
+        "91a99002-d344-4129-97fd-3768987f81b8": {
+          "type": "text",
+          "settings": {
+            "text": "Latest from the greatest"
+          }
+        },
+        "button": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Shop Alpinestars",
+            "button_link_1": "shopify:\/\/collections\/alpinestars",
+            "button_style_secondary_1": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "91a99002-d344-4129-97fd-3768987f81b8",
+        "button"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Alpinestars_Lifestyle.png",
+        "image_height": "medium",
+        "adapt_height_first_image": false,
+        "desktop_text_box_position": "center",
+        "show_text_box": false,
+        "image_overlay_opacity": 30,
+        "color_scheme": "accent-1",
+        "stack_images_on_mobile": true,
+        "show_text_below": false
       }
     },
     "1638986059856353eb": {
@@ -333,12 +341,13 @@
   "order": [
     "1640778944e11ccff8",
     "rich_text",
+    "16476315551a53182a",
     "16397610750ddd1714",
     "164726124261e0c5d8",
     "163899179357ab03e6",
-    "image_banner",
     "16472676393a60a1d6",
     "featured_products",
+    "image_banner",
     "1638986059856353eb"
   ]
 }

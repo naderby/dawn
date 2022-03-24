@@ -5,6 +5,43 @@
       "settings": {
       }
     },
+    "1648114003daf33f72": {
+      "type": "rich-text",
+      "blocks": {
+        "164811400351b0841a-0": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "Talk about your brand",
+            "heading_size": "h1"
+          }
+        },
+        "164811400351b0841a-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Call us on 01724 280888 or fill out the form below.<\/p>"
+          }
+        },
+        "164811400351b0841a-2": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "164811400351b0841a-0",
+        "164811400351b0841a-1",
+        "164811400351b0841a-2"
+      ],
+      "settings": {
+        "color_scheme": "background-1",
+        "full_width": true
+      }
+    },
     "form": {
       "type": "contact-form",
       "settings": {
@@ -20,6 +57,7 @@
   },
   "order": [
     "main",
+    "1648114003daf33f72",
     "form",
     "16472631407d7383d1"
   ]
