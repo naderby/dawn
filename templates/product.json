@@ -151,9 +151,9 @@
         "heading": "You may also like",
         "image_ratio": "square",
         "show_secondary_image": false,
-        "add_image_padding": false,
+        "add_image_padding": true,
         "show_image_outline": false,
-        "show_vendor": true,
+        "show_vendor": false,
         "show_rating": false
       }
     }
