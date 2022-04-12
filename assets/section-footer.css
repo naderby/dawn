@@ -540,3 +540,7 @@ noscript .localization-selector.link {
 ._1gwv20v div:first-child {
     right: unset!important;
 }
+
+#trustbadge-container-98e3dadd90eb493088abdc5597a70810 {
+z-index: 1000000000 !important;
+}
