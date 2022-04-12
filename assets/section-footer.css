@@ -510,3 +510,33 @@ noscript .localization-selector.link {
 .footer .disclosure__link--active {
   text-decoration: underline;
 }
+
+
+#minimized-trustbadge-98e3dadd90eb493088abdc5597a70810 {
+ left: 20px!important;
+ right: unset!important;
+}
+  
+#minimized-trustbadge-98e3dadd90eb493088abdc5597a70810:hover {
+ left: 19px!important;
+ right: unset!important;
+}
+  
+#minimized-trustbadge-98e3dadd90eb493088abdc5597a70810 .outsideAlerter-98e3dadd90eb493088abdc5597a70810 > div:first-child {
+ left: 0!important;
+ right: auto!important;
+}
+  
+#maximized-trustbadge-98e3dadd90eb493088abdc5597a70810 {
+ left: 20px!important;
+ right: unset!important;
+}
+  
+#trustcard-98e3dadd90eb493088abdc5597a70810 {
+ left: 20px!important;
+ right: unset!important;
+}
+ 
+._1gwv20v div:first-child {
+    right: unset!important;
+}
