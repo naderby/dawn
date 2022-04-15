@@ -406,7 +406,8 @@ var boostPFSFilterConfig = {
 	};
   
     FilterOptionItem.prototype.afterRender = function() {
-    console.log(this);
+      var newLabel = this.value.split(":")[1];
+      console.log(newLabel);
   }
 
 	/************************** END BUILD TOOLBAR **************************/
