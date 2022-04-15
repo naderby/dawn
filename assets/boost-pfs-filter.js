@@ -404,6 +404,10 @@ var boostPFSFilterConfig = {
 		if (!data) data = this.data;
 		jQ('.boost-pfs-filter-total-product').html(data.total_product + ' products');
 	};
+  
+    FilterOptionItem.prototype.afterRender = function() {
+    console.log(this);
+  }
 
 	/************************** END BUILD TOOLBAR **************************/
 })();
