@@ -408,7 +408,7 @@ var boostPFSFilterConfig = {
     FilterOptionItem.prototype.afterRender = function() {
       if (this.parent.prefix !== undefined) {
         var newLabel = this.value.split(":")[1];
-        console.log(newLabel);
+        this.label = newLabel;
       }
   }
 
