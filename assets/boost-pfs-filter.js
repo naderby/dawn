@@ -405,7 +405,7 @@ var boostPFSFilterConfig = {
 		jQ('.boost-pfs-filter-total-product').html(data.total_product + ' products');
 	};
   
-    FilterOptionItem.prototype.afterRender = function() {
+    FilterOptionItem.prototype.beforeRender = function() {
       if (this.parent.prefix !== undefined) {
         var newLabel = this.value.split(":")[1];
         this.label = newLabel;
