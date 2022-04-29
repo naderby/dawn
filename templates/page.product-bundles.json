@@ -1,48 +1,5 @@
 {
   "sections": {
-    "16512391689ad6ffbe": {
-      "type": "live-chat-button",
-      "settings": {
-        "live_chat_button_text": "Click here to chat!",
-        "live_chat_button_colour": "#000000",
-        "live_chat_button_bg": "#bed63a"
-      }
-    },
-    "16512404359d6f3257": {
-      "type": "rich-text",
-      "blocks": {
-        "1651240435f492851d-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "Talk about your brand",
-            "heading_size": "h1"
-          }
-        },
-        "1651240435f492851d-1": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>"
-          }
-        },
-        "1651240435f492851d-2": {
-          "type": "button",
-          "settings": {
-            "button_label": "Button label",
-            "button_link": "",
-            "button_style_secondary": false
-          }
-        }
-      },
-      "block_order": [
-        "1651240435f492851d-0",
-        "1651240435f492851d-1",
-        "1651240435f492851d-2"
-      ],
-      "settings": {
-        "color_scheme": "background-1",
-        "full_width": true
-      }
-    },
     "1651240448571169f5": {
       "type": "rich-text-with-image",
       "blocks": {
@@ -82,8 +39,6 @@
     }
   },
   "order": [
-    "16512391689ad6ffbe",
-    "16512404359d6f3257",
     "1651240448571169f5"
   ]
 }
