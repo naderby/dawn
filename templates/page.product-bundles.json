@@ -44,10 +44,19 @@
         "button_link": "",
         "swipe_on_mobile": false
       }
+    },
+    "16512391689ad6ffbe": {
+      "type": "live-chat-button",
+      "settings": {
+        "live_chat_button_text": "Click here to chat!",
+        "live_chat_button_colour": "#000000",
+        "live_chat_button_bg": "#bed63a"
+      }
     }
   },
   "order": [
     "main",
-    "16512345793526f8a6"
+    "16512345793526f8a6",
+    "16512391689ad6ffbe"
   ]
 }
