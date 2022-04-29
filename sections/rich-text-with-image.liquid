@@ -81,7 +81,12 @@
       "id": "full_width",
       "default": true,
       "label": "t:sections.rich-text.settings.full_width.label"
-    }
+    },
+	{
+	   "type": "html",
+		"id": "custom_css",
+		"label": "Enter custom CSS - one declaration per line"
+	}
   ],
   "blocks": [
     {
@@ -179,3 +184,7 @@
   ]
 }
 {% endschema %}
+
+{% stylesheet %}
+	{{section.settings.custom_css}}
+{% endstylesheet %}
