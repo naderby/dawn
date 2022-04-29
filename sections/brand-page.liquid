@@ -19,6 +19,8 @@
   
 {% assign linklist = linklists["brands"] %}
 {% assign collections_per_row = settings.frontpage_collections_per_row %}
+  
+{% assign placeholder_url = 'https://cdn.shopify.com/s/files/1/0600/9058/1166/files/gc-placeholder.jpg?v=1651227969' %}
 
   
 <ul class="collection-list grid grid--2-col grid--3-col-tablet grid--one-third-max grid--4-col-desktop grid--quarter-max collection-list--3-items negative-margin--small">
@@ -32,8 +34,8 @@
   {% if link.type == 'collection_link' %}
     {% if link_item.image %}
       {% assign link_image = link_item.image.src | collection_img_url: 'medium' %} 
-    {% else %}//Otherwise
-      {% assign link_image = link_item.products.first.featured_image | product_img_url: 'medium' %}//Grab the first product image and use that as the image
+    {% else %}
+      {% assign link_image = link_item.products.first.featured_image | product_img_url: 'medium' %}
     {% endif %}
   {% elsif link.type == 'product_link' %}
     {% assign link_image = link_item.featured_image | product_img_url: 'medium' %}
@@ -45,16 +47,20 @@
         {% assign link_image = src %}
       {% endif %}
     {% endif %}
-  {% elsif link.type == 'blog_link' %}//Otherwise if link.type is a blog link
-    {% if link_item.articles.first.content contains "<img" %}//And if the blog content contains an image tag
-      {% assign src = link_item.articles.first.content | split: 'src="' %}//Then create a new variable to src 
+  {% elsif link.type == 'blog_link' %}
+    {% if link_item.articles.first.content contains "<img" %}
+      {% assign src = link_item.articles.first.content | split: 'src="' %}
       {% assign src = src[1] | split: '"' | first | replace: '//cdn', 'http://cdn' | replace: 'http:http://', 'http://' | remove: 'https:'  %}//Create a new variable for src[1] use '"' substring as a parameter and replace '//cdn' with 'http://cdn' then replace 'http:http://' then finally remove 'https:'
-      {% if src %}//if src is present 
-        {% assign link_image = src %}//then create a new variable for link_image using src
+      {% if src %} 
+        {% assign link_image = src %}
       {% endif %}
     {% endif %}
   {% endif %}
 
+ {% if link_image == '' and placeholder != ''%}
+  {% assign link_image = placeholder %}
+ {% endif %}
+  
 <a class="card animate-arrow link card--media card--light-border" href="{{ link_item.url }}" title="{{ link_title }}">
     <div class="card--stretch card-colored color-background-1">
         <div>
