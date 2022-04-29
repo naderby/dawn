@@ -7,7 +7,10 @@
 <style>
 	{{section.settings.custom_css}}
   
-  
+  #section_{{section.id}} {
+   padding-top:30px;
+   padding-bottom:30px;
+  }
 </style>
 
 <div id="section_{{section.id}}" class="{% unless section.settings.full_width %}page-width{% endunless %} {% if section.settings.featured_image %} has-img {% endif %}">
