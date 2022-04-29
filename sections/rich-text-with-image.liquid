@@ -4,6 +4,10 @@
 <noscript>{{ 'component-rte.css' | asset_url | stylesheet_tag }}</noscript>
 <noscript>{{ 'section-rich-text.css' | asset_url | stylesheet_tag }}</noscript>
 
+<style>
+	{{section.settings.custom_css}}
+</style>
+
 <div class="{% unless section.settings.full_width %}page-width{% endunless %} {% if section.settings.featured_image %} has-img {% endif %}">
   
   {% if section.settings.featured_image %}
@@ -184,7 +188,3 @@
   ]
 }
 {% endschema %}
-
-{% stylesheet %}
-	{{section.settings.custom_css}}
-{% endstylesheet %}
