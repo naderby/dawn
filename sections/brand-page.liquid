@@ -57,8 +57,8 @@
     {% endif %}
   {% endif %}
 
- {% if link_image == '' and placeholder != ''%}
-  {% assign link_image = placeholder %}
+ {% if link_image == '' and placeholder_url != ''%}
+  {% assign link_image = placeholder_url %}
  {% endif %}
   
 <a class="card animate-arrow link card--media card--light-border" href="{{ link_item.url }}" title="{{ link_title }}">
