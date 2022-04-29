@@ -34,7 +34,8 @@
       "settings": {
         "featured_image": "shopify:\/\/shop_images\/product-bundler-animation.gif",
         "color_scheme": "background-1",
-        "full_width": true
+        "full_width": false,
+        "custom_css": ""
       }
     }
   },
