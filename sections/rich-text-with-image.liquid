@@ -8,7 +8,7 @@
   
   {% if section.settings.featured_image %}
   	<div class="image-wrapper">
-    	{{section.settings.featured_image | image_url |image_tag }}  
+    	{{section.settings.featured_image | image_url: width: 400 |image_tag }}  
   	</div>
   {% endif %}
   
