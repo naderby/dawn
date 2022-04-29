@@ -1,7 +1,106 @@
+{% assign percentage_discount = product.compare_at_price_max | minus: product.price | times: 100.0 | divided_by: product.compare_at_price_max | money_without_currency | times: 100 | remove: '.0' | plus: 0 %}
+<div class="gc-calls__wrapper">
+<!-- discount-{{ percentage_discount }}% -->
+    <div class="gc-calls-item__wrapper">
+        {% if percentage_discount == 0 and section.settings.show_at_zero %}
+            <div class="gc-calls-item__item">
+                <h3>{{section.settings.zero_discount_title}}</h3>
+              	{{section.settings.zero_discount_text}}
+              	{% comment %}
+                <p>Chat with us for an incredible discount on this item.</p>
+                <div data-id="PPRrS4HNd2W" class="livechat_button"><a class="link" href="https://www.chatbot.com/?utm_source=chat_button&utm_medium=referral&utm_campaign=lc_10946692">Chat</a></div>
+        		{% endcomment %}    
+      	</div>
+        {% elsif percentage_discount <= section.settings.threshold and section.show_below_threshold %}
+            <div class="gc-calls-item__item">
+                <h3>{{section.settings.below_threshold_title}}</h3>
+              	{{section.settings.below_threshold_text}}
+              	{% comment %}
+                <p>Chat with us for an even bigger discount on this item.</p>
+                <div data-id="PPRrS4HNd2W" class="livechat_button"><a class="link" href="https://www.chatbot.com/?utm_source=chat_button&utm_medium=referral&utm_campaign=lc_10946692">Chat</a></div>
+         		{% endcomment %}
+      		</div>
+        {% elsif section.show_above_threshold %}
+      		<div class="gc-calls-item__item">
+                <h3>{{section.settings.above_threshold_title}}</h3>
+              	{{section.settings.above_threshold_text}}
+              	{% comment %}
+                <p>Chat with us for an even bigger discount on this item.</p>
+                <div data-id="PPRrS4HNd2W" class="livechat_button"><a class="link" href="https://www.chatbot.com/?utm_source=chat_button&utm_medium=referral&utm_campaign=lc_10946692">Chat</a></div>
+              	{% endcomment %}
+            </div>
+        {% endif %}
+    </div>
+</div>
+
 {% schema %}
   {
-    "name": "Section name",
-    "settings": []
+    "name": "Product Page CTA",
+    "settings": [
+		{
+			"type": "checkbox",
+			"id": "show_at_zero",
+			"label": "Show at 0 Discount?",
+			"default": true
+		},
+		{
+			"type": "checkbox",
+			"id": "show_below_threshold",
+			"label": "Show below threshold?",
+			"default": true
+		},
+		{
+			"type": "checkbox",
+			"id": "show_above_threshold",
+			"label": "Show Above Threshold?",
+			"default":true
+		},
+		{
+          "type": "range",
+          "id": "threshold",
+          "min": 0,
+          "max": 100,
+          "step": 1,
+          "unit": "%",
+          "label": "Discount Threshold",
+          "default": 20
+		},
+		{
+			"type": "text",
+			"id": "zero_discount_title",
+			"label":"0 Discount Title"
+		},
+		{
+			"type": "text",
+			"id": "zero_discount_text",
+			"label":"0 Discount Text"
+		},
+		{
+			"type": "text",
+			"id": "below_threshold_title",
+			"label":"Below Threshold Title"
+		},
+		{
+			"type": "text",
+			"id": "below_threshold_text",
+			"label":"Below Threshold Text"
+		},
+		{
+			"type": "text",
+			"id": "above_threshold_title",
+			"label":"Above Threshold Title"
+		},
+		{
+			"type": "text",
+			"id": "above_threshold_text",
+			"label":"Above Threshold Text"
+		}
+	],
+	 "presets": [
+     {
+       "name": "Product Page CTA"
+     }
+   ]
   }
 {% endschema %}
 
