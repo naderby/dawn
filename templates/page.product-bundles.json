@@ -3,10 +3,51 @@
     "main": {
       "type": "rich-text",
       "settings": {
+        "color_scheme": "background-1",
+        "full_width": true
+      }
+    },
+    "16512345793526f8a6": {
+      "type": "multicolumn",
+      "blocks": {
+        "165123457928647b16-0": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Alpinestars_Lifestyle.png",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "165123457928647b16-1": {
+          "type": "column",
+          "settings": {
+            "title": "Product Bundles",
+            "text": "<p>More information coming soon<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "165123457928647b16-0",
+        "165123457928647b16-1"
+      ],
+      "settings": {
+        "title": "Multicolumn",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "column_alignment": "left",
+        "background_style": "none",
+        "button_label": "Button label",
+        "button_link": "",
+        "swipe_on_mobile": false
       }
     }
   },
   "order": [
-    "main"
+    "main",
+    "16512345793526f8a6"
   ]
 }
