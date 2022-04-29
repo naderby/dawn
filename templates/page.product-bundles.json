@@ -35,7 +35,7 @@
         "featured_image": "shopify:\/\/shop_images\/product-bundler-animation.gif",
         "color_scheme": "background-1",
         "full_width": false,
-        "custom_css": ".has-img{display:flex!important; justify-content:center; align-items:center; }\n.has-img img{width:auto!important;max-height:500px!important; margin:0 auto!important;}\n.has-img .image-wrapper{width:50%;}\n.has-img .rich-text{width:50%;text-align:left; margin:1em 0;}\n@media(max-width:768px){.has-img .image-wrapper{width:20%;}.has-img .rich-text{width:80%;} }"
+        "custom_css": ".has-img{display:flex!important; justify-content:center; align-items:center; }\n.has-img img{width:auto!important;max-height:500px!important; margin:0 auto!important;}\n.has-img .image-wrapper{width:50%;text-align:center;}\n.has-img .rich-text{width:50%;text-align:left; margin:1em 0;}\n@media(max-width:768px){.has-img .image-wrapper{width:20%;}.has-img .rich-text{width:80%;} }"
       }
     }
   },
