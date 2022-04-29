@@ -6,9 +6,11 @@
 
 <style>
 	{{section.settings.custom_css}}
+  
+  
 </style>
 
-<div class="{% unless section.settings.full_width %}page-width{% endunless %} {% if section.settings.featured_image %} has-img {% endif %}">
+<div id="section_{{section.id}}" class="{% unless section.settings.full_width %}page-width{% endunless %} {% if section.settings.featured_image %} has-img {% endif %}">
   
   {% if section.settings.featured_image %}
   	<div class="image-wrapper">
