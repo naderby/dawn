@@ -77,6 +77,12 @@
   --color-button-text: var(--color-base-outline-button-labels);
   --alpha-button-background: 0;
 }
+  
+.button--danger{
+ --color-button: #dc3545;
+ --color-button-text: #dc3545;
+ --alpha-button-background:0;
+}
 
 .color-background-2 .button--secondary,
 .color-inverse .button--secondary,
