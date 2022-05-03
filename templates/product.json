@@ -35,6 +35,7 @@
         "451b0cb0-a751-430b-95c7-4360f048701f": {
           "type": "product_page_info_box",
           "settings": {
+            "title": "Price Deals Block (Below Price)",
             "show_at_zero": true,
             "show_below_threshold": true,
             "show_above_threshold": false,
@@ -83,6 +84,7 @@
         "0324c195-6f0c-4df5-8a25-93cb3222beb8": {
           "type": "product_page_info_box",
           "settings": {
+            "title": "Price Deals Block",
             "show_at_zero": false,
             "show_below_threshold": false,
             "show_above_threshold": true,
