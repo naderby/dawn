@@ -363,6 +363,14 @@
             {%- endif -%}
             {%- when 'product_page_info_box' -%}
               {% assign percentage_discount = product.compare_at_price_max | minus: product.price | times: 100.0 | divided_by: product.compare_at_price_max | money_without_currency | times: 100 | remove: '.0' | plus: 0 %}
+              <div style="display:none;">
+                {{percentage_discount}}
+                <hr>
+                {{block.settings.threshold}}
+                <hr>
+                {{block.settings.show_below_threshold}}
+              </div>
+              
               <div class="gc-calls__wrapper">
                 <!-- discount-{{ percentage_discount }}% -->
                 <div class="gc-calls-item__wrapper">
@@ -378,7 +386,7 @@
                     <div data-id="PPRrS4HNd2W" class="livechat_button"><a class="link" href="https://www.chatbot.com/?utm_source=chat_button&utm_medium=referral&utm_campaign=lc_10946692">Chat</a></div>
                     {% endcomment %}    
                   </div>
-                  {% elsif percentage_discount <= block.settings.threshold and block.show_below_threshold %}
+                  {% elsif percentage_discount <= block.settings.threshold and block.settings.show_below_threshold %}
                   <div class="gc-calls-item__item">
                     <h3>{{block.settings.below_threshold_title}}</h3>
                     {{block.settings.below_threshold_text}}
@@ -390,7 +398,7 @@
                     <div data-id="PPRrS4HNd2W" class="livechat_button"><a class="link" href="https://www.chatbot.com/?utm_source=chat_button&utm_medium=referral&utm_campaign=lc_10946692">Chat</a></div>
                     {% endcomment %}
                   </div>
-                  {% elsif block.show_above_threshold %}
+                  {% elsif block.settings.show_above_threshold %}
                   <div class="gc-calls-item__item">
                     <h3>{{block.settings.above_threshold_title}}</h3>
                     {{block.settings.above_threshold_text}}
