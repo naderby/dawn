@@ -24,7 +24,7 @@ Powered By Frooition Pro 2016
 <link rel='stylesheet' type='text/css' href='https://c.frooition.com/e9906db2_ng/combined.css'/>
 <link rel='stylesheet' type='text/css' href=''/>
 <link rel='stylesheet' type='text/css' href=''/>
-<div class="creditlink-wrapper">
+<!--<div class="creditlink-wrapper">
 <div class="creditlink row">
 <div id="froocredit">
 <a href='https://pages.ebay.com/seller-center/listing-and-marketing/third-party-listing-tools.html#frooition' target='_blank'>
@@ -38,6 +38,7 @@ Frooition</b>
 </div>
 </div>
 </div>
+-->
 <div id="background" class="frooition-container template">
 <div id="container" class="page">
 
@@ -102,7 +103,7 @@ Clothing</a>
 {format eBayPrice, eBayCurrency}</div>
 </div>
 <!-- end froo item title -->
-<!-- froo image gallery -->
+<!-- froo image gallery 
 <froogallery>
 
 <div id="gallery_outer_3">
@@ -551,7 +552,51 @@ Clothing</a>
 </div>
 
 </froogallery>
-<!-- end froo image gallery -->
+end froo image gallery -->
+
+
+<div class="row">
+ <div
+class="span12 text-center">
+ <a href="#img1">
+<img class="logo"
+src="{CDNUrl}/productimages/{ProductID}.png?width=547&amp;etag={etag}">
+</a>
+ <a href="#_" class="lightbox"
+id="img1">
+ <div class="close-img">
+&times</div>
+<img
+src="{CDNUrl}/productimages/{ProductID}.png?width=800&amp;etag={etag}"
+/>
+ </a>
+ {for images} <a href="#_"
+class="lightbox" id="img{position+1}">
+ <div
+class="close-img">
+&times</div>
+ <img
+src="{cdnurl}{images.src}?width=800&amp;height=600&amp;nostretch">
+</a>
+ {/for} <div class="clearfix">
+</div>
+ {if
+count(images) >
+ 1}<hr/>
+{/if} {for images step=4} <div
+class="row image-row text-center">
+ {for Images count=4
+start={position}} <div class="span2">
+<a class="image
+fancybox" href="#img{position+1}">
+<img
+src="{cdnurl}{images.src}?width=200&amp;height=200"/>
+</a>
+</div>
+{/for} </div>
+ {/for} <br />
+ </div>
+ </div>
 <span id="feedback_msg">
  </span>
 <div class="clear">
@@ -958,7 +1003,7 @@ About Seller Page</a>
 </div>
 </div>
 
-<a href='https://pages.ebay.com/seller-center/listing-and-marketing/third-party-listing-tools.html#frooition' target='_blank'>
+<!--<a href='https://pages.ebay.com/seller-center/listing-and-marketing/third-party-listing-tools.html#frooition' target='_blank'>
 <div id="design">
 <div>
 Powered by <b>
@@ -968,6 +1013,7 @@ Frooition</b>
 </a>
 <div id="ns_copyright">
 Frooition | No-js Template | eBay design, eBay store design, eBay shop design, eBay template design, eBay listing design (ver:froo_no_js)</div>
+-->
 <div id="backup">
 This listing is currently undergoing maintenance, we apologise for any inconvenience caused.</div>
 
