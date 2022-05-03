@@ -390,7 +390,7 @@
                     <div data-id="PPRrS4HNd2W" class="livechat_button"><a class="link" href="https://www.chatbot.com/?utm_source=chat_button&utm_medium=referral&utm_campaign=lc_10946692">Chat</a></div>
                     {% endcomment %}
                   </div>
-                  {% elsif block.settings.show_above_threshold %}
+                  {% elsif block.settings.show_above_threshold and percentage_discount > block.settings.threshold  %}
                   <div class="gc-calls-item__item">
                     <h3>{{block.settings.above_threshold_title}}</h3>
                     {{block.settings.above_threshold_text}}
