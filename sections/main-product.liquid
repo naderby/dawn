@@ -808,7 +808,71 @@
           "content": "t:sections.main-product.blocks.rating.settings.paragraph.content"
         }
       ]
-    }
+    },
+    {
+  	 "type": "product_page_info_box",
+  	 "name": "Product CTA Box",
+  	 "settings": [
+  		{
+			"type": "checkbox",
+			"id": "show_at_zero",
+			"label": "Show at 0 Discount?",
+			"default": true
+		},
+		{
+			"type": "checkbox",
+			"id": "show_below_threshold",
+			"label": "Show below threshold?",
+			"default": true
+		},
+		{
+			"type": "checkbox",
+			"id": "show_above_threshold",
+			"label": "Show Above Threshold?",
+			"default":true
+		},
+		{
+          "type": "range",
+          "id": "threshold",
+          "min": 0,
+          "max": 100,
+          "step": 1,
+          "unit": "%",
+          "label": "Discount Threshold",
+          "default": 20
+		},
+		{
+			"type": "text",
+			"id": "zero_discount_title",
+			"label":"0 Discount Title"
+		},
+		{
+			"type": "richtext",
+			"id": "zero_discount_text",
+			"label":"0 Discount Text"
+		},
+		{
+			"type": "text",
+			"id": "below_threshold_title",
+			"label":"Below Threshold Title"
+		},
+		{
+			"type": "richtext",
+			"id": "below_threshold_text",
+			"label":"Below Threshold Text"
+		},
+		{
+			"type": "text",
+			"id": "above_threshold_title",
+			"label":"Above Threshold Title"
+		},
+		{
+			"type": "richtext",
+			"id": "above_threshold_text",
+			"label":"Above Threshold Text"
+		}
+  		]
+  	}
   ],
   "settings": [
     {
