@@ -79,8 +79,8 @@
 }
   
 .button--danger{
- --color-button: #dc3545;
- --color-button-text: #dc3545;
+ --color-button: '220, 53, 69';
+ --color-button-text: '220, 53, 69';
  --alpha-button-background:0;
 }
 
