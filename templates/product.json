@@ -32,6 +32,21 @@
           "settings": {
           }
         },
+        "451b0cb0-a751-430b-95c7-4360f048701f": {
+          "type": "product_page_info_box",
+          "settings": {
+            "show_at_zero": true,
+            "show_below_threshold": true,
+            "show_above_threshold": true,
+            "threshold": 20,
+            "zero_discount_title": "test",
+            "zero_discount_text": "<p>test<\/p>",
+            "below_threshold_title": "test",
+            "below_threshold_text": "<p>testtest<\/p>",
+            "above_threshold_title": "test",
+            "above_threshold_text": "<p>test<\/p>"
+          }
+        },
         "507543d3-5e9d-4243-9d75-a02b818238df": {
           "type": "custom_liquid",
           "settings": {
@@ -119,6 +134,7 @@
         "title",
         "subtitle",
         "price",
+        "451b0cb0-a751-430b-95c7-4360f048701f",
         "507543d3-5e9d-4243-9d75-a02b818238df",
         "variant_picker",
         "quantity_selector",
