@@ -40,11 +40,14 @@
             "show_above_threshold": false,
             "threshold": 20,
             "zero_discount_title": "Price Deals",
-            "zero_discount_text": "<p>Chat with us for an incredible discount on this item.<\/p><p><a href=\"https:\/\/www.chatbot.com\/?utm_source=chat_button&utm_medium=referral&utm_campaign=lc_10946692\">Chat<\/a><\/p>",
+            "zero_discount_text": "<p>Chat with us for an incredible discount on this item.<\/p>",
+            "zero_link_chat": true,
             "below_threshold_title": "Price Deals",
-            "below_threshold_text": "<p>Chat with us for an even bigger discount on this item.<\/p><p><a href=\"https:\/\/www.chatbot.com\/?utm_source=chat_button&utm_medium=referral&utm_campaign=lc_10946692\">Chat<\/a><\/p>",
+            "below_threshold_text": "<p>Chat with us for an even bigger discount on this item.<\/p>",
+            "below_link_chat": true,
             "above_threshold_title": "",
-            "above_threshold_text": ""
+            "above_threshold_text": "",
+            "above_link_chat": true
           }
         },
         "507543d3-5e9d-4243-9d75-a02b818238df": {
