@@ -403,7 +403,24 @@ var boostPFSFilterConfig = {
 	Filter.prototype.afterRender = function(data, eventType) {
 		if (!data) data = this.data;
 		jQ('.boost-pfs-filter-total-product').html(data.total_product + ' products');
-	};
+		
+      	var lastScrollTop = 0;
+        window.addEventListener("scroll", function(){
+           var st = window.pageYOffset || document.documentElement.scrollTop;
+          	if (st > lastScrollTop){
+              jQ('body').removeClass('scroll-down');
+              if(!jQ('body').hasClass('scroll-up')){
+              	jQ('body').addClass('scroll-up');
+              }
+           } else {
+              jQ('body').removeClass('scroll-up');
+               if(!jQ('body').hasClass('scroll-down')){
+                jQ('body').addClass('scroll-down');
+               }
+           }
+           lastScrollTop = st <= 0 ? 0 : st;
+        }, false);
+    };
   
   // Fix for the issue where prefixes are not being hidden.
     FilterOptionItem.prototype.beforeRender = function() {
@@ -414,4 +431,5 @@ var boostPFSFilterConfig = {
   }
 
 	/************************** END BUILD TOOLBAR **************************/
+  
 })();
