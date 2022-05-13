@@ -26,30 +26,13 @@
           "type": "content",
           "settings": {
           }
-        },
-        "69b30a6d-d520-45ad-872e-48ff131b0152": {
-          "type": "featured_products",
-          "settings": {
-            "heading": "Featured Products",
-            "test_dynamic": "",
-            "dynamic_product_list": [
-
-            ],
-            "image_ratio": "adapt",
-            "show_secondary_image": false,
-            "add_image_padding": false,
-            "show_image_outline": true,
-            "show_vendor": false,
-            "show_rating": false
-          }
         }
       },
       "block_order": [
         "featured_image",
         "title",
         "share",
-        "content",
-        "69b30a6d-d520-45ad-872e-48ff131b0152"
+        "content"
       ],
       "settings": {
       }
