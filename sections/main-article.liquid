@@ -72,11 +72,12 @@
                 alt="{{ article.image.alt | escape }}">
             </div>
             <div class="intro-content">
-              <span class="tag"></span>
+              {% assign blogTitle = article.handle | split: '/' %}
+              	<span class="tag">{{ blogTitle[0]}}</span>
               <h1 class="intro-title">
                 {{article.title}}
               </h1>
-              <small class="datetime">{{article.published_at | date: "%b %d, %y"}}</small>
+              <small class="circle-divider caption-with-letter-spacing" itemprop="dateCreated pubdate datePublished">{{ article.published_at | time_tag: format: 'date' }}</small>
             {% if article.excerpt %}
               <div class="excerpt">
                 {{article.excerpt}}
