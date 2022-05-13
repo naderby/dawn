@@ -1,7 +1,92 @@
+{% if section.settings.product_list %}
+<section class="product-list featured-products">
+  <h3 class="product-list-heading">{{section.settings.heading}}</h3>
+  <ul class="grid grid--2-col product-grid{% if section.settings.product_list.count > 3 %} grid--4-col-desktop grid--quarter-max{% else %} grid--{{ sections.settings.product_list.count }}-col-tablet{% endif %}" role="list">
+      {% for product in section.settings.product_list %}
+        <li class="grid__item">
+          {% render 'product-card',
+            product_card_product: product,
+            media_size: section.settings.image_ratio,
+            show_secondary_image: section.settings.show_secondary_image,
+            add_image_padding: section.settings.add_image_padding,
+            show_vendor: section.settings.show_vendor,
+            show_image_outline: section.settings.show_image_outline,
+            show_rating: section.settings.show_rating
+          %}
+        </li>
+      {% endfor %}
+    </ul>
+</section>
+{% endif %}
+
 {% schema %}
   {
-    "name": "Section name",
-    "settings": []
+    "name": "Featured Products",
+    "settings": [
+      {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Featured Products"
+      },
+      {
+      "type": "product_list",
+      "id": "product_list",
+      "label": "Products",
+      "limit": 12
+      },
+      {
+            "type": "select",
+            "id": "image_ratio",
+            "options": [
+              {
+                "value": "adapt",
+                "label": "t:sections.product-recommendations.settings.image_ratio.options__1.label"
+              },
+              {
+                "value": "portrait",
+                "label": "t:sections.product-recommendations.settings.image_ratio.options__2.label"
+              },
+              {
+                "value": "square",
+                "label": "t:sections.product-recommendations.settings.image_ratio.options__3.label"
+              }
+            ],
+            "default": "adapt",
+            "label": "t:sections.product-recommendations.settings.image_ratio.label"
+          },
+          {
+            "type": "checkbox",
+            "id": "show_secondary_image",
+            "default": false,
+            "label": "t:sections.product-recommendations.settings.show_secondary_image.label"
+          },
+          {
+            "type": "checkbox",
+            "id": "add_image_padding",
+            "default": false,
+            "label": "t:sections.product-recommendations.settings.add_image_padding.label"
+          },
+          {
+            "type": "checkbox",
+            "id": "show_image_outline",
+            "default": true,
+            "label": "t:sections.product-recommendations.settings.show_image_outline.label"
+          },
+          {
+            "type": "checkbox",
+            "id": "show_vendor",
+            "default": false,
+            "label": "t:sections.product-recommendations.settings.show_vendor.label"
+          },
+          {
+            "type": "checkbox",
+            "id": "show_rating",
+            "default": false,
+            "label": "t:sections.product-recommendations.settings.show_rating.label",
+            "info": "t:sections.product-recommendations.settings.show_rating.info"
+          }
+	]
   }
 {% endschema %}
 
