@@ -11,9 +11,15 @@
         },
         "title": {
           "type": "title",
+          "disabled": true,
           "settings": {
             "blog_show_date": true,
             "blog_show_author": false
+          }
+        },
+        "content": {
+          "type": "content",
+          "settings": {
           }
         },
         "share": {
@@ -22,17 +28,21 @@
             "share_label": "Share"
           }
         },
-        "content": {
-          "type": "content",
+        "d675219b-5fa7-4473-a1b4-43d5f811bbc8": {
+          "type": "live_chat_button",
           "settings": {
+            "live_chat_button_text": "Click here to chat!",
+            "live_chat_button_colour": "#000000",
+            "live_chat_button_bg": "#bed63a"
           }
         }
       },
       "block_order": [
         "featured_image",
         "title",
+        "content",
         "share",
-        "content"
+        "d675219b-5fa7-4473-a1b4-43d5f811bbc8"
       ],
       "settings": {
       }
