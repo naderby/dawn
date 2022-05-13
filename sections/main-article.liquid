@@ -195,6 +195,7 @@
       {% endif %}
   
   {%- when 'live_chat_button' -%}
+  <div class="page-width page-width-narrow">
     <button 
             onclick="window.LiveChatWidget.call('maximize');"
             type="button"
@@ -206,7 +207,7 @@
                    ">
       {{block.settings.live_chat_button_text}}
     </button>	
-        
+  </div>
     {%- endcase -%}
   {%- endfor -%}
 
