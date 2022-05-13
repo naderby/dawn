@@ -90,7 +90,7 @@
             <script src="{{ 'share.js' | asset_url }}" defer="defer"></script>
           </div>
   	{%- when 'featured_products' -%}
-  		{{section.metafields | json}}
+  		{{article.metafields | json}}
       {% if block.settings.product_list %}
       <section class="product-list featured-products">
         <h3 class="product-list-heading">{{block.settings.heading}}</h3>
