@@ -194,7 +194,19 @@
       </section>
       {% endif %}
   
-  
+  {%- when 'live_chat_button' -%}
+    <button 
+            onclick="window.LiveChatWidget.call('maximize');"
+            type="button"
+            class="live-chat-button-custom button"
+            id="chatButton_{{block.id}}"
+            style="
+                   background-color:{{block.settings.live_chat_button_bg}};
+                   color:{{block.settings.live_chat_button_colour}};
+                   ">
+      {{block.settings.live_chat_button_text}}
+    </button>	
+        
     {%- endcase -%}
   {%- endfor -%}
 
