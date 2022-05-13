@@ -4,16 +4,24 @@
       "type": "main-article",
       "blocks": {
         "featured_image": {
-          "type": "featured_image"
+          "type": "featured_image",
+          "settings": {
+          }
         },
         "title": {
-          "type": "title"
+          "type": "title",
+          "settings": {
+          }
         },
         "content": {
-          "type": "content"
+          "type": "content",
+          "settings": {
+          }
         },
         "share": {
-          "type": "share"
+          "type": "share",
+          "settings": {
+          }
         }
       },
       "block_order": [
@@ -21,10 +29,18 @@
         "title",
         "share",
         "content"
-      ]
+      ],
+      "settings": {
+      }
+    },
+    "article_featured_products": {
+      "type": "article_featured_products",
+      "settings": {
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "article_featured_products"
   ]
 }
