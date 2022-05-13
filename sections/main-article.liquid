@@ -95,6 +95,9 @@
       <section class="product-list featured-products page-width">
         <h3 class="product-list-heading">{{article.metafields.my_fields.product_heading}}</h3>
         {{article.metafields.my_fields.products}}
+        {% for prod in article.metafields.my_fields.products %}
+        	{{prod}} <hr>
+        {% endfor %}
         <ul class="grid grid--2-col product-grid{% if article.metafields.my_fields.products.count > 3 %} grid--4-col-desktop grid--quarter-max{% else %} grid--{{ article.metafields.my_fields.products.count }}-col-tablet{% endif %}" role="list">
           {% for product in article.metafields.my_fields.products %}
           <code>
