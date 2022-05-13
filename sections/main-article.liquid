@@ -90,10 +90,11 @@
             <script src="{{ 'share.js' | asset_url }}" defer="defer"></script>
           </div>
   	{%- when 'featured_products' -%}
-  		{{article.metafields.my_fields.product_heading}}
-      {% if block.settings.product_list %}
+  		
+      {% if article.metafields.my_fields.products %}
       <section class="product-list featured-products">
-        <h3 class="product-list-heading">{{block.settings.heading}}</h3>
+        <h3 class="product-list-heading">{{article.metafields.my_fields.product_heading}}</h3>
+        
         <ul class="grid grid--2-col product-grid{% if block.settings.product_list.count > 3 %} grid--4-col-desktop grid--quarter-max{% else %} grid--{{ block.settings.product_list.count }}-col-tablet{% endif %}" role="list">
           {% for product in block.settings.product_list %}
           <li class="grid__item">
