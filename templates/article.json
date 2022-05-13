@@ -32,15 +32,9 @@
       ],
       "settings": {
       }
-    },
-    "article_featured_products": {
-      "type": "article_featured_products",
-      "settings": {
-      }
     }
   },
   "order": [
-    "main",
-    "article_featured_products"
+    "main"
   ]
 }
