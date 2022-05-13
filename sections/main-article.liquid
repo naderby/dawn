@@ -1,5 +1,47 @@
 {{ 'section-blog-post.css' | asset_url | stylesheet_tag }}
 
+<style>
+  .article-template__hero-container{
+   	display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center; 
+  }
+  
+  .article-template__hero-container .article-template__hero-adapt.media{
+    width:50%;
+    padding:0!important;
+  }
+  
+  .article-template__hero-container .article-template__hero-adapt.media img{
+   position:relative; 
+  }
+  
+  .article-template__hero-container .intro-content{
+    width: 50%;
+    background-color: #fff;
+    padding: 2em;
+    transform: translateX(-5%);
+    box-shadow:0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  }
+  
+  @media(max-width:962px){
+    .article-template__hero-container{
+  		flex-direction:column;	
+  	}
+  
+    .article-template__hero-container .article-template__hero-adapt.media{
+      width:100%;
+    }
+
+    .article-template__hero-container .intro-content{
+      width: 100%;
+      transform: translateY(-5%);
+      box-shadow:0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    }
+  }
+</style>
+
 <article class="article-template" itemscope itemtype="http://schema.org/BlogPosting">
   {%- for block in section.blocks -%}
     {%- case block.type -%}
