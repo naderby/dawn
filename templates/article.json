@@ -6,11 +6,20 @@
         "featured_image": {
           "type": "featured_image",
           "settings": {
+            "image_height": "adapt"
           }
         },
         "title": {
           "type": "title",
           "settings": {
+            "blog_show_date": true,
+            "blog_show_author": false
+          }
+        },
+        "share": {
+          "type": "share",
+          "settings": {
+            "share_label": "Share"
           }
         },
         "content": {
@@ -18,9 +27,20 @@
           "settings": {
           }
         },
-        "share": {
-          "type": "share",
+        "69b30a6d-d520-45ad-872e-48ff131b0152": {
+          "type": "featured_products",
           "settings": {
+            "heading": "Featured Products",
+            "test_dynamic": "",
+            "dynamic_product_list": [
+
+            ],
+            "image_ratio": "adapt",
+            "show_secondary_image": false,
+            "add_image_padding": false,
+            "show_image_outline": true,
+            "show_vendor": false,
+            "show_rating": false
           }
         }
       },
@@ -28,7 +48,8 @@
         "featured_image",
         "title",
         "share",
-        "content"
+        "content",
+        "69b30a6d-d520-45ad-872e-48ff131b0152"
       ],
       "settings": {
       }
