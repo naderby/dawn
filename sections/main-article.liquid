@@ -94,7 +94,7 @@
       {% if article.metafields.my_fields.products %}
       <section class="product-list featured-products page-width">
         <h3 class="product-list-heading">{{article.metafields.my_fields.product_heading}}</h3>
-        {{article.metafields.my_fields.products}}
+        {{article.metafields.my_fields.products.type}}
         {% for prod in article.metafields.my_fields.products %}
         	{{prod}} <hr>
         {% endfor %}
