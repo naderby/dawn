@@ -104,6 +104,33 @@ Clothing</a>
 </div>
 <!-- end froo item title -->
 
+
+<div class="item-details">
+<frooitemtitle>
+<h3>
+{Title}</h3>
+</frooitemtitle>
+    
+<div class="price">
+{format eBayPrice, eBayCurrency}</div>
+<!-- froo description -->
+<froodescription>
+
+		<div id="description">
+		<div id="descriptiontitle">Item Description</div>
+		<div id="descriptioncontent">{include field="EbayDescription"}</div>
+		<div id="descriptionbase">
+</div>
+		</div>
+</froodescription>
+<!-- end froo description -->
+</div>
+
+
+
+
+
+
 <div class="row">
     <div class="span12 text-center">
         <a href="#img1">
@@ -142,28 +169,7 @@ Clothing</a>
 </div>
 </div>
 
-<div class="item-details">
-<frooitemtitle>
-<h3>
-{Title}</h3>
-</frooitemtitle>
-    
-<div class="price">
-{format eBayPrice, eBayCurrency}</div>
-<!-- froo description -->
-<froodescription>
 
-		<div id="description">
-		<div id="descriptiontitle">
-Item Description</div>
-		<div id="descriptioncontent">
-{include field="EbayDescription"}</div>
-		<div id="descriptionbase">
-</div>
-		</div>
-</froodescription>
-<!-- end froo description -->
-</div>
 
 <div class="clear">
 </div>
