@@ -86,14 +86,141 @@
               {{ product.title | escape }}
             </h1>
           {%- when 'custom_related_products' -%}
-        	<div style="display:none">
-              {{product.metafields.my_fields.related_products}}
-            {% for refer_product in product.metafields.my_fields.related_products.value %}
-               {% assign productName = refer_product.title %}
-               {% assign productHandle = refer_product.handle %}
-              {{refer_product | json}}
-            {% endfor %}
-        	</div>
+			<style>
+              .custom-related-products{
+              	position:relative; 
+                margin-bottom:2em;
+              }
+              
+              .custom-related-products h3.related-products-title{
+                position: absolute;
+                top: 0;
+                margin: 0;
+                transform: translateY(-50%);
+                left: 10px;
+                padding: 0 9px;
+                background-color: #fff;  
+              }
+              
+              .custom-related-products .livechat_button{
+               border:1px solid #bed63a;
+               position:absolute;
+               bottom:0;
+               right:1em;
+               transform:translateY(50%);
+               background-color: #fff;
+               padding: 6px 12px;
+              }
+              
+              .custom-related-products .livechat_button a{
+               color: #bed63a;
+              }
+              
+              .custom-related-products .product-grid{
+               margin:0;
+               list-style-type:none;
+               border:1px solid #bed63a;
+               display:flex;
+               flex-direction:column;
+               padding: 1em;
+               border-radius: 3px;
+              }
+              
+              .custom-related-products .product-grid li{
+                display: flex;
+                align-items: center;
+                justify-content: space-evenly;
+                flex-direction: row;
+              }
+              
+              .custom-related-products .product-grid li img{
+               width:25%;
+              }
+              
+              .custom-related-products .product-grid li .product-entry{
+               width:75%;
+               flex:1;
+               padding:1em;
+              }
+              
+              .custom-related-products .product-grid li .product-entry h5{
+               margin:0!important; 
+              }
+              
+              .custom-related-products .price-form-wrapper{
+               display:flex;
+               flex-direction:row;
+              }
+              
+              
+              .custom-related-products .price-form-wrapper .price,
+              .custom-related-products .price-form-wrapper .product-form{
+               flex:1; 
+               margin:0!important;
+              }
+              
+              .custom-related-products form button[name="add"]{
+                padding: 6px;
+                line-height: normal;
+                font-size: 14px;
+                height: auto;
+                min-height: 0;
+                margin: 0; 
+              }
+              
+              .custom-related-products .price-form-wrapper{
+               margin-top:1em; 
+              }
+        	</style>
+            {%if product.metafields.my_fields.related_products %}
+				<div class="custom-related-products">
+                  <h3 class="related-products-title">{{block.settings.title}}</h3>
+					<ul class="product-grid">
+						{% for refer_product in product.metafields.my_fields.related_products.value %}
+						<li class="product-item">
+							<img src="{{ refer_product.featured_image | image_url: width: 500 }}" class="product-image">
+							<div class="product-entry">
+								<h5 class="product-title">{{refer_product.title}}</h5>
+                              <div class="price-form-wrapper">
+								<span class="price">
+									{%- render 'price', product: product, use_variant: true, show_badges: true, price_class: 'price--large' -%}
+								</span>
+                                <product-form class="product-form">
+                <div class="product-form__error-message-wrapper" role="alert" hidden="">
+                  <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-error" viewBox="0 0 13 13">
+                    <circle cx="6.5" cy="6.50049" r="5.5" stroke="white" stroke-width="2"></circle>
+                    <circle cx="6.5" cy="6.5" r="5.5" fill="#EB001B" stroke="#EB001B" stroke-width="0.7"></circle>
+                    <path d="M5.87413 3.52832L5.97439 7.57216H7.02713L7.12739 3.52832H5.87413ZM6.50076 9.66091C6.88091 9.66091 7.18169 9.37267 7.18169 9.00504C7.18169 8.63742 6.88091 8.34917 6.50076 8.34917C6.12061 8.34917 5.81982 8.63742 5.81982 9.00504C5.81982 9.37267 6.12061 9.66091 6.50076 9.66091Z" fill="white"></path>
+                    <path d="M5.87413 3.17832H5.51535L5.52424 3.537L5.6245 7.58083L5.63296 7.92216H5.97439H7.02713H7.36856L7.37702 7.58083L7.47728 3.537L7.48617 3.17832H7.12739H5.87413ZM6.50076 10.0109C7.06121 10.0109 7.5317 9.57872 7.5317 9.00504C7.5317 8.43137 7.06121 7.99918 6.50076 7.99918C5.94031 7.99918 5.46982 8.43137 5.46982 9.00504C5.46982 9.57872 5.94031 10.0109 6.50076 10.0109Z" fill="white" stroke="#EB001B" stroke-width="0.7">
+                  </path></svg>
+                  <span class="product-form__error-message"></span>
+                </div>
+								<form method="post" action="/cart/add" accept-charset="UTF-8" class="form" enctype="multipart/form-data" novalidate="novalidate" data-type="add-to-cart-form">
+									<input type="hidden" name="form_type" value="product">
+									<input type="hidden" name="utf8" value="✓">
+									<input type="hidden" name="id" value="{{refer_product.first_available_variant.id}}">
+                  					<div class="product-form__buttons">
+                    					<button type="submit" name="add" class="product-form__submit button">
+                        				<span>Add to cart</span>
+										</button>
+                                      <div class="loading-overlay__spinner hidden">
+                                        <svg aria-hidden="true" focusable="false" role="presentation" class="spinner" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
+                                          <circle class="path" fill="none" stroke-width="6" cx="33" cy="33" r="30"></circle>
+                                        </svg>
+                                      </div>
+									</div>
+								</form>
+                                </product-form>
+                              </div>
+							</div>
+						</li>
+						{% endfor %}
+					</ul>
+                  	{% if block.settings.link_chat %}
+                  		 <div data-id="PPRrS4HNd2W" class="livechat_button"><a class="link" href="https://www.chatbot.com/?utm_source=chat_button&utm_medium=referral&utm_campaign=lc_10946692">Live Chat</a></div>
+                  	{% endif %}
+				</div>
+			{% endif %}
           {%- when 'price' -%}
             <div class="no-js-hidden" id="price-{{ section.id }}" role="status" {{ block.shopify_attributes }}>
               {%- render 'price', product: product, use_variant: true, show_badges: true, price_class: 'price--large' -%}
