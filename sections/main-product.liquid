@@ -87,6 +87,7 @@
             </h1>
           {%- when 'custom_related_products' -%}
         	<div style="display:none">
+              {{product.metafields.my_fields.related_products.metafield_text}}
               {% for relProd in product.metafields.my_fields.related_products %}
               	{{relProd | json}}
               {% endfor %}
