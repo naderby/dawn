@@ -88,6 +88,8 @@
           {%- when 'custom_related_products' -%}
         	<div style="display:none">
               {{product.metafields.my_fields.related_products}}
+              
+              {{products[7468746735858] | json}}
         	</div>
           {%- when 'price' -%}
             <div class="no-js-hidden" id="price-{{ section.id }}" role="status" {{ block.shopify_attributes }}>
