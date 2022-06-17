@@ -87,6 +87,7 @@
             </h1>
           {%- when 'custom_related_products' -%}
         	<div style="display:none">
+              {{product.metafields.my_fields.related_products}}
             {% for refer_product in product.metafields.my_fields.related_products %}
                {% assign productName = refer_product.title %}
                {% assign productHandle = refer_product.handle %}
