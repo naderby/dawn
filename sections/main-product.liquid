@@ -186,13 +186,18 @@
 					<ul class="product-grid">
 						{% for refer_product in product.metafields.my_fields.related_products.value %}
 						<li class="product-item">
-							<img src="{{ refer_product.featured_image | image_url: width: 500 }}" class="product-image">
+							<a href="{{refer_product.url}}" class="product-img-link">
+                              <img src="{{ refer_product.featured_image | image_url: width: 500 }}" class="product-image">
+                          	</a>
 							<div class="product-entry">
-								<h5 class="product-title">{{refer_product.title}}</h5>
+                              <h5 class="product-title"><a href="{{refer_product.url}}" class="product-title-link">{{refer_product.title}}</a></h5>
                               <div class="price-form-wrapper">
 								<span class="price">
 									{%- render 'price', product: product, use_variant: true, show_badges: true, price_class: 'price--large' -%}
 								</span>
+                                {% if refer_product.variants.size > 1 %}
+                                <a href="{{refer_product.url}}" class="button view-product-button">View Product</a>
+                                {% else %}
                                 <product-form class="product-form">
                 <div class="product-form__error-message-wrapper" role="alert" hidden="">
                   <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-error" viewBox="0 0 13 13">
@@ -219,6 +224,7 @@
 									</div>
 								</form>
                                 </product-form>
+                                {% endif %}
                               </div>
 							</div>
 						</li>
