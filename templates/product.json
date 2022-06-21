@@ -78,7 +78,7 @@
         "a38cc9e3-d282-4182-9068-17f13265824a": {
           "type": "custom_related_products",
           "settings": {
-            "title": "Customers Also Bought...",
+            "title": "you may also like these",
             "link_chat": true
           }
         },
