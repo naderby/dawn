@@ -514,6 +514,18 @@
             </div>
 
             <script src="{{ 'pickup-availability.js' | asset_url }}" defer="defer"></script>
+              
+              
+               
+            {% if product.id == 7461158256882 %}
+              <h4>Hello World</h4>
+			{% endif %}
+              
+            <div style="display:none" class="paypalTest">
+            	{{product | json }}  
+            </div>
+              
+              
           {%- when 'rating' -%}
             {%- if product.metafields.reviews.rating.value != blank -%}
               {% liquid
@@ -536,15 +548,7 @@
                 <span class="visually-hidden">{{ product.metafields.reviews.rating_count }} {{ "accessibility.total_reviews" | t }}</span>
               </p>
             {%- endif -%}
-              
-            {% if product.id == 7461158256882 %}
-              <h4>Hello World</h4>
-			{% endif %}
-              
-            <div style="display:none" class="paypalTest">
-            	{{product | json }}  
-            </div>
-            
+           
             {%- when 'product_page_info_box' -%}
               {% assign percentage_discount = product.compare_at_price_max | minus: product.price | times: 100.0 | divided_by: product.compare_at_price_max | money_without_currency | times: 100 | remove: '.0' | plus: 0 %}
               <div class="gc-calls__wrapper">
