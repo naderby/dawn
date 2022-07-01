@@ -245,7 +245,17 @@
 						{% endfor %}
 					</ul>
                   	{% if block.settings.link_chat %}
-                  		 <div data-id="PPRrS4HNd2W" class="livechat_button"><a class="link" href="https://www.chatbot.com/?utm_source=chat_button&utm_medium=referral&utm_campaign=lc_10946692">Live Chat</a></div>
+                  <button 
+                          onclick="window.LiveChatWidget.call('maximize');"
+                          type="button"
+                          class="live-chat-button-custom button"
+                          id="chatButton_{{block.id}}"
+                          style="
+                                 background-color:{{block.settings.live_chat_button_bg}};
+                                 color:{{block.settings.live_chat_button_colour}};
+                                 ">
+                    {{block.settings.live_chat_button_text}}
+                  </button>
                   	{% endif %}
 				</div>
 			{% endif %}
@@ -800,7 +810,25 @@
 			"id": "link_chat",
 			"label": "Show Link to Live Chat?",
 			"default": true
-		}
+		},
+  		{
+        "id": "live_chat_button_text",
+        "type": "text",
+        "label": "Button Text",
+        "default": "Click here to chat!"
+      	},
+      	{
+        "id": "live_chat_button_colour",
+        "type": "color",
+        "label": "Text Colour",
+        "default": "#000000"
+      	},
+	  	{
+		"id": "live_chat_button_bg",
+        "type": "color",
+        "label": "Button Colour",
+        "default": "#bed63a"
+	  	}
   		]
     },
     {
