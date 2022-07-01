@@ -514,39 +514,6 @@
             </div>
 
             <script src="{{ 'pickup-availability.js' | asset_url }}" defer="defer"></script>
-              
-              
-               
-            {% if product.id == 7461158256882 %}
-              <h4>Hello World</h4>
-			
-              
-            <div style="display:none" class="paypalTest">
-              <script src="https://www.paypal.com/sdk/js?client-id=AX-EBenI3UgORveLGMVNvuxW45sOyCkraC-oAVN8GqNsGC7rrFz4fUFu2hzsz3sfS5mvDYHcheghU7WH&currency=GBP&components=messages">
-              </script>
-
-              <script>
-                   paypal
-                    .Messages({
-                      amount: {{product.selected_or_first_available_variant.price}},
-                      placement: "product",
-                      style: {
-                        layout: "text",
-                        logo: {
-                          type: "inline",
-                        },
-                      },
-                    })
-                    .render("#pp-pay-later-message");
-              </script>
-
-                <div id="pp-pay-later-message"
-                  data-pp-message
-                  data-pp-amount="{{product.selected_or_first_available_variant.price}}">
-                </div>
-            </div>
-              {% endif %}
-              
           {%- when 'rating' -%}
             {%- if product.metafields.reviews.rating.value != blank -%}
               {% liquid
@@ -569,7 +536,6 @@
                 <span class="visually-hidden">{{ product.metafields.reviews.rating_count }} {{ "accessibility.total_reviews" | t }}</span>
               </p>
             {%- endif -%}
-           
             {%- when 'product_page_info_box' -%}
               {% assign percentage_discount = product.compare_at_price_max | minus: product.price | times: 100.0 | divided_by: product.compare_at_price_max | money_without_currency | times: 100 | remove: '.0' | plus: 0 %}
               <div class="gc-calls__wrapper">
