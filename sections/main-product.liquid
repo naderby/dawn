@@ -515,38 +515,6 @@
 
             <script src="{{ 'pickup-availability.js' | asset_url }}" defer="defer"></script>
               
-            {% if product.id == 7461158256882 %}
-              
-              <div style="display:none" class="paypalTest">
-              <script src="https://www.paypal.com/sdk/js?client-id=AX-EBenI3UgORveLGMVNvuxW45sOyCkraC-oAVN8GqNsGC7rrFz4fUFu2hzsz3sfS5mvDYHcheghU7WH&currency=GBP&components=messages">
-              </script>
-
-              <script>
-                   paypal
-                    .Messages({
-                      amount: {{product.selected_or_first_available_variant.price | money_without_currency}},
-                      placement: "product",
-                      style: {
-                        layout: "text",
-                        logo: {
-                          type: "inline",
-                        },
-                      },
-                    })
-                    .render("#pp-pay-later-message");
-              </script>
-
-                <div id="pp-pay-later-message"
-                  data-pp-message
-                  data-pp-amount="{{product.selected_or_first_available_variant.price | money_without_currency}}">
-                </div>
-           	  </div>
-              
-            {% endif %}
-              
-              
-              
-              
           {%- when 'rating' -%}
             {%- if product.metafields.reviews.rating.value != blank -%}
               {% liquid
