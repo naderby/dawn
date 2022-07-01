@@ -103,7 +103,7 @@
               }
               
               .custom-related-products .livechat_button{
-               border:1px solid #bed63a;
+               border:1px solid;
                position:absolute;
                bottom:0;
                right:1em;
@@ -248,10 +248,11 @@
                   <button 
                           onclick="window.LiveChatWidget.call('maximize');"
                           type="button"
-                          class="live-chat-button-custom button"
+                          class="live-chat-button-custom button livechat_button"
                           id="chatButton_{{block.id}}"
                           style="
                                  background-color:{{block.settings.live_chat_button_bg}};
+                                 border-color:{{block.settings.live_chat_button_bg}};
                                  color:{{block.settings.live_chat_button_colour}};
                                  ">
                     {{block.settings.live_chat_button_text}}
