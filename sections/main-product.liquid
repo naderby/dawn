@@ -524,7 +524,7 @@
               <script>
                    paypal
                     .Messages({
-                      amount: {{product.selected_or_first_available_variant.price | money_without_currenc}},
+                      amount: {{product.selected_or_first_available_variant.price | money_without_currency}},
                       placement: "product",
                       style: {
                         layout: "text",
@@ -538,7 +538,7 @@
 
                 <div id="pp-pay-later-message"
                   data-pp-message
-                  data-pp-amount="{{product.selected_or_first_available_variant.price | money_without_currenc}}">
+                  data-pp-amount="{{product.selected_or_first_available_variant.price | money_without_currency}}">
                 </div>
            	  </div>
               
