@@ -75,6 +75,11 @@
             "paylater_paypal_client_id": "AfmroIfn4uAnj1t9dd3orBUYA_0zRK5aqDp0Ya8zGZzgcaYob0GX35PrAh_XgaW9Tr9zqOtsniVQoFlX"
           }
         },
+        "cf31f721-9f25-42ad-805e-7311164d525f": {
+          "type": "pickup_availability",
+          "settings": {
+          }
+        },
         "9ee8db31-91e6-4b9d-8a1a-525454dd7b60": {
           "type": "popup",
           "settings": {
@@ -183,6 +188,7 @@
         "quantity_selector",
         "buy_buttons",
         "de1384bf-463e-4209-b415-17d4fdf076e5",
+        "cf31f721-9f25-42ad-805e-7311164d525f",
         "9ee8db31-91e6-4b9d-8a1a-525454dd7b60",
         "a38cc9e3-d282-4182-9068-17f13265824a",
         "0324c195-6f0c-4df5-8a25-93cb3222beb8",
