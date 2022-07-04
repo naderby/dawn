@@ -515,6 +515,11 @@
 
             <script src="{{ 'pickup-availability.js' | asset_url }}" defer="defer"></script>
               
+              
+          {%- when 'paypal_paylater' -%}
+              
+              <div style="display:none;" class="skyline-test">Hello World</div>
+              
           {%- when 'rating' -%}
             {%- if product.metafields.reviews.rating.value != blank -%}
               {% liquid
@@ -884,6 +889,19 @@
           "info": "t:sections.main-product.blocks.buy_buttons.settings.show_dynamic_checkout.info"
         }
       ]
+    },
+    {
+	 "type": "paypal_paylater",
+  	 "name": "Paypal Paylater Message",
+  	 "settings": [
+  	   {
+		  "type": "checkbox",
+          "id": "show_paypal_paylater",
+          "default": false,
+          "label": "Show PayPal Paylater Messaging",
+          "info": "Tick this box to display the messaging. (Requires PayPal Client ID)"
+       }
+  	 ]
     },
     {
       "type": "description",

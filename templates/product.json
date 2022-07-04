@@ -68,6 +68,11 @@
             "show_dynamic_checkout": true
           }
         },
+        "paypal_paylater": {
+          "type": "paypal_paylater",
+          "settings": {
+          }
+        },
         "9ee8db31-91e6-4b9d-8a1a-525454dd7b60": {
           "type": "popup",
           "settings": {
