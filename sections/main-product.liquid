@@ -518,7 +518,33 @@
               
           {%- when 'paypal_paylater' -%}
               
-              <div style="display:none;" class="skyline-test">Hello World</div>
+             {% if block.settings.show_paypal_paylater and block.settings.paylater_paypal_client_id != blank %}
+             	
+              <script src="https://www.paypal.com/sdk/js?client-id={{block.settings.paylater_paypal_client_id}}&currency=GBP&components=messages">
+              </script>
+
+              <script>
+                paypal
+                .Messages({
+                  amount: {{product.selected_or_first_available_variant.price | money_without_currency}},
+                  placement: "product",
+                  style: {
+                    layout: "text",
+                    logo: {
+                      type: "inline",
+                    },
+                  },
+                })
+                .render("#pp-pay-later-message");
+              </script>
+
+              <div id="pp-pay-later-message"
+                   data-pp-message
+                   data-pp-amount="{{product.first_or_selected_variant.price | money_without_currency}}">
+              </div> 
+              
+             
+             {% endif%}
               
           {%- when 'rating' -%}
             {%- if product.metafields.reviews.rating.value != blank -%}
