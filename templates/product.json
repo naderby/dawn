@@ -71,8 +71,8 @@
         "de1384bf-463e-4209-b415-17d4fdf076e5": {
           "type": "paypal_paylater",
           "settings": {
-            "show_paypal_paylater": false,
-            "paylater_paypal_client_id": ""
+            "show_paypal_paylater": true,
+            "paylater_paypal_client_id": "AX-EBenI3UgORveLGMVNvuxW45sOyCkraC-oAVN8GqNsGC7rrFz4fUFu2hzsz3sfS5mvDYHcheghU7WH"
           }
         },
         "9ee8db31-91e6-4b9d-8a1a-525454dd7b60": {
