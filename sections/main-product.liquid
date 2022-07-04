@@ -500,7 +500,9 @@
                   </div>
                 {%- endform -%}
               </product-form>
-
+            </div>
+              
+          {%- when 'pickup_availability' -%}
               {{ 'component-pickup-availability.css' | asset_url | stylesheet_tag }}
 
               {%- assign pick_up_availabilities = product.selected_or_first_available_variant.store_availabilities | where: 'pick_up_enabled', true -%}
@@ -521,10 +523,8 @@
                   </pickup-availability-preview>
                 </template>
               </pickup-availability>
-            </div>
-
-            <script src="{{ 'pickup-availability.js' | asset_url }}" defer="defer"></script>
               
+              <script src="{{ 'pickup-availability.js' | asset_url }}" defer="defer"></script>
               
           {%- when 'paypal_paylater' -%}
               
@@ -936,6 +936,10 @@
         }
       ]
     },
+    {
+  	 "type": "pickup_availability",
+  	 "name": "Pickup Message"
+  	},
     {
 	 "type": "paypal_paylater",
   	 "name": "Paypal Paylater Message",
