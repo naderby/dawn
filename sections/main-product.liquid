@@ -14,7 +14,7 @@
 <script>
   var g_variants={};
   {%- for p_variant in product.variants -%}
-  g_variants.{{p_variant.id}} = {
+  g_variants['{{p_variant.id}}'] = {
     "price": "{{p_variant.price | money_without_currency}}",
     "available": {{p_variant.available}}
   };
@@ -553,6 +553,17 @@
                    data-pp-amount="{{product.selected_or_first_available_variant.price | money_without_currency}}">
               </div> 
               
+              <script>
+               const pp_hiddenInput = document.querySelector('#{{ product_form_id }} input[name="id"]');
+               pp_hiddenInput.addEventListener('change', function(event) {
+                 var chosen = this.value;
+                 console.log(chosen);
+                 if(typeof g_variants[chosen] != 'undefined' && typeof g_variants[chosen]['price'] != 'undefined')
+                 {
+                  document.getElementById("pp-pay-later-message").setAttribute('data-pp-amount',g_variants[chosen]['price']); 
+                 }
+               });
+              </script>
              
              {% endif%}
               
