@@ -11,6 +11,16 @@
 
 <script src="{{ 'product-form.js' | asset_url }}" defer="defer"></script>
 
+<script>
+  var g_variants={};
+  {%- for p_variant in product.variants -%}
+  g_variants.{{p_variant.id}} = {
+    "price": "{{p_variant.price | money_without_currency}}",
+    "available": {{p_variant.available}}
+  }
+  {%- endfor -%}
+</script>
+
 {%- assign first_3d_model = product.media | where: "media_type", "model" | first -%}
 {%- if first_3d_model -%}
   {{ 'component-product-model.css' | asset_url | stylesheet_tag }}
