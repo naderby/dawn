@@ -120,6 +120,27 @@
             max-height:30px;
             width:auto;
           }
+
+          @media(max-width:844px){
+            body .grid__item.product__media-wrapper span.product-overlay-badge{
+              position: relative;
+              width: 100%;
+              max-width: unset;
+              top: unset;
+              right: unset;
+            }
+
+             body .grid__item.product__media-wrapper span.product-overlay-badge .badge-inner{
+               flex-direction:row;
+               justify-content:space-evenly;
+             }
+
+            body .grid__item.product__media-wrapper span.product-overlay-badge .badge-inner img{
+              max-height:unset;
+              height:auto;
+              width:15%;
+            }
+          }
         </style>
         {% if product.metafields.badge_overlay.background-color %}
           {% assign badge_bg = product.metafields.badge_overlay.background-color %}
