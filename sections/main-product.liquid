@@ -119,7 +119,8 @@
         <span class="product-overlay-badge" style="background-color:{{ badge_bg }}; border-color:{{ badge_bg }}">
         
         {% if product.metafields.badge_overlay.link %}
-          <a href="#">{{ product.metafields.badge_overlay.link }}
+          <a href="#">
+          {{ product.metafields.badge_overlay.link }}
         {% endif %}
         <span class="badge-inner">
           {% if product.metafields.badge_overlay.image %}
