@@ -81,10 +81,10 @@
 
       {%- if product.metafields.badge_overlay.show == true -%}
         <style>
-          .grid__item product__media-wrapper{
+          .grid__item.product__media-wrapper{
             position:relative;
           }
-          .grid__item product__media-wrapper span.product-overlay-badge{
+          .grid__item.product__media-wrapper span.product-overlay-badge{
             display: block;
             position: absolute;
             top: 10px;
@@ -98,14 +98,14 @@
             box-shadow: 0 1px 3px rgb(0 0 0 / 12%), 0 1px 2px rgb(0 0 0 / 24%)
           }
 
-          .grid__item product__media-wrapper span.product-overlay-badge .badge-inner{
+          .grid__item.product__media-wrapper span.product-overlay-badge .badge-inner{
             display:flex;
             flex-direction:column;
             justify-content:center;
             align-items:center;
           }
 
-          .grid__item product__media-wrapper span.product-overlay-badge .badge-inner img{
+          .grid__item.product__media-wrapper span.product-overlay-badge .badge-inner img{
             max-height:50px;
             width:auto;
           }
