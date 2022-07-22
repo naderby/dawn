@@ -78,7 +78,9 @@
           {{ 'products.product.xr_button' | t }}
         </button>
       {%- endif -%}
-
+      <pre style="display:none;">
+      {{ product.metafields.badge_overlay.show | json }}
+      </pre>
       {%- if product.metafields.badge_overlay.show == true -%}
         <style>
           .grid__item.product__media-wrapper{
