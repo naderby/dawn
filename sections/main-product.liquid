@@ -117,10 +117,11 @@
           }
 
           .grid__item.product__media-wrapper span.product-overlay-badge .badge-inner img{
-            max-height:30px;
+            max-height:50px;
             width:auto;
           }
 
+          {% comment %}
           @media(max-width:844px){
             body .grid__item.product__media-wrapper span.product-overlay-badge{
               position: relative;
@@ -141,6 +142,7 @@
               width:15%;
             }
           }
+        {% endcomment %}
         </style>
         {% if product.metafields.badge_overlay.background-color %}
           {% assign badge_bg = product.metafields.badge_overlay.background-color %}
