@@ -130,8 +130,8 @@
         "image_overlay_opacity": 0,
         "color_scheme": "accent-1",
         "button_position": "center",
-        "button_bg_color": "#fff",
-        "button_text_color": "#000",
+        "button_bg_color": "#ffffff",
+        "button_text_color": "#000000",
         "stack_images_on_mobile": false,
         "show_text_below": false
       }
@@ -180,8 +180,8 @@
         "image_overlay_opacity": 0,
         "color_scheme": "accent-1",
         "button_position": "center",
-        "button_bg_color": "#fff",
-        "button_text_color": "#000",
+        "button_bg_color": "#ffffff",
+        "button_text_color": "#000000",
         "stack_images_on_mobile": false,
         "show_text_below": false
       }
@@ -292,8 +292,8 @@
         "image_overlay_opacity": 30,
         "color_scheme": "accent-1",
         "button_position": "center",
-        "button_bg_color": "#fff",
-        "button_text_color": "#000",
+        "button_bg_color": "#ffffff",
+        "button_text_color": "#000000",
         "stack_images_on_mobile": true,
         "show_text_below": false
       }
@@ -348,6 +348,12 @@
         "image_padding": false,
         "show_view_all": false
       }
+    },
+    "16602880581f868281": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<!-- Begin eTrusted widget tag -->\n<etrusted-widget data-etrusted-widget-id=\"wdg-dcf50c22-1e1b-437a-8e28-521c885c731b\"><\/etrusted-widget>\n<!-- End eTrusted widget tag -->"
+      }
     }
   },
   "order": [
@@ -360,6 +366,7 @@
     "16472676393a60a1d6",
     "featured_products",
     "image_banner",
-    "1638986059856353eb"
+    "1638986059856353eb",
+    "16602880581f868281"
   ]
 }
