@@ -60,10 +60,19 @@
           },
           "e7b61ee4-09a2-4749-abb9-7ed12862656c": {
             "type": "announcement",
+            "disabled": true,
             "settings": {
               "text": "Discontinued glove clearout - when they're gone, they're gone!",
               "color_scheme": "accent-1",
               "link": "shopify:\/\/collections\/discontinued-gloves-clearout"
+            }
+          },
+          "e42272a8-83c2-4bcd-8f60-67ab47b679e6": {
+            "type": "announcement",
+            "settings": {
+              "text": "Huge reductions on shoei x-spirit 3",
+              "color_scheme": "accent-1",
+              "link": "shopify:\/\/collections\/shoei-x-spirit-3"
             }
           }
         },
@@ -72,7 +81,8 @@
           "f8e391d0-0152-4014-8ecc-c9e2300e684d",
           "a9fd834d-b107-4a91-80e2-07cbff896aa6",
           "7abd1e12-af08-40d8-adcf-e2af1d868309",
-          "e7b61ee4-09a2-4749-abb9-7ed12862656c"
+          "e7b61ee4-09a2-4749-abb9-7ed12862656c",
+          "e42272a8-83c2-4bcd-8f60-67ab47b679e6"
         ],
         "settings": {
         }
