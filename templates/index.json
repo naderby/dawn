@@ -193,21 +193,21 @@
         "1647267639bb077406-0": {
           "type": "heading",
           "settings": {
-            "heading": "RST 2022",
-            "heading_size": "large"
+            "heading": "Alpinestars End Of Season Sale",
+            "heading_size": "medium"
           }
         },
         "1647267639bb077406-1": {
           "type": "text",
           "settings": {
-            "text": "The finest threads from the masters in Motorcycle Clothing"
+            "text": "Get up to 25% off, hurry ends soon!"
           }
         },
         "1647267639bb077406-2": {
           "type": "buttons",
           "settings": {
-            "button_label_1": "Shop RST",
-            "button_link_1": "shopify:\/\/collections\/rst",
+            "button_label_1": "Shop Sale",
+            "button_link_1": "shopify:\/\/collections\/alpinestars-sale",
             "button_style_secondary_1": false,
             "button_label_2": "",
             "button_link_2": "",
@@ -221,9 +221,9 @@
         "1647267639bb077406-2"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/RST_Lifestyle_2000_x_1450.png",
+        "image": "shopify:\/\/shop_images\/Alpinestars_Sale_d2b45a46-8595-4aca-85a6-7604e2ceee91.png",
         "image_height": "medium",
-        "adapt_height_first_image": false,
+        "adapt_height_first_image": true,
         "desktop_text_box_position": "center",
         "show_text_box": false,
         "image_overlay_opacity": 30,
