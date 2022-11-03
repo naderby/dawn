@@ -223,7 +223,7 @@
       "settings": {
         "image": "shopify:\/\/shop_images\/Alpinestars_Sale_d2b45a46-8595-4aca-85a6-7604e2ceee91.png",
         "image_height": "medium",
-        "adapt_height_first_image": true,
+        "adapt_height_first_image": false,
         "desktop_text_box_position": "center",
         "show_text_box": false,
         "image_overlay_opacity": 30,
