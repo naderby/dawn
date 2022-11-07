@@ -85,6 +85,7 @@
     },
     "16397610750ddd1714": {
       "type": "gearchange-usps",
+      "disabled": true,
       "settings": {
       }
     },
