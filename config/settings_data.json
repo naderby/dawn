@@ -70,9 +70,9 @@
           "e42272a8-83c2-4bcd-8f60-67ab47b679e6": {
             "type": "announcement",
             "settings": {
-              "text": "Alpinestars end of season sale",
-              "color_scheme": "accent-1",
-              "link": "shopify:\/\/collections\/alpinestars-sale"
+              "text": "Alpinestars Black Friday sale",
+              "color_scheme": "inverse",
+              "link": "shopify:\/\/collections\/alpinestars"
             }
           }
         },

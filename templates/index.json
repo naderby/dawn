@@ -46,7 +46,7 @@
         "color_scheme": "inverse",
         "button_position": "bottom",
         "button_bg_color": "#bed63a",
-        "button_text_color": "#000",
+        "button_text_color": "#000000",
         "stack_images_on_mobile": true,
         "show_text_below": true
       }
@@ -133,21 +133,21 @@
         "1647267639bb077406-0": {
           "type": "heading",
           "settings": {
-            "heading": "Alpinestars End Of Season Sale",
+            "heading": "Alpinestars BLACK FRIDAY Sale",
             "heading_size": "large"
           }
         },
         "1647267639bb077406-1": {
           "type": "text",
           "settings": {
-            "text": "Get up to 25% off, hurry ends soon!"
+            "text": "While stocks last!"
           }
         },
         "1647267639bb077406-2": {
           "type": "buttons",
           "settings": {
-            "button_label_1": "Shop Sale",
-            "button_link_1": "shopify:\/\/collections\/alpinestars-sale",
+            "button_label_1": "Shop Alpinestars",
+            "button_link_1": "shopify:\/\/collections\/alpinestars",
             "button_style_secondary_1": false,
             "button_label_2": "",
             "button_link_2": "",
