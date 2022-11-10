@@ -1,0 +1,236 @@
+{
+  "sections": {
+    "1639761270b5e6a9ad": {
+      "type": "gearchange-usps",
+      "disabled": true,
+      "settings": {
+      }
+    },
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "b3823b51-5d12-4c31-a0c6-0c29676ea18d": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "<div><a href=\"{{ product.vendor | url_for_vendor }}\"><img style=\"max-width:10rem; background:rgba(var(--color-foreground),.04);padding:1rem;border-radius:1rem;\" src=\"{{ product.vendor | prepend: \"vendor-\" | append: \".svg\" | asset_url }}\" onerror=\"parentNode.parentNode.remove()\"\/><\/a><\/div>"
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {
+          }
+        },
+        "subtitle": {
+          "type": "text",
+          "settings": {
+            "text": "{{ product.metafields.descriptors.subtitle.value }}",
+            "text_style": "subtitle"
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {
+          }
+        },
+        "451b0cb0-a751-430b-95c7-4360f048701f": {
+          "type": "product_page_info_box",
+          "settings": {
+            "title": "Price Deals Block (Below Price)",
+            "show_at_zero": true,
+            "show_below_threshold": true,
+            "show_above_threshold": false,
+            "threshold": 20,
+            "zero_discount_title": "Price Deals",
+            "zero_discount_text": "<p>Chat with us for an incredible discount on this item.<\/p>",
+            "zero_link_chat": true,
+            "below_threshold_title": "Price Deals",
+            "below_threshold_text": "<p>Chat with us for an even bigger discount on this item.<\/p>",
+            "below_link_chat": true,
+            "above_threshold_title": "",
+            "above_threshold_text": "",
+            "above_link_chat": true
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "dropdown"
+          }
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "settings": {
+          }
+        },
+        "de1384bf-463e-4209-b415-17d4fdf076e5": {
+          "type": "paypal_paylater",
+          "settings": {
+            "show_paypal_paylater": true,
+            "paylater_paypal_client_id": "AfmroIfn4uAnj1t9dd3orBUYA_0zRK5aqDp0Ya8zGZzgcaYob0GX35PrAh_XgaW9Tr9zqOtsniVQoFlX"
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true
+          }
+        },
+        "cf31f721-9f25-42ad-805e-7311164d525f": {
+          "type": "pickup_availability",
+          "settings": {
+          }
+        },
+        "9ee8db31-91e6-4b9d-8a1a-525454dd7b60": {
+          "type": "popup",
+          "settings": {
+            "text": "Size guide",
+            "page": "{{ product.metafields.my_fields.size_guide.value }}"
+          }
+        },
+        "a38cc9e3-d282-4182-9068-17f13265824a": {
+          "type": "custom_related_products",
+          "settings": {
+            "title": "You may also like",
+            "link_chat": true,
+            "live_chat_button_text": "Live Chat For a Bundle Deal",
+            "live_chat_button_colour": "#000000",
+            "live_chat_button_bg": "#bed63a"
+          }
+        },
+        "0324c195-6f0c-4df5-8a25-93cb3222beb8": {
+          "type": "product_page_info_box",
+          "settings": {
+            "title": "Price Deals Block",
+            "show_at_zero": false,
+            "show_below_threshold": false,
+            "show_above_threshold": true,
+            "threshold": 20,
+            "zero_discount_title": "",
+            "zero_discount_text": "",
+            "zero_link_chat": true,
+            "below_threshold_title": "",
+            "below_threshold_text": "",
+            "below_link_chat": true,
+            "above_threshold_title": "Price Deals",
+            "above_threshold_text": "<p>Further discounts are unlikely on this item. Chat for deals on similar items.<\/p>",
+            "above_link_chat": true
+          }
+        },
+        "037990a1-dde3-476b-9a40-aaa5d6baee1e": {
+          "type": "product_page_info_simple",
+          "settings": {
+            "title": "Tech Advice",
+            "main_text": "<p>Need help? With 20yrs experience, we have the answers. Just ask!<\/p>",
+            "link_chat": true
+          }
+        },
+        "decdfd4e-5cc1-4b8e-9129-ab18626115ec": {
+          "type": "product_page_info_simple",
+          "settings": {
+            "title": "FREE Size Exchanges",
+            "main_text": "<p>Let us recommend your size\/fit. If wrong, we pay for the exchange.<\/p>",
+            "link_chat": true
+          }
+        },
+        "6d458955-9a20-4240-8a05-2ce0392d34f1": {
+          "type": "popup",
+          "settings": {
+            "text": "Delivery \/ Shipping",
+            "page": "delivery-returns"
+          }
+        },
+        "description": {
+          "type": "description",
+          "disabled": true,
+          "settings": {
+          }
+        },
+        "vendor": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "Range: {{ product.metafields.my_fields.range.value }}",
+            "text_style": "body"
+          }
+        },
+        "5dd901e6-1a37-42cb-b5a8-fe75586e0532": {
+          "type": "collapsible_tab",
+          "disabled": true,
+          "settings": {
+            "heading": "Size guide tab",
+            "content": "<p>this is a guide<\/p>",
+            "page": "arai-helmets-size-guide",
+            "icon": "ruler"
+          }
+        },
+        "8eb97334-589b-4417-b60c-3479d103deb0": {
+          "type": "popup",
+          "disabled": true,
+          "settings": {
+            "text": "Technical Advice",
+            "page": ""
+          }
+        },
+        "share": {
+          "type": "share",
+          "settings": {
+            "share_label": "Share"
+          }
+        }
+      },
+      "block_order": [
+        "b3823b51-5d12-4c31-a0c6-0c29676ea18d",
+        "title",
+        "subtitle",
+        "price",
+        "451b0cb0-a751-430b-95c7-4360f048701f",
+        "variant_picker",
+        "quantity_selector",
+        "de1384bf-463e-4209-b415-17d4fdf076e5",
+        "buy_buttons",
+        "cf31f721-9f25-42ad-805e-7311164d525f",
+        "9ee8db31-91e6-4b9d-8a1a-525454dd7b60",
+        "a38cc9e3-d282-4182-9068-17f13265824a",
+        "0324c195-6f0c-4df5-8a25-93cb3222beb8",
+        "037990a1-dde3-476b-9a40-aaa5d6baee1e",
+        "decdfd4e-5cc1-4b8e-9129-ab18626115ec",
+        "6d458955-9a20-4240-8a05-2ce0392d34f1",
+        "description",
+        "vendor",
+        "5dd901e6-1a37-42cb-b5a8-fe75586e0532",
+        "8eb97334-589b-4417-b60c-3479d103deb0",
+        "share"
+      ],
+      "settings": {
+        "media_layout": "thumbnails",
+        "enable_sticky_info": true,
+        "hide_variants": false,
+        "enable_video_looping": false
+      }
+    },
+    "164815274588c711d2": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "{%- if product.description != blank -%}\n  <div class=\"product__description rte page-width\">\n    {{ product.description }}\n  <\/div>\n{%- endif -%}"
+      }
+    },
+    "product-recommendations": {
+      "type": "product-recommendations",
+      "settings": {
+        "heading": "You may also like",
+        "image_ratio": "square",
+        "show_secondary_image": false,
+        "add_image_padding": true,
+        "show_image_outline": false,
+        "show_vendor": false,
+        "show_rating": false
+      }
+    }
+  },
+  "order": [
+    "1639761270b5e6a9ad",
+    "main",
+    "164815274588c711d2",
+    "product-recommendations"
+  ]
+}
