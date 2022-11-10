@@ -34,6 +34,7 @@
         },
         "451b0cb0-a751-430b-95c7-4360f048701f": {
           "type": "product_page_info_box",
+          "disabled": true,
           "settings": {
             "title": "Price Deals Block (Below Price)",
             "show_at_zero": true,
@@ -82,6 +83,7 @@
         },
         "9ee8db31-91e6-4b9d-8a1a-525454dd7b60": {
           "type": "popup",
+          "disabled": true,
           "settings": {
             "text": "Size guide",
             "page": "{{ product.metafields.my_fields.size_guide.value }}"
@@ -99,6 +101,7 @@
         },
         "0324c195-6f0c-4df5-8a25-93cb3222beb8": {
           "type": "product_page_info_box",
+          "disabled": true,
           "settings": {
             "title": "Price Deals Block",
             "show_at_zero": false,
@@ -118,6 +121,7 @@
         },
         "037990a1-dde3-476b-9a40-aaa5d6baee1e": {
           "type": "product_page_info_simple",
+          "disabled": true,
           "settings": {
             "title": "Tech Advice",
             "main_text": "<p>Need help? With 20yrs experience, we have the answers. Just ask!<\/p>",
@@ -126,6 +130,7 @@
         },
         "decdfd4e-5cc1-4b8e-9129-ab18626115ec": {
           "type": "product_page_info_simple",
+          "disabled": true,
           "settings": {
             "title": "FREE Size Exchanges",
             "main_text": "<p>Let us recommend your size\/fit. If wrong, we pay for the exchange.<\/p>",
@@ -134,6 +139,7 @@
         },
         "6d458955-9a20-4240-8a05-2ce0392d34f1": {
           "type": "popup",
+          "disabled": true,
           "settings": {
             "text": "Delivery \/ Shipping",
             "page": "delivery-returns"
