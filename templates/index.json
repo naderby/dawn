@@ -37,13 +37,13 @@
         "template--15818840408306__f7a0fcc3-b083-488a-ad37-37d614fea997-1668075768ff2cbad8-2"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/Black_Friday_Banner_1_c7148b1a-4785-4c03-97cd-0e05ecd80202.png",
-        "image_height": "small",
+        "image": "shopify:\/\/shop_images\/Black_Friday_Banner_2.png",
+        "image_height": "medium",
         "adapt_height_first_image": true,
         "desktop_text_box_position": "flex-end",
         "show_text_box": false,
         "image_overlay_opacity": 0,
-        "color_scheme": "inverse",
+        "color_scheme": "accent-2",
         "button_position": "bottom",
         "button_bg_color": "#bed63a",
         "button_text_color": "#000000",
