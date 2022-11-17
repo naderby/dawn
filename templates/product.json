@@ -30,6 +30,7 @@
         },
         "7ad30487-ccf2-49b3-a950-2221fdf4afe3": {
           "type": "popup",
+          "disabled": true,
           "settings": {
             "text": "VAT Free Intercom Promotion",
             "page": "intercom-promotion"
