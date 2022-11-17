@@ -51,10 +51,10 @@
             "zero_discount_text": "<p>Black Friday deals are now running on most items. <\/p><p>Live chat us for a possible addition discount.<\/p>",
             "zero_link_chat": true,
             "below_threshold_title": "Price Deals",
-            "below_threshold_text": "<p>Chat with us for an even bigger discount on this item.<\/p>",
+            "below_threshold_text": "<p>Black Friday deals are now running on most items. <\/p><p>Live chat us for a possible addition discount.<\/p>",
             "below_link_chat": true,
-            "above_threshold_title": "",
-            "above_threshold_text": "",
+            "above_threshold_title": "Price Deals",
+            "above_threshold_text": "<p>Black Friday deals are now running on most items. <\/p><p>Live chat us for a possible addition discount.<\/p>",
             "above_link_chat": true
           }
         },
