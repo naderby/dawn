@@ -27,6 +27,13 @@
             "text_style": "subtitle"
           }
         },
+        "7ad30487-ccf2-49b3-a950-2221fdf4afe3": {
+          "type": "popup",
+          "settings": {
+            "text": "VAT Free Intercom Promotion",
+            "page": "intercom-promotion"
+          }
+        },
         "price": {
           "type": "price",
           "settings": {
@@ -38,10 +45,10 @@
             "title": "Price Deals Block (Below Price)",
             "show_at_zero": true,
             "show_below_threshold": true,
-            "show_above_threshold": false,
+            "show_above_threshold": true,
             "threshold": 20,
             "zero_discount_title": "Price Deals",
-            "zero_discount_text": "<p>Chat with us for an incredible discount on this item.<\/p>",
+            "zero_discount_text": "<p>Black Friday deals are now running on most items. <\/p><p>Live chat us for a possible addition discount.<\/p>",
             "zero_link_chat": true,
             "below_threshold_title": "Price Deals",
             "below_threshold_text": "<p>Chat with us for an even bigger discount on this item.<\/p>",
@@ -103,7 +110,7 @@
             "title": "Price Deals Block",
             "show_at_zero": false,
             "show_below_threshold": false,
-            "show_above_threshold": true,
+            "show_above_threshold": false,
             "threshold": 20,
             "zero_discount_title": "",
             "zero_discount_text": "",
@@ -182,6 +189,7 @@
         "b3823b51-5d12-4c31-a0c6-0c29676ea18d",
         "title",
         "subtitle",
+        "7ad30487-ccf2-49b3-a950-2221fdf4afe3",
         "price",
         "451b0cb0-a751-430b-95c7-4360f048701f",
         "variant_picker",
