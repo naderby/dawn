@@ -69,10 +69,19 @@
           },
           "e42272a8-83c2-4bcd-8f60-67ab47b679e6": {
             "type": "announcement",
+            "disabled": true,
             "settings": {
               "text": "Alpinestars Black Friday sale",
               "color_scheme": "inverse",
               "link": "shopify:\/\/collections\/alpinestars"
+            }
+          },
+          "9212bc60-fdf3-43dd-a90d-0860bfd5d06c": {
+            "type": "announcement",
+            "settings": {
+              "text": "Black Friday sale now on",
+              "color_scheme": "inverse",
+              "link": "shopify:\/\/collections\/all"
             }
           }
         },
@@ -82,7 +91,8 @@
           "a9fd834d-b107-4a91-80e2-07cbff896aa6",
           "7abd1e12-af08-40d8-adcf-e2af1d868309",
           "e7b61ee4-09a2-4749-abb9-7ed12862656c",
-          "e42272a8-83c2-4bcd-8f60-67ab47b679e6"
+          "e42272a8-83c2-4bcd-8f60-67ab47b679e6",
+          "9212bc60-fdf3-43dd-a90d-0860bfd5d06c"
         ],
         "settings": {
         }
