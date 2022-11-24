@@ -797,6 +797,8 @@ a.product__text {
     .modal-sm .product-popup-modal__content{
     padding:0 3rem 3rem!important;
     height:auto;
+    /*Feefo Review Widget*/
+    z-index:1000000001!important
   }
 }
 
