@@ -23,7 +23,7 @@
         "0a4196d2-319b-41a4-bc56-9384f458590e": {
           "type": "popup_with_meta",
           "settings": {
-            "page": "intercom-promotion"
+            "page": "{{ product.metafields.popup.page.value }}"
           }
         },
         "subtitle": {
