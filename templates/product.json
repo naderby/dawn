@@ -89,6 +89,12 @@
           "settings": {
           }
         },
+        "0a4196d2-319b-41a4-bc56-9384f458590e": {
+          "type": "popup_with_meta",
+          "settings": {
+            "page": "intercom-promotion"
+          }
+        },
         "9ee8db31-91e6-4b9d-8a1a-525454dd7b60": {
           "type": "popup",
           "settings": {
@@ -199,6 +205,7 @@
         "de1384bf-463e-4209-b415-17d4fdf076e5",
         "buy_buttons",
         "cf31f721-9f25-42ad-805e-7311164d525f",
+        "0a4196d2-319b-41a4-bc56-9384f458590e",
         "9ee8db31-91e6-4b9d-8a1a-525454dd7b60",
         "a38cc9e3-d282-4182-9068-17f13265824a",
         "0324c195-6f0c-4df5-8a25-93cb3222beb8",
