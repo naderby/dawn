@@ -793,6 +793,11 @@ a.product__text {
   .product-popup-modal__content-info > * {
     max-height: 100%;
   }
+
+    .modal-sm .product-popup-modal__content{
+    padding:0 3rem 3rem!important;
+    height:auto;
+  }
 }
 
 .product-popup-modal__toggle {
