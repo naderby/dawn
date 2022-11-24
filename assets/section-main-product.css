@@ -739,6 +739,10 @@ a.product__text {
     width: 70%;
     padding: 0 3rem;
   }
+
+  .modal-sm .product-popup-modal__content{
+    padding:0 3rem 3rem 3rem;
+  }
 }
 
 .product-popup-modal__content img {
