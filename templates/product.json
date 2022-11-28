@@ -23,7 +23,9 @@
         "0a4196d2-319b-41a4-bc56-9384f458590e": {
           "type": "popup_with_meta",
           "settings": {
-            "page": "{{ product.metafields.popup.page.value }}"
+            "title": "Discount Popup",
+            "page": "{{ product.metafields.popup.page.value }}",
+            "badge_colour": "#dc1a1a"
           }
         },
         "subtitle": {
