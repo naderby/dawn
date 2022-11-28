@@ -442,7 +442,7 @@
           {%- when 'popup_with_meta' -%}
             {% if product.metafields.popup.text.value %}
               {% assign badge_colour = 'var(--gradient-base-accent-1);' %}
-              {%  if block.settings.badge_colour %}
+              {%  if block.settings.badge_colour != blank %}
                 {% assign badge_colour = block.settings.badge_colour %}
               {% endif %}
                <modal-opener class="product-popup-modal__opener no-js-hidden popup-with-meta" data-modal="#PopupModal-{{ block.id }}" {{ block.shopify_attributes }}>
