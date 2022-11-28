@@ -441,7 +441,7 @@
               <a href="{{ block.settings.page.url }}" class="product-popup-modal__button link no-js">{{ block.settings.text }}</a>
           {%- when 'popup_with_meta' -%}
             {% if product.metafields.popup.text.value %}
-              {% assign badge_colour = 'var(--gradient-base-accent-1);' %}
+              {% assign badge_colour = '#222222;' %}
               {%  if block.settings.badge_colour != blank %}
                 {% assign badge_colour = block.settings.badge_colour %}
               {% endif %}
