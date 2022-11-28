@@ -441,10 +441,14 @@
               <a href="{{ block.settings.page.url }}" class="product-popup-modal__button link no-js">{{ block.settings.text }}</a>
           {%- when 'popup_with_meta' -%}
             {% if product.metafields.popup.text.value %}
+              {% assign badge_colour = 'var(--gradient-base-accent-1);' %}
+              {%  if block.settings.badge_colour %}
+                {% assign badge_colour = block.settings.badge_colour %}
+              {% endif %}
                <modal-opener class="product-popup-modal__opener no-js-hidden popup-with-meta" data-modal="#PopupModal-{{ block.id }}" {{ block.shopify_attributes }}>
                 <button id="ProductPopup-{{ block.id }}" class="product-popup-modal__button link" type="button" aria-haspopup="dialog" style="text-decoration:none;">
                   {% if product.metafields.popup.badge.value %}
-                    <span class="badge" style="background-color: var(--gradient-base-accent-1); font-weight: 600;">{{ product.metafields.popup.badge.value }}</span>
+                    <span class="badge" style="background-color:{{ badge_colour }}; color:#fff; font-weight: 600;">{{ product.metafields.popup.badge.value }}</span>
                   {% endif %}
                   {{ product.metafields.popup.text.value }}
               </button>
