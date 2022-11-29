@@ -138,7 +138,7 @@
       "view_full_details": "View full details",
       "xr_button": "View in your space",
       "xr_button_label": "View in your space, loads item in augmented reality window",
-      "include_taxes": "",
+      "include_taxes": " ",
       "shipping_policy_html": "<a href=\"{{ link }}\">Shipping<\/a> calculated at checkout."
     },
     "modal": {
@@ -394,6 +394,13 @@
       "expired": "Expired",
       "copy_code_success": "Code copied successfully",
       "print_gift_card": "Print"
+    }
+  },
+  "shopify": {
+    "checkout": {
+      "payment_gateway": {
+        "credit_card_label": "Credit or Debit card"
+      }
     }
   }
 }
