@@ -399,7 +399,8 @@
   "shopify": {
     "checkout": {
       "payment_gateway": {
-        "credit_card_label": "Credit or Debit card"
+        "credit_card_label": "Credit or Debit card",
+        "bank_deposit_label": "Bank Transfer"
       }
     }
   }
