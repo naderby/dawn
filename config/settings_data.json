@@ -83,6 +83,14 @@
               "color_scheme": "inverse",
               "link": "shopify:\/\/collections\/all"
             }
+          },
+          "5d87020f-e6df-4dde-8257-12ac9f4ddeff": {
+            "type": "announcement",
+            "settings": {
+              "text": "Free UK Shipping on orders over £49.99",
+              "color_scheme": "accent-1",
+              "link": "shopify:\/\/pages\/delivery-returns"
+            }
           }
         },
         "block_order": [
@@ -92,7 +100,8 @@
           "7abd1e12-af08-40d8-adcf-e2af1d868309",
           "e7b61ee4-09a2-4749-abb9-7ed12862656c",
           "e42272a8-83c2-4bcd-8f60-67ab47b679e6",
-          "9212bc60-fdf3-43dd-a90d-0860bfd5d06c"
+          "9212bc60-fdf3-43dd-a90d-0860bfd5d06c",
+          "5d87020f-e6df-4dde-8257-12ac9f4ddeff"
         ],
         "settings": {
         }
