@@ -298,7 +298,7 @@ a.product__text {
 }
 
 .product .price {
-  align-items: flex-start;
+  align-items: center;
 }
 
 .product .price .badge {
