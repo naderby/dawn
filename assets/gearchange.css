@@ -141,7 +141,7 @@ section[id$="featured_products"] .slider.slider--tablet {
 /* PRODUCT PAGE */
 
 /* remove SALE pill from price area */
-.product .price .badge {
+.product .price .badge:not(.price__badge-shipping) {
   display: none !important;
 }
 
