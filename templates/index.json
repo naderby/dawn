@@ -2,6 +2,7 @@
   "sections": {
     "f7a0fcc3-b083-488a-ad37-37d614fea997": {
       "type": "image-banner",
+      "disabled": true,
       "blocks": {
         "template--15818840408306__f7a0fcc3-b083-488a-ad37-37d614fea997-1668075768ff2cbad8-0": {
           "type": "heading",
@@ -128,6 +129,7 @@
     },
     "16472676393a60a1d6": {
       "type": "image-banner",
+      "disabled": true,
       "blocks": {
         "1647267639bb077406-0": {
           "type": "heading",

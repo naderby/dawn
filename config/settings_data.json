@@ -78,6 +78,7 @@
           },
           "9212bc60-fdf3-43dd-a90d-0860bfd5d06c": {
             "type": "announcement",
+            "disabled": true,
             "settings": {
               "text": "Black Friday sale now on",
               "color_scheme": "inverse",
