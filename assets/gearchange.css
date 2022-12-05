@@ -145,6 +145,12 @@ section[id$="featured_products"] .slider.slider--tablet {
   display: none !important;
 }
 
+.product .price .badge.price__badge-shipping{
+  background-color:#0B6E4F;
+  color:#fff;
+  font-size:1em;
+}
+
 /* changes to model for size guides */
 .product-popup-modal__content-info h1 {
   font-size: calc(var(--font-heading-scale) * 3rem) !important;
