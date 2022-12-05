@@ -156,18 +156,18 @@
             "page": "delivery-returns"
           }
         },
-        "description": {
-          "type": "description",
-          "disabled": true,
-          "settings": {
-          }
-        },
         "vendor": {
           "type": "text",
           "disabled": true,
           "settings": {
-            "text": "Range: {{ product.metafields.my_fields.range.value }}",
+            "text": "* Terms and Condition apply",
             "text_style": "body"
+          }
+        },
+        "description": {
+          "type": "description",
+          "disabled": true,
+          "settings": {
           }
         },
         "5dd901e6-1a37-42cb-b5a8-fe75586e0532": {
@@ -214,8 +214,8 @@
         "037990a1-dde3-476b-9a40-aaa5d6baee1e",
         "decdfd4e-5cc1-4b8e-9129-ab18626115ec",
         "6d458955-9a20-4240-8a05-2ce0392d34f1",
-        "description",
         "vendor",
+        "description",
         "5dd901e6-1a37-42cb-b5a8-fe75586e0532",
         "8eb97334-589b-4417-b60c-3479d103deb0",
         "share"
@@ -231,6 +231,43 @@
       "type": "custom-liquid",
       "settings": {
         "custom_liquid": "{%- if product.description != blank -%}\n  <div class=\"product__description rte page-width\">\n    {{ product.description }}\n  <\/div>\n{%- endif -%}"
+      }
+    },
+    "100f7774-9808-4e94-bcff-0cb91087f8d1": {
+      "type": "rich-text",
+      "blocks": {
+        "template--15818840080626__100f7774-9808-4e94-bcff-0cb91087f8d1-1670244168cf172ede-0": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "Talk about your brand",
+            "heading_size": "h1"
+          }
+        },
+        "template--15818840080626__100f7774-9808-4e94-bcff-0cb91087f8d1-1670244168cf172ede-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p><a href=\"\/pages\/delivery-returns\" title=\"Delivery \/ Shipping\">* Terms and Conditions apply<\/a><\/p>"
+          }
+        },
+        "template--15818840080626__100f7774-9808-4e94-bcff-0cb91087f8d1-1670244168cf172ede-2": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "template--15818840080626__100f7774-9808-4e94-bcff-0cb91087f8d1-1670244168cf172ede-0",
+        "template--15818840080626__100f7774-9808-4e94-bcff-0cb91087f8d1-1670244168cf172ede-1",
+        "template--15818840080626__100f7774-9808-4e94-bcff-0cb91087f8d1-1670244168cf172ede-2"
+      ],
+      "settings": {
+        "color_scheme": "background-1",
+        "full_width": true
       }
     },
     "product-recommendations": {
@@ -250,6 +287,7 @@
     "1639761270b5e6a9ad",
     "main",
     "164815274588c711d2",
+    "100f7774-9808-4e94-bcff-0cb91087f8d1",
     "product-recommendations"
   ]
 }
