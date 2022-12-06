@@ -120,7 +120,7 @@
             "title": "Price Deals Block",
             "show_at_zero": false,
             "show_below_threshold": false,
-            "show_above_threshold": true,
+            "show_above_threshold": false,
             "threshold": 20,
             "zero_discount_title": "",
             "zero_discount_text": "",
