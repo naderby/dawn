@@ -206,3 +206,7 @@ section[id$="featured_products"] .slider.slider--tablet {
   top: 0% !important;
   bottom: unset !important;
 }
+
+.custom-related-products .badge.price__badge-shipping{
+  display:none!important;
+}
