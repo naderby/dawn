@@ -6,27 +6,25 @@
       "blocks": {
         "template--15818840408306__f7a0fcc3-b083-488a-ad37-37d614fea997-1668075768ff2cbad8-0": {
           "type": "heading",
-          "disabled": true,
           "settings": {
-            "heading": "Image banner",
-            "heading_size": "medium"
+            "heading": "last minute gifts",
+            "heading_size": "large"
           }
         },
         "template--15818840408306__f7a0fcc3-b083-488a-ad37-37d614fea997-1668075768ff2cbad8-1": {
           "type": "text",
-          "disabled": true,
           "settings": {
-            "text": "Give customers details about the banner image(s) or content on the template."
+            "text": "There's still time to get gifts for Christmas"
           }
         },
         "template--15818840408306__f7a0fcc3-b083-488a-ad37-37d614fea997-1668075768ff2cbad8-2": {
           "type": "buttons",
           "settings": {
-            "button_label_1": "Shop Products",
-            "button_link_1": "shopify:\/\/collections\/all",
+            "button_label_1": "Shop Gift Ideas",
+            "button_link_1": "shopify:\/\/collections\/motorcycle-gift-ideas",
             "button_style_secondary_1": false,
-            "button_label_2": "",
-            "button_link_2": "",
+            "button_label_2": "Browse All Products",
+            "button_link_2": "shopify:\/\/collections\/all",
             "button_style_secondary_2": false
           }
         }
@@ -37,18 +35,18 @@
         "template--15818840408306__f7a0fcc3-b083-488a-ad37-37d614fea997-1668075768ff2cbad8-2"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/Black_Friday_Banner_4.png",
-        "image_height": "large",
-        "adapt_height_first_image": true,
+        "image": "shopify:\/\/shop_images\/wrapping-christmas-presents.jpg",
+        "image_height": "small",
+        "adapt_height_first_image": false,
         "desktop_text_box_position": "flex-end",
         "show_text_box": false,
-        "image_overlay_opacity": 0,
-        "color_scheme": "accent-2",
+        "image_overlay_opacity": 30,
+        "color_scheme": "accent-1",
         "button_position": "bottom",
         "button_bg_color": "#fafafa",
         "button_text_color": "#000000",
         "stack_images_on_mobile": true,
-        "show_text_below": true
+        "show_text_below": false
       }
     },
     "1640778944e11ccff8": {
