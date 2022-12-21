@@ -699,14 +699,11 @@
             {%- endif -%}
             {%- when 'product_page_info_box' -%}
               {% assign one_percent = product.compare_at_price_max | divided_by: 100  %}
-              {% assign new_percentage_discount = product.compare_at_price_max | minus: product.price | divided_by: one_percent  %}
+              {% assign percentage_discount = product.compare_at_price_max | minus: product.price | divided_by: one_percent  %}
+              {% comment %}
+              Removed old logic to calculate the discount percentage.
               {% assign percentage_discount = product.compare_at_price_max | minus: product.price | times: 100.0 | divided_by: product.compare_at_price_max | money_without_currency | times: 100 | remove: '.0' | plus: 0 %}
-
-            <!-- Price info-->
-            <!-- compare at max: {{ product.compare_at_price_max }} -->
-            <!-- price: {{ product.price }}-->
-            <!-- one_percent: {{ one_percent }}-->
-            <!-- discount percent: {{ new_percentage_discount }}-->
+              {% endcomment %}
               <div class="gc-calls__wrapper">
                 <!-- discount-{{ percentage_discount }}% -->
                 <div class="gc-calls-item__wrapper">
