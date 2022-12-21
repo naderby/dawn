@@ -698,6 +698,9 @@
               </p>
             {%- endif -%}
             {%- when 'product_page_info_box' -%}
+            <!-- Price info-->
+            <!-- compare at max: {{ product.compare_at_price_max }} -->
+            <!-- price: {{ product.price }}-->
               {% assign percentage_discount = product.compare_at_price_max | minus: product.price | times: 100.0 | divided_by: product.compare_at_price_max | money_without_currency | times: 100 | remove: '.0' | plus: 0 %}
               <div class="gc-calls__wrapper">
                 <!-- discount-{{ percentage_discount }}% -->
