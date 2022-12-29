@@ -95,6 +95,7 @@
           },
           "5d87020f-e6df-4dde-8257-12ac9f4ddeff": {
             "type": "announcement",
+            "disabled": true,
             "settings": {
               "text": "Free UK Shipping on orders over £49.99",
               "color_scheme": "accent-1",
