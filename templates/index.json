@@ -2,28 +2,28 @@
   "sections": {
     "f7a0fcc3-b083-488a-ad37-37d614fea997": {
       "type": "image-banner",
-      "disabled": true,
       "blocks": {
         "template--15818840408306__f7a0fcc3-b083-488a-ad37-37d614fea997-1668075768ff2cbad8-0": {
           "type": "heading",
+          "disabled": true,
           "settings": {
-            "heading": "last minute gifts",
+            "heading": "January sale",
             "heading_size": "large"
           }
         },
         "template--15818840408306__f7a0fcc3-b083-488a-ad37-37d614fea997-1668075768ff2cbad8-1": {
           "type": "text",
           "settings": {
-            "text": "There's still time to get gifts for Christmas"
+            "text": ""
           }
         },
         "template--15818840408306__f7a0fcc3-b083-488a-ad37-37d614fea997-1668075768ff2cbad8-2": {
           "type": "buttons",
           "settings": {
-            "button_label_1": "Shop Gift Ideas",
+            "button_label_1": "",
             "button_link_1": "shopify:\/\/collections\/motorcycle-gift-ideas",
             "button_style_secondary_1": false,
-            "button_label_2": "Browse All Products",
+            "button_label_2": "Browse Products",
             "button_link_2": "shopify:\/\/collections\/all",
             "button_style_secondary_2": false
           }
@@ -35,12 +35,12 @@
         "template--15818840408306__f7a0fcc3-b083-488a-ad37-37d614fea997-1668075768ff2cbad8-2"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/wrapping-christmas-presents.jpg",
+        "image": "shopify:\/\/shop_images\/sale_3.png",
         "image_height": "small",
         "adapt_height_first_image": false,
         "desktop_text_box_position": "flex-end",
         "show_text_box": false,
-        "image_overlay_opacity": 30,
+        "image_overlay_opacity": 0,
         "color_scheme": "accent-1",
         "button_position": "bottom",
         "button_bg_color": "#fafafa",

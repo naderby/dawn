@@ -2,7 +2,7 @@
   "current": {
     "colors_solid_button_labels": "#333333",
     "colors_accent_1": "#bed63a",
-    "colors_accent_2": "#000000",
+    "colors_accent_2": "#e22120",
     "colors_text": "#333333",
     "colors_outline_button_labels": "#333333",
     "colors_background_1": "#ffffff",
@@ -67,6 +67,14 @@
               "link": "shopify:\/\/collections\/discontinued-gloves-clearout"
             }
           },
+          "a48143de-1e24-45b6-b89e-9625b6157b89": {
+            "type": "announcement",
+            "settings": {
+              "text": "JANUARY SALES - UP TO 50% OFF",
+              "color_scheme": "accent-2",
+              "link": "shopify:\/\/collections\/all"
+            }
+          },
           "e42272a8-83c2-4bcd-8f60-67ab47b679e6": {
             "type": "announcement",
             "disabled": true,
@@ -100,6 +108,7 @@
           "a9fd834d-b107-4a91-80e2-07cbff896aa6",
           "7abd1e12-af08-40d8-adcf-e2af1d868309",
           "e7b61ee4-09a2-4749-abb9-7ed12862656c",
+          "a48143de-1e24-45b6-b89e-9625b6157b89",
           "e42272a8-83c2-4bcd-8f60-67ab47b679e6",
           "9212bc60-fdf3-43dd-a90d-0860bfd5d06c",
           "5d87020f-e6df-4dde-8257-12ac9f4ddeff"
