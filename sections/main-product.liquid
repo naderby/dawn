@@ -14,15 +14,23 @@
 <script>
   var g_variants={};
   var g_variants_options={}
+  {% assign stock_check_str  = ''%}
   {%- for p_variant in product.variants -%}
   g_variants['{{p_variant.id}}'] = {
     "price": "{{p_variant.price | money_without_currency}}",
     "available": {{p_variant.available}}
   };
+  {% assign stock_key = '' %}}
+  {% assign stock_check_str  = stock_check_str | append: ''%}
 
   {% if p_variant.option1 %}
+    {% assign stock_key = stock_key | append: p_variant.option1 %}
     {% if p_variant.option2  %}
+      {% assign stock_key = stock_key   | append: '-'%}
+      {% assign stock_key = stock_key | append: p_variant.option2 %}
       {% if p_variant.option3 %}
+        {% assign stock_key = stock_key | append: '-'%}
+        {% assign stock_key = stock_key | append: p_variant.option3 %}
         g_variants_options['{{ p_variant.option1 }}']['{{ p_variant.option2 }}']['{{ p_variant.option3 }}'] = '{{p_variant.available}}';
       {% else %}}
         g_variants_options['{{ p_variant.option1 }}']['{{ p_variant.option2 }}'] = '{{p_variant.available}}';
@@ -31,6 +39,13 @@
         g_variants_options['{{ p_variant.option1 }}']= '{{p_variant.available}}';
     {% endif %}}
   {% endif %}}
+    
+    {% assign stock_key = stock_key   | append: '-'%}
+      {% if p_variant.available %}}
+        {% assign stock_key = stock_key | append: '1' %}
+      {% else %}}
+        {% assign stock_key = stock_key | append: '0' %}
+      {% endif %}}
   
   {%- endfor -%}
 </script>
