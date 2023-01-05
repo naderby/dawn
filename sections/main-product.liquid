@@ -20,9 +20,9 @@
     "available": {{p_variant.available}}
   };
 
-  {% if p.variant.option1 %}
-    {% if p.variant.option2  %}
-      {% if p.variant.option3 %}
+  {% if p_variant.option1 %}
+    {% if p_variant.option2  %}
+      {% if p_variant.option3 %}
         g_variants_options['{{ p_variant.option1 }}']['{{ p_variant.option2 }}']['{{ p_variant.option3 }}'] = '{{p_variant.available}}';
       {% else %}}
         g_variants_options['{{ p_variant.option1 }}']['{{ p_variant.option2 }}'] = '{{p_variant.available}}';
