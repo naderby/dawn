@@ -64,7 +64,7 @@
             "below_threshold_text": "<p>Live chat us for a possible additional discount on this item!<\/p>",
             "below_link_chat": true,
             "above_threshold_title": "Price Deals",
-            "above_threshold_text": "<p>Further discounts are unlikely on this item as it's already heavily discounted. But it's worth a try, you never know your luck!<\/p>",
+            "above_threshold_text": "<p>We are now at our lowest price on this product, we won't be able to go any lower unless you are considering buying multiple items.<\/p>",
             "above_link_chat": true
           }
         },
