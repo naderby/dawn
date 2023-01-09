@@ -56,7 +56,7 @@
             "show_at_zero": true,
             "show_below_threshold": true,
             "show_above_threshold": true,
-            "threshold": 20,
+            "threshold": 19,
             "zero_discount_title": "Price Deals",
             "zero_discount_text": "<p>Chat to us for an incredible discount on this item!<\/p>",
             "zero_link_chat": true,
