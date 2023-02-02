@@ -412,7 +412,7 @@
             {%- endif -%}
             <div {{ block.shopify_attributes }}>
               {%- form 'product', product, id: 'product-form-installment', class: 'installment caption-large' -%}
-                <input type="hidden" name="id" value="{{ product.selected_variant.id }}">
+                <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
                 {{ form | payment_terms }}
               {%- endform -%}
             </div>
@@ -634,7 +634,6 @@
                           name="options[{{ option.name | escape }}]"
                           form="{{ product_form_id }}"
                         >
-                      <option hidden disabled>Choose a {{ option.name }}</option>
                           {%- for value in option.values -%}
                             {% comment %}
                             /*
@@ -713,6 +712,7 @@
                               {{ label }}
                             </option>
                           {%- endfor -%}
+                        <option hidden disabled>Choose a {{ option.name }}</option>
                         </select>
                         {% render 'icon-caret' %}
                       </div>
@@ -733,7 +733,7 @@
                   <select name="id" id="Variants-{{ section.id }}" class="select__select" form="{{ product_form_id }}">
                     {%- for variant in product.variants -%}
                       <option
-                        {% if variant == product.selected_variant %}selected="selected"{% endif %}
+                        {% if variant == product.selected_or_first_available_variant %}selected="selected"{% endif %}
                         {% if variant.available == false %}disabled{% endif %}
                         value="{{ variant.id }}"
                       >
@@ -761,13 +761,13 @@
                 </div>
 
                 {%- form 'product', product, id: product_form_id, class: 'form', novalidate: 'novalidate', data-type: 'add-to-cart-form' -%}
-                  <input type="hidden" name="id" value="{{ product.selected_variant.id }}" disabled>
+                  <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}" disabled>
                   <div class="product-form__buttons">
                     <button
                       type="submit"
                       name="add"
                       class="product-form__submit button button--full-width {% if block.settings.show_dynamic_checkout and product.selling_plan_groups == empty %}button--secondary{% else %}button--primary{% endif %} "
-                    {% if product.selected_variant.available == false %}disabled{% endif %}
+                    {% if product.selected_or_first_available_variant.available == false %}disabled{% endif %}
                     >
                         <span>
                           {%- if product.selected_or_first_available_variant.available -%}
