@@ -579,6 +579,34 @@
                             
                             {% assign label = value %}
                             {% assign attributes = '' %}
+
+                            {% assign option_count = product.options_with_values | size %}
+                            
+                            {% if option_count == 1 %}
+                                {% comment %}
+                                /*
+                                * We have an array built up that contains the escaped value, with a -0 or -1 at the end to indicate
+                                * stock status. Create a key to search, then check the stock status.
+                                */
+                                {% endcomment %}
+                                {% assign search_key = value | escape %}
+                                {% assign search_key = search_key | append: "-0" %}
+                                  {% if stock_check_arr contains search_key %}
+                                    {% assign label = label | append: "(Out of Stock)" %}
+                                    {% assign attributes = attributes | append: " disabled " %}
+                                  {% endif %}
+                            {% elsif option_count == 2 %}
+                                {% comment %}
+                                /*
+                                * At time of writing, many products on Gearchange have a 'colour' option, but only have 1 colour.
+                                * Here we will hard code a solution for products with Colour and Size options.
+                                */
+                                {% endcomment %}
+                                {% if product.options contains "Size" and product.options contains "Color" %}
+                                  <div class="findmetwo" style="display:none;">In if....</div>
+                                {% endif %}
+                                
+                            {% endif %}
                             <option 
                             value="{{ value | escape }}"
                             {% if option.selected_value == value %}selected="selected"{% endif %}
