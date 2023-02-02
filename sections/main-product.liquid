@@ -602,6 +602,7 @@
                                 */
                                 {% endcomment %}
                                 {% if product.options contains "Size" and product.options contains "Color" %}
+                                  <div style="display:none;">{{ product.options | json }}
                                   <div style="display:none;">{{ product.options_by_name['color'] | size }}</div>
                                 {% endif %}
                                 
