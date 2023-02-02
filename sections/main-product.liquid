@@ -590,11 +590,13 @@
                                 {% endcomment %}
                                 {% assign search_key = value | escape %}
                                 {% assign search_key = search_key | append: "-0" %}
+                              
                                   {% if stock_check_arr contains search_key %}
                                     {% assign label = label | append: "(Out of Stock)" %}
                                     {% assign attributes = attributes | append: " disabled " %}
                                   {% endif %}
-                            {% elsif option_count == 2 %}
+                              
+                            {% elsif option_count == 2 and option.name == 'Size' %}
                                 {% comment %}
                                 /*
                                 * At time of writing, many products on Gearchange have a 'colour' option, but only have 1 colour.
@@ -616,7 +618,12 @@
                                       */
                                       {% endcomment %}
                                       {% assign search_key = value | escape %}
-                                        <div class="findme">.....{{ product.options_by_name[colourKey].position }}</div>
+                                        {% if product.options_by_name[colourKey].position == 1 %}
+                                        {% assign search_key = search_key | prepend: product.options_by_name[colourKey].values.first %}
+                                        {% else %}
+                                        {% assign search_key = value | append: product.options_by_name[colourKey].values.first %}
+                                        {% endif %}
+                                        {{ stock_check_arr | json }}
                                       {% endif %}
                                     {% endif %}
                                 {% endif %}
