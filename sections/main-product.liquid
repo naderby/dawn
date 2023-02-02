@@ -599,20 +599,25 @@
                                 /*
                                 * At time of writing, many products on Gearchange have a 'colour' option, but only have 1 colour.
                                 * Here we will hard code a solution for products with Colour and Size options.
+                                * Some attributes on the site are spelled 'Colour', others are spelled 'Color', so we have to keep both in mind.
                                 */
                                 {% endcomment %}
-                                {% if product.options contains "Size" and product.options contains "Color" %}
-                                  {% assign colourCount = product.options_by_name['Color'].values | size %}
-                                  {% if colourCount == 1 %}
-                                    {% comment %}
-                                    /*
-                                    * If the code reaches here, then we are on a product with 2 dropdowns, Color and Size
-                                    * And the Color dropdown only has 1 option - so we can append it or prepend it to our stock key
-                                    * to allow us to disable the 'out of stock' sizes.
-                                    */
-                                    {% endcomment %}
-                                    {% assign search_key = value | escape %}
-                                      <div class="findme">.....{{ product.options_by_name['Color'].position }}</div>
+                                {% if product.options contains "Size" %}
+                                  {% if product.options contains "Colour" or product.options contains "Color" %}
+                                    {% assign colourKey = "Colour" %}
+                                    {% if product.options contains "Color" %} {% assign colourKey = "Color" %} {% endif %}
+                                    {% assign colourCount = product.options_by_name[colourKey].values | size %}
+                                    {% if colourCount == 1 %}
+                                      {% comment %}
+                                      /*
+                                      * If the code reaches here, then we are on a product with 2 dropdowns, Color and Size
+                                      * And the Color dropdown only has 1 option - so we can append it or prepend it to our stock key
+                                      * to allow us to disable the 'out of stock' sizes.
+                                      */
+                                      {% endcomment %}
+                                      {% assign search_key = value | escape %}
+                                        <div class="findme">.....{{ product.options_by_name[colourKey].position }}</div>
+                                      {% endif %}
                                     {% endif %}
                                 {% endif %}
                                 
