@@ -627,6 +627,7 @@
                                             {% assign appendString = appendString | append: product.options_by_name[colourKey].values.first  %}
                                             {% assign search_key = value | append: appendString %}
                                           {% endif %}
+                                          {% assign search_key = search_key | append: '-0' %}
                                           {{ search_key }}
   
                                       {% endif %}
