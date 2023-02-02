@@ -46,9 +46,17 @@
       {% else %}}
         {% assign stock_key = stock_key | append: '0' %}
       {% endif %}}
-  
+      
+  {% assign stock_check_str = stock_check_str | append: stock_key %}
+  {% assign stock_check_str = stock_check_str | append: '|||||' %}
+  {% assign stock_check_arr = stock_check_str | split: '|||||' %}
+    
   {%- endfor -%}
 </script>
+
+<div style="display:none;" class="findme">
+{{ stock_check_arr | json }}
+</div>
 
 {%- assign first_3d_model = product.media | where: "media_type", "model" | first -%}
 {%- if first_3d_model -%}
