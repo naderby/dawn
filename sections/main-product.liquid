@@ -609,21 +609,26 @@
                                     {% assign colourKey = "Colour" %}
                                     {% if product.options contains "Color" %} {% assign colourKey = "Color" %} {% endif %}
                                     {% assign colourCount = product.options_by_name[colourKey].values | size %}
-                                    {% if colourCount == 1 %}
-                                      {% comment %}
-                                      /*
-                                      * If the code reaches here, then we are on a product with 2 dropdowns, Color and Size
-                                      * And the Color dropdown only has 1 option - so we can append it or prepend it to our stock key
-                                      * to allow us to disable the 'out of stock' sizes.
-                                      */
-                                      {% endcomment %}
-                                      {% assign search_key = value | escape %}
-                                        {% if product.options_by_name[colourKey].position == 1 %}
-                                        {% assign search_key = search_key | prepend: product.options_by_name[colourKey].values.first %}
-                                        {% else %}
-                                        {% assign search_key = value | append: product.options_by_name[colourKey].values.first %}
-                                        {% endif %}
-                                        {{ stock_check_arr | json }}
+                                      {% if colourCount == 1 %}
+                                        {% comment %}
+                                        /*
+                                        * If the code reaches here, then we are on a product with 2 dropdowns, Color and Size
+                                        * And the Color dropdown only has 1 option - so we can append it or prepend it to our stock key
+                                        * to allow us to disable the 'out of stock' sizes.
+                                        */
+                                        {% endcomment %}
+                                        {% assign search_key = value | escape %}
+                                          {% if product.options_by_name[colourKey].position == 1 %}
+                                            {% assign prependString = product.options_by_name[colourKey].values.first %}
+                                            {% assign prependString = prependString | append:'-' %}
+                                            {% assign search_key = search_key | prepend: prependString %}
+                                          {% else %}
+                                            {% assign appendString = '-' %}
+                                            {% assign appendString = appendString | append: product.options_by_name[colourKey].values.first  %}
+                                            {% assign search_key = value | append: appendString %}
+                                          {% endif %}
+                                          {{ search_key }}
+  
                                       {% endif %}
                                     {% endif %}
                                 {% endif %}
