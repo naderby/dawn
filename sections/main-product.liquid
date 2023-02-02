@@ -556,6 +556,18 @@
               {%- else -%}
                 <variant-selects class="no-js-hidden" data-section="{{ section.id }}" data-url="{{ product.url }}" {{ block.shopify_attributes }}>
                   {%- for option in product.options_with_values -%}
+
+                  {% comment %}
+                  /*
+                  * Set up some default variables to handle attributes and the dropdown label.
+                  * This is helpful for displaying 'out of stock' messages instantly, if it is supported.
+                  * Currently, this will only work on items with 1 option (or 2 options, where the first only has 1 value).
+                  *
+                  */
+                  {% endcomment %}
+                  {% assign label = value %}
+                  {% assign attributes = '' %}
+                    
                     <div class="product-form__input product-form__input--dropdown">
                       <label class="form__label" for="Option-{{ section.id }}-{{ forloop.index0 }}">
                         {{ option.name }}
@@ -567,12 +579,12 @@
                           form="{{ product_form_id }}"
                         >
                           {%- for value in option.values -%}
-                            <option value="{{ value | escape }}" {% if option.selected_value == value %}selected="selected"{% endif %}
-
-                            
-                            
+                            <option 
+                            value="{{ value | escape }}"
+                            {% if option.selected_value == value %}selected="selected"{% endif %}
+                            {{ attributes }}
                             >
-                              {{ value }}
+                              {{ label }}
                             </option>
                           {%- endfor -%}
                         </select>
