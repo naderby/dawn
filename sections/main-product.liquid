@@ -557,7 +557,6 @@
                                 {% assign search_key = search_key | append: "-0" %}
                               
                                   {% if stock_check_arr contains search_key %}
-                                    {% assign label = label | append: " (Out of Stock)" %}
                                     {% assign attributes = attributes | append: " disabled " %}
                                   {% endif %}
                               
