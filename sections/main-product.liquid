@@ -581,7 +581,6 @@
                             {% assign attributes = '' %}
 
                             {% assign option_count = product.options_with_values | size %}
-                            <div class="findmetwo" style="display:none;">{{ option_count }}</div>
                             {% if option_count == 1 %}
                                 {% comment %}
                                 /*
@@ -602,9 +601,8 @@
                                 * Here we will hard code a solution for products with Colour and Size options.
                                 */
                                 {% endcomment %}
-                               <div class="findmetwo" style="display:none;">In if....</div>
                                 {% if product.options contains "Size" and product.options contains "Color" %}
-                                  <div class="findmethree" style="display:none;">In if....</div>
+                                  <div style="display:none;">{{ product.options_by_name['Color'] | size }}</div>
                                 {% endif %}
                                 
                             {% endif %}
