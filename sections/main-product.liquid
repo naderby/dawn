@@ -634,6 +634,7 @@
                           name="options[{{ option.name | escape }}]"
                           form="{{ product_form_id }}"
                         >
+                      <option hidden disabled>Choose a {{ option.name }}</option>
                           {%- for value in option.values -%}
                             {% comment %}
                             /*
@@ -712,7 +713,6 @@
                               {{ label }}
                             </option>
                           {%- endfor -%}
-                        <option hidden disabled>Choose a {{ option.name }}</option>
                         </select>
                         {% render 'icon-caret' %}
                       </div>
