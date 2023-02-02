@@ -712,6 +712,7 @@
                               {{ label }}
                             </option>
                           {%- endfor -%}
+                        <option hidden disabled>Choose a {{ option.name }}</option>
                         </select>
                         {% render 'icon-caret' %}
                       </div>
