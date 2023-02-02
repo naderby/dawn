@@ -861,3 +861,8 @@ a.product__text {
     display: none;
   }
 }
+
+select option[disabled]{
+  background-color:#f2f2f2;
+}
+}
