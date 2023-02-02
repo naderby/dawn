@@ -602,7 +602,7 @@
                                 */
                                 {% endcomment %}
                                 {% if product.options contains "Size" and product.options contains "Color" %}
-                                  <div style="display:none;">{{ product.options_by_name['Color'] | size }}</div>
+                                  <div style="display:none;">{{ product.options_by_name['color'] | size }}</div>
                                 {% endif %}
                                 
                             {% endif %}
