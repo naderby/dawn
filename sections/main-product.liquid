@@ -602,7 +602,18 @@
                                 */
                                 {% endcomment %}
                                 {% if product.options contains "Size" and product.options contains "Color" %}
-                                  <div style="display:none;">{{ product.options_by_name['Color'].values | json }} .... {{ product.options_by_name['Color'].values | size }}</div>
+                                  {% assign colourCount = product.options_by_name['Color'].values | size %}
+                                  {% if colourCount == 1 %}
+                                    {% comment %}
+                                    /*
+                                    * If the code reaches here, then we are on a product with 2 dropdowns, Color and Size
+                                    * And the Color dropdown only has 1 option - so we can append it or prepend it to our stock key
+                                    * to allow us to disable the 'out of stock' sizes.
+                                    */
+                                    {% endcomment %}
+                                    {% assign search_key = value | escape %}
+                                      <div class="findme">.....{{ product.options_by_name['Color'].position }}</div>
+                                    {% endif %}
                                 {% endif %}
                                 
                             {% endif %}
