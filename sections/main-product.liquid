@@ -11,17 +11,10 @@
 
 <script src="{{ 'product-form.js' | asset_url }}" defer="defer"></script>
 
-<script>
-  var g_variants={};
-  var g_variants_options={}
   {% assign stock_check_str  = ''%}
   {%- for p_variant in product.variants -%}
-  g_variants['{{p_variant.id}}'] = {
-    "price": "{{p_variant.price | money_without_currency}}",
-    "available": {{p_variant.available}}
-  };
-  {% assign stock_key = '' %}}
-  {% assign stock_check_str  = stock_check_str | append: ''%}
+    {% assign stock_key = '' %}
+    {% assign stock_check_str  = stock_check_str | append: ''%}
 
   {% if p_variant.option1 %}
     {% assign stock_key = stock_key | append: p_variant.option1 %}
@@ -31,28 +24,23 @@
       {% if p_variant.option3 %}
         {% assign stock_key = stock_key | append: '-'%}
         {% assign stock_key = stock_key | append: p_variant.option3 %}
-        g_variants_options['{{ p_variant.option1 }}']['{{ p_variant.option2 }}']['{{ p_variant.option3 }}'] = '{{p_variant.available}}';
-      {% else %}}
-        g_variants_options['{{ p_variant.option1 }}']['{{ p_variant.option2 }}'] = '{{p_variant.available}}';
-      {% endif %}}
-    {% else %}}
-        g_variants_options['{{ p_variant.option1 }}']= '{{p_variant.available}}';
-    {% endif %}}
-  {% endif %}}
+      {% endif %}
+  {% endif %}
+  {% endif %}
     
-    {% assign stock_key = stock_key   | append: '-'%}
-      {% if p_variant.available %}}
+      {% assign stock_key = stock_key   | append: '-'%}
+      {% if p_variant.available %}
         {% assign stock_key = stock_key | append: '1' %}
-      {% else %}}
+      {% else %}
         {% assign stock_key = stock_key | append: '0' %}
-      {% endif %}}
+      {% endif %}
       
   {% assign stock_check_str = stock_check_str | append: stock_key %}
   {% assign stock_check_str = stock_check_str | append: '|||||' %}
   {% assign stock_check_arr = stock_check_str | split: '|||||' %}
-    
-  {%- endfor -%}
-</script>
+  
+{%- endfor -%}
+
 
 {%- assign first_3d_model = product.media | where: "media_type", "model" | first -%}
 {%- if first_3d_model -%}
@@ -71,14 +59,14 @@
         {% comment %} Added by Mike V. at Shopify Theme Support March 24 2022 {% endcomment %}
         <ul class="product__media-list grid grid--peek list-unstyled slider slider--mobile{% if section.settings.media_layout == 'thumbnails' %} media-thumbnails{% endif %}" role="list">
           {%- assign variant_images = product.images | where: 'attached_to_variant?', true | map: 'src' -%}
-          {%- if product.selected_or_first_available_variant.featured_media != null -%}
-            {%- assign media = product.selected_or_first_available_variant.featured_media -%}
+          {%- if product.selected_variant.featured_media != null -%}
+            {%- assign media = product.selected_variant.featured_media -%}
             <li class="product__media-item grid__item slider__slide{% if media.media_type != 'image' %} product__media-item--full{% endif %}{% if section.settings.hide_variants and variant_images contains media.src %} product__media-item--variant{% endif %}" data-media-id="{{ section.id }}-{{ media.id }}">
               {% render 'product-thumbnail', media: media, position: 'featured', loop: section.settings.enable_video_looping, modal_id: section.id, xr_button: true %}
             </li>
           {%- endif -%}
           {%- for media in product.media -%}
-            {%- unless media.id == product.selected_or_first_available_variant.featured_media.id -%}
+            {%- unless media.id == product.selected_variant.featured_media.id -%}
               <li class="product__media-item grid__item slider__slide{% if media.media_type != 'image' %} product__media-item--full{% endif %}{% if section.settings.hide_variants and variant_images contains media.src %} product__media-item--variant{% endif %}" data-media-id="{{ section.id }}-{{ media.id }}">
                 {% render 'product-thumbnail', media: media, position: forloop.index, loop: section.settings.enable_video_looping, modal_id: section.id, xr_button: true %}
               </li>
@@ -412,7 +400,7 @@
             {%- endif -%}
             <div {{ block.shopify_attributes }}>
               {%- form 'product', product, id: 'product-form-installment', class: 'installment caption-large' -%}
-                <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
+                <input type="hidden" name="id" value="{{ product.selected_variant.id }}">
                 {{ form | payment_terms }}
               {%- endform -%}
             </div>
@@ -606,7 +594,7 @@
                                 name="{{ option.name }}"
                                 value="{{ value | escape }}"
                                 form="{{ product_form_id }}"
-                                {% if option.selected_value == value %}checked{% endif %}
+                                {% if option.selected_value == value and product.selected_variant %}checked{% endif %}
                                 {{ attributes }}
                           >
                           <label for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}">
@@ -622,7 +610,6 @@
               {%- else -%}
                 <variant-selects class="no-js-hidden" data-section="{{ section.id }}" data-url="{{ product.url }}" {{ block.shopify_attributes }}>
                   {%- for option in product.options_with_values -%}
-                    
                     <div class="product-form__input product-form__input--dropdown">
                       <label class="form__label" for="Option-{{ section.id }}-{{ forloop.index0 }}">
                         {{ option.name }}
@@ -633,6 +620,7 @@
                           name="options[{{ option.name | escape }}]"
                           form="{{ product_form_id }}"
                         >
+                        <option disabled hidden selected>Choose a {{ option.name }}</option>
                           {%- for value in option.values -%}
                             {% comment %}
                             /*
@@ -658,8 +646,10 @@
                                 {% assign search_key = search_key | append: "-0" %}
                               
                                   {% if stock_check_arr contains search_key %}
-                                    {% assign label = label | append: " (Out of Stock)" %}
-                                    {% assign attributes = attributes | append: " disabled " %}
+                                    {% assign label = label | append: block.settings.out_of_stock_text %}
+                                    {% if block.settings.disable_out_of_stock %}
+                                     {% assign attributes = attributes | append: " disabled " %}
+                                    {% endif %}
                                   {% endif %}
                               
                             {% elsif option_count == 2 and option.name == 'Size' %}
@@ -695,8 +685,10 @@
                                           {% endif %}
                                           {% assign search_key = search_key | append: '-0' %}
                                           {% if stock_check_arr contains search_key %}
-                                            {% assign label = label | append: " (Out of Stock)" %}
-                                            {% assign attributes = attributes | append: " disabled " %}
+                                             {% assign label = label | append: block.settings.out_of_stock_text %}
+                                              {% if block.settings.disable_out_of_stock %}
+                                               {% assign attributes = attributes | append: " disabled " %}
+                                              {% endif %}
                                           {% endif %}
                                       {% endif %}
                                     {% endif %}
@@ -705,7 +697,7 @@
                             {% endif %}
                             <option 
                             value="{{ value | escape }}"
-                            {% if option.selected_value == value %}selected="selected"{% endif %}
+                            {% if option.selected_value == value and product.selected_variant %}selected="selected"{% endif %}
                             {{ attributes }}
                             >
                               {{ label }}
@@ -729,9 +721,10 @@
                 <label class="form__label" for="Variants-{{ section.id }}">{{ 'products.product.product_variants' | t }}</label>
                 <div class="select">
                   <select name="id" id="Variants-{{ section.id }}" class="select__select" form="{{ product_form_id }}">
+                    <option disabled hidden selected>Choose a {{ option.name}}</option>
                     {%- for variant in product.variants -%}
                       <option
-                        {% if variant == product.selected_or_first_available_variant %}selected="selected"{% endif %}
+                        {% if variant == product.selected_variant %}selected="selected"{% endif %}
                         {% if variant.available == false %}disabled{% endif %}
                         value="{{ variant.id }}"
                       >
@@ -759,19 +752,19 @@
                 </div>
 
                 {%- form 'product', product, id: product_form_id, class: 'form', novalidate: 'novalidate', data-type: 'add-to-cart-form' -%}
-                  <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}" disabled>
+                  <input type="hidden" name="id" value="{{ product.selected_variant.id }}" disabled>
                   <div class="product-form__buttons">
                     <button
                       type="submit"
                       name="add"
-                      class="product-form__submit button button--full-width {% if block.settings.show_dynamic_checkout and product.selling_plan_groups == empty %}button--secondary{% else %}button--primary{% endif %} "
-                    {% if product.selected_or_first_available_variant.available == false %}disabled{% endif %}
+                      class="product-form__submit button button--full-width {% if block.settings.show_dynamic_checkout and product.selling_plan_groups == empty %}button--secondary{% else %}button--primary{% endif %} {% if product.selected_variant %}{% else %} hidden {% endif %}"
+                    {% if product.selected_variant.available == false %}disabled{% endif %}
                     >
                         <span>
-                          {%- if product.selected_or_first_available_variant.available -%}
+                          {%- if product.selected_variant.available -%}
                             {{ 'products.product.add_to_cart' | t }}
                           {%- else -%}
-                            {{ 'products.product.sold_out' | t }}
+                              {{ 'products.product.sold_out' | t }}
                           {%- endif -%}
                         </span>
                         <div class="loading-overlay__spinner hidden">
@@ -783,7 +776,8 @@
                     {%- if block.settings.show_dynamic_checkout -%}
                       {{ form | payment_button }}
                     {%- endif -%}
-                  </div>
+                    
+                     </div>
                 {%- endform -%}
               </product-form>
             </div>
@@ -791,12 +785,12 @@
           {%- when 'pickup_availability' -%}
               {{ 'component-pickup-availability.css' | asset_url | stylesheet_tag }}
 
-              {%- assign pick_up_availabilities = product.selected_or_first_available_variant.store_availabilities | where: 'pick_up_enabled', true -%}
+              {%- assign pick_up_availabilities = product.selected_variant.store_availabilities | where: 'pick_up_enabled', true -%}
 
               <pickup-availability class="product__pickup-availabilities no-js-hidden"
-                {% if product.selected_or_first_available_variant.available and pick_up_availabilities.size > 0 %} available{% endif %}
+                {% if product.selected_variant.available and pick_up_availabilities.size > 0 %} available{% endif %}
                 data-root-url="{{ routes.root_url }}"
-                data-variant-id="{{ product.selected_or_first_available_variant.id }}"
+                data-variant-id="{{ product.selected_variant.id }}"
                 data-has-only-default-variant="{{ product.has_only_default_variant }}"
               >
                 <template>
@@ -836,11 +830,13 @@
 
               <div id="pp-pay-later-message"
                    data-pp-message
-                   data-pp-amount="{{product.selected_or_first_available_variant.price | money_without_currency}}">
+                   data-pp-amount="{{product.selected_variant.price | money_without_currency}}">
               </div> 
               
               <script>
                const pp_hiddenInput = document.querySelector('#{{ product_form_id }} input[name="id"]');
+               if(pp_hiddenInput)
+               {
                pp_hiddenInput.addEventListener('change', function(event) {
                  var chosen = this.value;
                  if(typeof g_variants[chosen] != 'undefined' && typeof g_variants[chosen]['price'] != 'undefined')
@@ -848,6 +844,7 @@
                   document.getElementById("pp-pay-later-message").setAttribute('data-pp-amount',g_variants[chosen]['price']); 
                  }
                });
+               }
               </script>
              
              {% endif%}
@@ -948,8 +945,8 @@
 
       <div class="product-media-modal__content" role="document" aria-label="{{ 'products.modal.label' | t }}" tabindex="0">
         {%- liquid
-          if product.selected_or_first_available_variant.featured_media != null
-            assign media = product.selected_or_first_available_variant.featured_media
+          if product.selected_variant.featured_media != null
+            assign media = product.selected_variant.featured_media
             render 'product-media', media: media, loop: section.settings.enable_video_looping, variant_image: section.settings.hide_variants
           endif
         -%}
@@ -962,7 +959,7 @@
               assign variant_image = false
             endif
 
-            unless media.id == product.selected_or_first_available_variant.featured_media.id
+            unless media.id == product.selected_variant.featured_media.id
               render 'product-media', media: media, loop: section.settings.enable_video_looping, variant_image: variant_image
             endunless
           -%}
@@ -1045,7 +1042,7 @@
       return (msie > 0 || trident > 0);
     }
 
-    if (!isIE()) return;
+    if (!isIE()) {return};
     const hiddenInput = document.querySelector('#{{ product_form_id }} input[name="id"]');
     const noScriptInputWrapper = document.createElement('div');
     const variantSwitcher = document.querySelector('variant-radios[data-section="{{ section.id }}"]') || document.querySelector('variant-selects[data-section="{{ section.id }}"]');
@@ -1055,6 +1052,7 @@
     document.querySelector('#Variants-{{ section.id }}').addEventListener('change', function(event) {
       hiddenInput.value = event.currentTarget.value;
     });
+    
   });
 </script>
 
@@ -1067,8 +1065,8 @@
 {%- endif -%}
 
 {%- liquid
-  if product.selected_or_first_available_variant.featured_media
-    assign seo_media = product.selected_or_first_available_variant.featured_media
+  if product.selected_variant.featured_media
+    assign seo_media = product.selected_variant.featured_media
   else
     assign seo_media = product.featured_media
   endif
@@ -1087,8 +1085,8 @@
       ],
     {%- endif %}
     "description": {{ product.description | strip_html | json }},
-    {% if product.selected_or_first_available_variant.sku != blank -%}
-      "sku": {{ product.selected_or_first_available_variant.sku | json }},
+    {% if product.selected_variant.sku != blank -%}
+      "sku": {{ product.selected_variant.sku | json }},
     {%- endif %}
     "brand": {
       "@type": "Thing",
@@ -1223,6 +1221,19 @@
           ],
           "default": "button",
           "label": "t:sections.main-product.blocks.variant_picker.settings.picker_type.label"
+        },
+        {
+          "type": "checkbox",
+          "label": "Disable Out of Stock Variants",
+          "id": "disable_out_of_stock",
+          "info": "Add the disabled attribute to the variant HTML. This will stop users from clicking on the disabled option.",
+          "default": true
+        },
+        {
+          "type": "text",
+          "label": "Out Of Stock Text",
+          "id": "out_of_stock_text",
+          "default": "(Out of Stock)"
         }
       ]
     },
