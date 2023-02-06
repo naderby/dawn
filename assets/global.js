@@ -683,6 +683,7 @@ class VariantSelects extends HTMLElement {
     if (!productForm) return;
     const innerForm = productForm.querySelector('.form');
     console.log('logging-inner-form');
+    console.log(productForm);
     console.log(innerForm);
     const addButton = productForm.querySelector('[name="add"]');
     const addButtonText = productForm.querySelector('[name="add"] > span');
