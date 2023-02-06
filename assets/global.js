@@ -687,11 +687,11 @@ class VariantSelects extends HTMLElement {
     if (!addButton) return;
 
     if (disable) {
-      addButton.classList.add('hidden');
+      productForm.classList.add('hidden');
       addButton.setAttribute('disabled', 'disabled');
       if (text) addButtonText.textContent = text;
     } else {
-      addButton.classList.remove('hidden');
+      productForm.classList.remove('hidden');
       addButton.removeAttribute('disabled');
       addButtonText.textContent = window.variantStrings.addToCart;
     }
