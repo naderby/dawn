@@ -575,6 +575,7 @@ class VariantSelects extends HTMLElement {
       this.toggleAddButton(true, '', true);
       this.setUnavailable();
     } else {
+      this.setAvailable();
       this.updateMedia();
       this.updateURL();
       this.updateVariantInput();
@@ -686,14 +687,29 @@ class VariantSelects extends HTMLElement {
     if (!addButton) return;
 
     if (disable) {
+      addButton.classList.add('hidden');
       addButton.setAttribute('disabled', 'disabled');
       if (text) addButtonText.textContent = text;
     } else {
+      addButton.classList.remove('hidden');
       addButton.removeAttribute('disabled');
       addButtonText.textContent = window.variantStrings.addToCart;
     }
 
     if (!modifyClass) return;
+  }
+
+  toggleChatButton(show = true){
+     const productForm = document.getElementById(`product-form-${this.dataset.section}`);
+     if (!productForm) return;
+     const addButton = productForm.querySelector('.livechat_button_full');
+     if(!addButton) return;
+     if(show){
+       addButton.classList.remove('hidden');
+     }
+    else{
+       addButton.classList.add('hidden');
+    }
   }
 
   setUnavailable() {
@@ -704,6 +720,14 @@ class VariantSelects extends HTMLElement {
     if (!addButton) return;
     addButtonText.textContent = window.variantStrings.unavailable;
     if (price) price.classList.add('visibility-hidden');
+  }
+
+  setAvailable() {
+    const button = document.getElementById(`product-form-${this.dataset.section}`);
+    const addButton = button.querySelector('[name="add"]');
+    if (!addButton) return;
+    addButton.setAttribute('type','submit');
+    addButton.classList.remove('livechat_button');
   }
 
   getVariantData() {
