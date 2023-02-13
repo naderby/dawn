@@ -122,8 +122,8 @@
             "title": "Price Deals Block",
             "show_at_zero": false,
             "show_below_threshold": false,
-            "show_above_threshold": false,
-            "threshold": 20,
+            "show_above_threshold": true,
+            "threshold": 19,
             "zero_discount_title": "",
             "zero_discount_text": "",
             "zero_link_chat": true,
@@ -131,7 +131,7 @@
             "below_threshold_text": "",
             "below_link_chat": true,
             "above_threshold_title": "Price Deals",
-            "above_threshold_text": "<p>Further discounts are unlikely on this item. Chat for deals on similar items.<\/p>",
+            "above_threshold_text": "<p>We are now at our lowest price on this product, we won't be able to go any lower unless you are considering buying multiple items.<\/p>",
             "above_link_chat": true
           }
         },
