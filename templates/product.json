@@ -55,13 +55,13 @@
             "title": "Price Deals Block (Below Price)",
             "show_at_zero": true,
             "show_below_threshold": true,
-            "show_above_threshold": true,
+            "show_above_threshold": false,
             "threshold": 19,
             "zero_discount_title": "Price Deals",
             "zero_discount_text": "<p>Chat to us for an incredible discount on this item!<\/p>",
             "zero_link_chat": true,
             "below_threshold_title": "Price Deals",
-            "below_threshold_text": "<p>Live chat us for a possible additional discount on this item!<\/p>",
+            "below_threshold_text": "<p>Chat to us for an incredible discount on this item!<\/p>",
             "below_link_chat": true,
             "above_threshold_title": "Price Deals",
             "above_threshold_text": "<p>We are now at our lowest price on this product, we won't be able to go any lower unless you are considering buying multiple items.<\/p>",
@@ -71,7 +71,9 @@
         "variant_picker": {
           "type": "variant_picker",
           "settings": {
-            "picker_type": "dropdown"
+            "picker_type": "dropdown",
+            "disable_out_of_stock": true,
+            "out_of_stock_text": "(Out of Stock)"
           }
         },
         "quantity_selector": {
