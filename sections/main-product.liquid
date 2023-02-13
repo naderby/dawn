@@ -759,8 +759,12 @@
                   {% endif %}
                 {% endif %}
 
-                <div class="findme">
-                  Option size is: [{{ product.options.size }}]
+                <div class="findme hidden">
+                  Option size is: [{{ product.options.size }}] 
+
+                  {% for option in product.options -%}
+                  - {{ option }}
+                  {%- endfor %}
                 </div>
                   
                 {%- form 'product', product, id: product_form_id, class: form_class, novalidate: 'novalidate', data-type: 'add-to-cart-form' -%}
