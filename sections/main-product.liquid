@@ -752,10 +752,13 @@
                 </div>
 
                 {% assign form_class = 'form' %}
-                {% if product.selected_variant %}
-                  {% else %}
-                  {% assign form_class = form_class | append: ' hidden' %}  
+                {% if product.options.size > 0  %}
+                  {% if product.selected_variant%}
+                    {% else %}
+                    {% assign form_class = form_class | append: ' hidden' %}  
+                  {% endif %}
                 {% endif %}
+                  
                 {%- form 'product', product, id: product_form_id, class: form_class, novalidate: 'novalidate', data-type: 'add-to-cart-form' -%}
                   <input type="hidden" name="id" value="{{ product.selected_variant.id }}" disabled>
                   <div class="product-form__buttons">
