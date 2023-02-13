@@ -762,15 +762,21 @@
                 <div class="findme hidden">
                   {{ product.options_with_values | json }}
                 </div>
+
+                {% if product.has_only_default_variant %}
+                    {% assign selected = product.selected_or_first_available_variant.id %}
+                  {% else %}
+                    {% assign selected = product.selected_variant.id %}
+                  {% endif %}
             
                 {%- form 'product', product, id: product_form_id, class: form_class, novalidate: 'novalidate', data-type: 'add-to-cart-form' -%}
-                  <input type="hidden" name="id" value="{{ product.selected_variant.id }}" disabled>
+                  <input type="hidden" name="id" value="{{ selected }}" disabled>
                   <div class="product-form__buttons">
                     <button
                       type="submit"
                       name="add"
                       class="product-form__submit button button--full-width {% if block.settings.show_dynamic_checkout and product.selling_plan_groups == empty %}button--secondary{% else %}button--primary{% endif %}"
-                    {% if product.selected_variant.available == false %}disabled{% endif %}
+                    {% if product.selected_variant.available == false and product.has_only_default_variant == false %}disabled{% endif %}
                     >
                         <span>
                           {%- if product.selected_variant.available -%}
