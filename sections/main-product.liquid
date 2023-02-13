@@ -779,7 +779,7 @@
                     {% if product.selected_variant.available == false and product.has_only_default_variant == false %}disabled{% endif %}
                     >
                         <span>
-                          {%- if product.selected_variant.available -%}
+                          {%- if product.selected_variant.available or product.has_only_default_variant -%}
                             {{ 'products.product.add_to_cart' | t }}
                           {%- else -%}
                               {{ 'products.product.sold_out' | t }}
