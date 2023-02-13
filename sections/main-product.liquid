@@ -758,6 +758,10 @@
                     {% assign form_class = form_class | append: ' hidden' %}  
                   {% endif %}
                 {% endif %}
+
+                <div class="findme">
+                  Option size is: [{{ product.options.size }}]
+                </div>
                   
                 {%- form 'product', product, id: product_form_id, class: form_class, novalidate: 'novalidate', data-type: 'add-to-cart-form' -%}
                   <input type="hidden" name="id" value="{{ product.selected_variant.id }}" disabled>
