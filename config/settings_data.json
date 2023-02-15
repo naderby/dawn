@@ -70,9 +70,9 @@
           "a48143de-1e24-45b6-b89e-9625b6157b89": {
             "type": "announcement",
             "settings": {
-              "text": "JANUARY SALES - UP TO 50% OFF",
-              "color_scheme": "accent-2",
-              "link": "shopify:\/\/collections\/all"
+              "text": "Free shipping over £50 (Terms Apply)",
+              "color_scheme": "accent-1",
+              "link": "shopify:\/\/pages\/delivery-returns"
             }
           },
           "e42272a8-83c2-4bcd-8f60-67ab47b679e6": {
