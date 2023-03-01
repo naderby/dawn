@@ -2,7 +2,6 @@
   "sections": {
     "f7a0fcc3-b083-488a-ad37-37d614fea997": {
       "type": "image-banner",
-      "disabled": true,
       "blocks": {
         "template--15818840408306__f7a0fcc3-b083-488a-ad37-37d614fea997-1668075768ff2cbad8-0": {
           "type": "heading",
@@ -14,7 +13,10 @@
         "template--15818840408306__f7a0fcc3-b083-488a-ad37-37d614fea997-1668075768ff2cbad8-1": {
           "type": "text",
           "settings": {
-            "text": "Huge discounts on your favourite brands!"
+            "text": "Huge discounts on your favourite brands!",
+            "clampLower": 1.5,
+            "clampMiddle": 3.5,
+            "clampHigher": 2.6
           }
         },
         "template--15818840408306__f7a0fcc3-b083-488a-ad37-37d614fea997-1668075768ff2cbad8-2": {
@@ -139,7 +141,10 @@
         "1647267639bb077406-1": {
           "type": "text",
           "settings": {
-            "text": "While stocks last!"
+            "text": "While stocks last!",
+            "clampLower": 1.2,
+            "clampMiddle": 1,
+            "clampHigher": 3
           }
         },
         "1647267639bb077406-2": {
@@ -200,7 +205,10 @@
         "1647261242ac6e1e9b-1": {
           "type": "text",
           "settings": {
-            "text": ""
+            "text": "",
+            "clampLower": 1.2,
+            "clampMiddle": 1,
+            "clampHigher": 3
           }
         },
         "1647261242ac6e1e9b-2": {
@@ -249,7 +257,10 @@
         "16389917923d4e93eb-1": {
           "type": "text",
           "settings": {
-            "text": "We're not only online!"
+            "text": "We're not only online!",
+            "clampLower": 1.2,
+            "clampMiddle": 1,
+            "clampHigher": 3
           }
         },
         "16389917923d4e93eb-2": {
@@ -315,7 +326,10 @@
         "91a99002-d344-4129-97fd-3768987f81b8": {
           "type": "text",
           "settings": {
-            "text": "Latest from the greatest"
+            "text": "Latest from the greatest",
+            "clampLower": 1.2,
+            "clampMiddle": 1,
+            "clampHigher": 3
           }
         },
         "button": {
