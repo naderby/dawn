@@ -101,7 +101,11 @@
             </h2>
           {%- when 'text' -%}
             <div class="banner__text" {{ block.shopify_attributes }}>
-              <span>{{ block.settings.text | escape }}</span>
+              <span
+                {% if block.settings.clampLower and block.settings.clampMiddle and block.settings.clampHigher %}
+                    style="font-size:clamp({{ block.settings.clampLower }}rem, {{ block.settings.clampMiddle }}vw, {{ block.settings.clampHigher }}rem); line-height:normal;"
+                {% endif %}
+                >{{ block.settings.text | escape }}</span>
             </div>
           {%- when 'buttons' -%}
             <div class="banner__buttons{% if block.settings.button_label_1 != blank and block.settings.button_label_2 != blank %} banner__buttons--multiple{% endif %} {% if section.settings.button_position == "bottom" %}banner__buttons--bottom{% endif %}" {{ block.shopify_attributes }}>
@@ -312,6 +316,37 @@
           "id": "text",
           "default": "Give customers details about the banner image(s) or content on the template.",
           "label": "t:sections.image-banner.blocks.text.settings.text.label"
+        },
+        {
+        "type": "range",
+        "id": "clampLower",
+        "label": "Font Size (Smallest Scale)",
+        "default":1.2,
+        "min": 0.5,
+        "max": 4,
+        "step": 0.1,
+        "info": "Enter the lowest font size to display at (unit: rem)."
+        },
+        {
+        "type": "range",
+        "id": "clampMiddle",
+        "default":1,
+        "unit": "vw",
+        "min": 1,
+        "max": 50,
+        "step":0.5,
+        "label": "Viewport Width Scale",
+        "info": "Select the preferred font size based on the viewport width."
+        },
+        {
+        "type": "range",
+        "label": "Font Size (Largest Scale)",
+        "id": "clampHigher",
+        "default":3,
+        "step": 0.1,
+        "min": 0.5,
+        "max": 4,
+        "info": "Enter the highest font size to display at (unit: rem)."
         }
       ]
     },
