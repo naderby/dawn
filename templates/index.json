@@ -6,16 +6,15 @@
       "blocks": {
         "template--15818840408306__f7a0fcc3-b083-488a-ad37-37d614fea997-1668075768ff2cbad8-0": {
           "type": "heading",
-          "disabled": true,
           "settings": {
-            "heading": "January sale",
+            "heading": "Winter Sale",
             "heading_size": "large"
           }
         },
         "template--15818840408306__f7a0fcc3-b083-488a-ad37-37d614fea997-1668075768ff2cbad8-1": {
           "type": "text",
           "settings": {
-            "text": ""
+            "text": "Huge discounts on your favourite brands!"
           }
         },
         "template--15818840408306__f7a0fcc3-b083-488a-ad37-37d614fea997-1668075768ff2cbad8-2": {
@@ -36,16 +35,16 @@
         "template--15818840408306__f7a0fcc3-b083-488a-ad37-37d614fea997-1668075768ff2cbad8-2"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/sale_3.png",
+        "image": "shopify:\/\/shop_images\/sale-banner-bg.jpg",
         "image_height": "small",
-        "adapt_height_first_image": false,
-        "desktop_text_box_position": "flex-end",
+        "adapt_height_first_image": true,
+        "desktop_text_box_position": "center",
         "show_text_box": false,
         "image_overlay_opacity": 0,
-        "color_scheme": "accent-1",
+        "color_scheme": "background-2",
         "button_position": "bottom",
-        "button_bg_color": "#fafafa",
-        "button_text_color": "#000000",
+        "button_bg_color": "#333333",
+        "button_text_color": "#fafafa",
         "stack_images_on_mobile": true,
         "show_text_below": false
       }
