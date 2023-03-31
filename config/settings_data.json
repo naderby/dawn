@@ -174,7 +174,15 @@
     },
     "content_for_index": [
 
-    ]
+    ],
+    "blocks": {
+      "10384935893930344104": {
+        "type": "shopify:\/\/apps\/seoant-broken-link-redirect\/blocks\/brokenlink-404\/cc7b1996-e567-42d0-8862-356092041863",
+        "disabled": false,
+        "settings": {
+        }
+      }
+    }
   },
   "presets": {
     "Default": {
