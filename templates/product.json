@@ -68,6 +68,15 @@
             "above_link_chat": true
           }
         },
+        "3fb74415-8f87-4de5-88c1-be439d3318b1": {
+          "type": "product_availability",
+          "settings": {
+            "show_in_stock": true,
+            "in_stock_text": "In Stock",
+            "show_out_of_stock": true,
+            "out_of_stock_text": "Out of Stock"
+          }
+        },
         "variant_picker": {
           "type": "variant_picker",
           "settings": {
@@ -205,6 +214,7 @@
         "7ad30487-ccf2-49b3-a950-2221fdf4afe3",
         "price",
         "451b0cb0-a751-430b-95c7-4360f048701f",
+        "3fb74415-8f87-4de5-88c1-be439d3318b1",
         "variant_picker",
         "quantity_selector",
         "de1384bf-463e-4209-b415-17d4fdf076e5",
