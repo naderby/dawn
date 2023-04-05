@@ -521,7 +521,7 @@
                       <fieldset class="js product-form__input">
                         <legend class="form__label">{{ option.name }}</legend>
                         {%- for value in option.values -%}
- {% comment %}
+                             {% comment %}
                             /*
                             * Set up some default variables to handle attributes and the dropdown label.
                             * This is helpful for displaying 'out of stock' messages instantly, if it is supported.
@@ -823,7 +823,136 @@
               </pickup-availability>
               
               <script src="{{ 'pickup-availability.js' | asset_url }}" defer="defer"></script>
-              
+
+            {%- when 'product_availability' -%}
+            <product-availability>
+              <style>
+                .alert.alert-stock-status{
+                  padding:.6em .8em;
+                  background-color:#f2f2f2;
+                  border-left:8px solid #ccc;
+                  margin-bottom:1em;
+                }
+
+                .alert.alert-stock-status .inner{
+                  display:flex;
+                  align-items:center;
+                  gap:10px;
+                }
+
+                .alert.alert-stock-status .inner svg{
+                  max-width:8%;
+                }
+
+                .alert.alert-stock-status.available{
+                    border-left-color:#8cdf62!important;
+                }
+                .alert.alert-stock-status.available svg path{
+                  fill:#8cdf62!important;
+                }
+                .alert.alert-stock-status.unavailable{
+                    border-left-color:#d93b3b!important;
+                }
+                .alert.alert-stock-status.unavailable svg path{
+                  fill:#d93b3b!important;
+                }
+              </style>
+
+              {% if product.first_available_variant == null %}
+                {% if block.settings.show_out_of_stock %}
+                   <div class="alert alert-stock-status unavailable">
+                      <div class="inner">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M256 48a208 208 0 1 1 0 416 208 208 0 1 1 0-416zm0 464A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM175 175c-9.4 9.4-9.4 24.6 0 33.9l47 47-47 47c-9.4 9.4-9.4 24.6 0 33.9s24.6 9.4 33.9 0l47-47 47 47c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-47-47 47-47c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-47 47-47-47c-9.4-9.4-24.6-9.4-33.9 0z"/></svg>
+                        {{ block.settings.out_of_stock_text }}  
+                      </div>
+                    </div>
+                {% endif %}
+              {% else %}
+
+                {% if block.settings.show_in_stock %}
+                   <div class="alert alert-stock-status available hidden">
+                    <div class="inner">
+                       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M256 48a208 208 0 1 1 0 416 208 208 0 1 1 0-416zm0 464A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM369 209c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-111 111-47-47c-9.4-9.4-24.6-9.4-33.9 0s-9.4 24.6 0 33.9l64 64c9.4 9.4 24.6 9.4 33.9 0L369 209z"/></svg>
+                      {{ block.settings.in_stock_text }}  
+                    </div>
+                  </div>
+                {% endif %}
+
+                {% if block.settings.show_out_of_stock %}
+                   <div class="alert alert-stock-status unavailable hidden">
+                      <div class="inner">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M256 48a208 208 0 1 1 0 416 208 208 0 1 1 0-416zm0 464A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM175 175c-9.4 9.4-9.4 24.6 0 33.9l47 47-47 47c-9.4 9.4-9.4 24.6 0 33.9s24.6 9.4 33.9 0l47-47 47 47c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-47-47 47-47c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-47 47-47-47c-9.4-9.4-24.6-9.4-33.9 0z"/></svg>
+                        {{ block.settings.out_of_stock_text }}  
+                      </div>
+                    </div>
+                {% endif %}
+                <script>
+                  document.querySelector('form[action="/cart/add"] input[name="id"]').addEventListener('change',function(){
+                     const selectedVal = this.value;
+                     const variantEle = document.querySelector('variant-selects script[type="application/json"]');
+                     if(variantEle)
+                     {
+                        const variantObj = JSON.parse(variantEle.textContent);
+                        var foundItem = variantObj.find(productAvailabilityVariantIsSelected);
+
+                        if(foundItem)
+                        {
+                          if(foundItem.available == true)
+                          {
+                            productAvailabilityShowInStock();
+                          }
+                          else
+                          {
+                            productAvailabilityShowOutOfStock();
+                          }
+                        }
+                     }
+                  });
+
+                function productAvailabilityShowInStock()
+                {
+                  const alerts = document.querySelectorAll('product-availability div.alert.alert-stock-status');
+                  const inStockAlert = document.querySelector('product-availability div.alert.alert-stock-status.available');
+                  if(alerts && inStockAlert)
+                  {
+                    alerts.forEach((alert)=> {
+                      alert.classList.add('hidden');
+                    });
+                    inStockAlert.classList.remove('hidden');
+                  }
+                }
+
+                function productAvailabilityShowOutOfStock()
+                {
+                  const alerts = document.querySelectorAll('product-availability div.alert.alert-stock-status');
+                  const outOfStockAlert = document.querySelector('product-availability div.alert.alert-stock-status.unavailable');
+                  if(alerts && outOfStockAlert)
+                  {
+                    alerts.forEach((alert)=> {
+                      alert.classList.add('hidden');
+                    });
+                    outOfStockAlert.classList.remove('hidden');
+                  }
+                }
+
+                function productAvailabilityVariantIsSelected(variant)
+                  {
+                    const selectedVal =  document.querySelector('form[action="/cart/add"] input[name="id"]').value;
+                    return (variant.id == selectedVal);
+                  }
+
+                {% if product.selected_variant.sku != blank -%}
+                /*
+                * Trigger a change if variant is already selected.
+                */
+                  document.addEventListener("DOMContentLoaded", function(event) { 
+                  var fakeChange = new Event('change');
+                  document.querySelector('form[action="/cart/add"] input[name="id"]').dispatchEvent(fakeChange);
+                  });
+                {% endif %}
+                </script>
+              </product-availability>
+              {% endif %}
           {%- when 'paypal_paylater' -%}
               
              {% if block.settings.show_paypal_paylater and block.settings.paylater_paypal_client_id != blank %}
@@ -1253,6 +1382,37 @@
           "id": "out_of_stock_text",
           "default": "(Out of Stock)"
         }
+      ]
+    },
+    {
+      "type": "product_availability",
+      "name": "Product Availability",
+      "limit": 1,
+      "settings": [
+          {
+          "type": "checkbox",
+          "label": "Show if In Stock?",
+          "id": "show_in_stock",
+          "default": true
+          },
+          {
+            "type": "text",
+            "label": "In Stock Text",
+            "id": "in_stock_text",
+            "default": "In Stock"
+          },
+          {
+          "type": "checkbox",
+          "label": "Show if Out of Stock?",
+          "id": "show_out_of_stock",
+          "default": true
+          },
+          {
+          "type": "text",
+          "label": "Out of Stock Text",
+          "id": "out_of_stock_text",
+          "default": "Out of Stock"
+          }
       ]
     },
     {
