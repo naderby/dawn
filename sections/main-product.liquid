@@ -608,10 +608,20 @@
                   </script>
                 </variant-radios>
               {%- else -%}
+              {% assign productCollections = product.collections | map: "handle" %}
                 <variant-selects class="no-js-hidden" data-section="{{ section.id }}" data-url="{{ product.url }}" {{ block.shopify_attributes }}>
                   {%- for option in product.options_with_values -%}
-                    <div class="product-form__input product-form__input--dropdown">
-                      <label class="form__label" for="Option-{{ section.id }}-{{ forloop.index0 }}">
+                    <div class="product-form__input product-form__input--dropdown
+                    
+                  {% if productCollections contains 'motorcycle-rainwear'%}
+                    {% if  option.name == 'Colour' or option.name == 'Color'%}
+                        {% if option.values.size == 1 %}
+                        hidden
+                        {% endif %}
+                    {% endif %}
+                  {% endif %}
+                  ">
+                      <label class="form__label" for="Option-{{ section.id }}-{{ forloop.index0 }}" data-size="{{ option.values.size }}">
                         {{ option.name }}
                       </label>
                       <div class="select">
@@ -697,7 +707,17 @@
                             {% endif %}
                             <option 
                             value="{{ value | escape }}"
-                            {% if option.selected_value == value and product.selected_variant %}selected="selected"{% endif %}
+                            {% if option.selected_value == value and product.selected_variant %}
+                                selected="selected"
+                            {%else %}
+                                {% if productCollections contains 'motorcycle-rainwear'%}
+                                    {% if  option.name == 'Colour' or option.name == 'Color'%}
+                                        {% if option.values.size == 1 %}
+                                        selected="selected"
+                                        {% endif %}
+                                    {% endif %}
+                                {% endif %}
+                            {% endif %}
                             {{ attributes }}
                             >
                               {{ label }}
