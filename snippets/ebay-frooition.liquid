@@ -577,14 +577,29 @@ end froo image gallery -->
       <img class="logo"
       src="{CDNUrl}/productimages/{ProductID}.png?width=547&amp;etag={etag}">
       <div class="lightbox-gallery">
-        {for images} <a href="#_"
-        class="lightbox" id="img{position+1}">
-        <div
-        class="close-img">
-        &times</div>
-        <img
-        src="{cdnurl}{images.src}?width=800&amp;height=600&amp;nostretch">
-        </a>
+        {for images} 
+          <a href="#_"
+          class="lightbox" id="img{position+1}">
+            <div
+            class="close-img">
+            &times</div>
+            <img
+            src="{cdnurl}{images.src}?width=800&amp;height=600&amp;nostretch">
+          </a>
+        {/for}
+        {for images step=4} 
+          <div class="row image-row text-center">
+           {for Images count=4
+        start={position}}
+            <div class="span2">
+              <a class="image
+              fancybox" href="#img{position+1}">
+                <img
+                src="{cdnurl}{images.src}?width=200&amp;height=200"/>
+              </a>
+            </div>
+          {/for}
+          </div>
         {/for}
       </div>
     </div>
@@ -613,45 +628,12 @@ end froo image gallery -->
         </div>
     </div>
   </div>
- <div
-class="span12 text-center">
- 
- {for images} <a href="#_"
-class="lightbox" id="img{position+1}">
- <div
-class="close-img">
-&times</div>
- <img
-src="{cdnurl}{images.src}?width=800&amp;height=600&amp;nostretch">
-</a>
- {/for} <div class="clearfix">
 </div>
- {if
-count(images) >
- 1}<hr/>
-{/if} {for images step=4} <div
-class="row image-row text-center">
- {for Images count=4
-start={position}} <div class="span2">
-<a class="image
-fancybox" href="#img{position+1}">
-<img
-src="{cdnurl}{images.src}?width=200&amp;height=200"/>
-</a>
-</div>
-{/for} </div>
- {/for} <br />
- </div>
- </div>
+<div class="after-row">
 <span id="feedback_msg">
  </span>
 <div class="clear">
 </div>
-</div>
-</div>
-
-
-<div class="clear">
 </div>
     
 <!-- froo bottom middle custom box -->
