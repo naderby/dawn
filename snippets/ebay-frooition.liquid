@@ -553,11 +553,15 @@ Easter Sale</a>
 end froo image gallery -->
 
 <style>
+  #tabs [type=radio]:checked ~ label{
+    margin:0!important;
+    border:0!important;
+  }
   .entry-content.main{
     display:flex;
     gap:1em;
   }
-
+  
   @media(max-width:884px){
     .entry-content.main{
       flex-direction:column;
