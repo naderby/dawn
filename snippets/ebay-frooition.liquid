@@ -567,6 +567,10 @@ end froo image gallery -->
     width:50%;
   }
 
+  .m-w-100{
+    max-width:100%;
+  }
+
   .entry-content.main .main-description .item-details{
     float:none;
     width:100%;
@@ -589,7 +593,7 @@ end froo image gallery -->
           </a>
         {/for}
         {for images step=4} 
-          <div class="row image-row text-center">
+          <div class="row m-w-100 image-row text-center">
            {for Images count=4
         start={position}}
             <div class="span2">
