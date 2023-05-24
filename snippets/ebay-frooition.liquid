@@ -553,10 +553,22 @@ end froo image gallery -->
 <style>
   .entry-content.main{
     display:flex;
+    gap:1em;
+  }
+
+  @media(max-width:884px){
+    .entry-content.main{
+      flex-direction:column;
+    }
   }
 
   .entry-content.main .flex-1{
     flex:1;
+  }
+
+  .entry-content.main .main-description .item-details{
+    float:none;
+    width:100%;
   }
 </style>
 <div class="row">
