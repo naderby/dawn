@@ -564,14 +564,6 @@ end froo image gallery -->
     }
   }
 
-  .lightbox:target img{
-    width:auto;
-    max-width:unset;
-    height:100%;
-    max-height:90%;
-    padding:0;
-  }
-
   .lightbox:target .close-img{
         position: absolute;
     right: 2%;
@@ -588,6 +580,14 @@ end froo image gallery -->
     max-width:100%; 
   }
 
+
+  .lightbox:target img{
+    width: auto;
+    max-width: 80%!important;
+    height: auto;
+    max-height:unset!important;
+  }
+  
   .m-w-100{
     max-width:100%;
   }
