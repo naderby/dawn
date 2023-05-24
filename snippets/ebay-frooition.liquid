@@ -550,22 +550,60 @@ Easter Sale</a>
 </froogallery>
 end froo image gallery -->
 
+<style>
+  .entry-content.main{
+    display:flex;
+  }
 
+  .entry-content.main .flex-1{
+    flex:1;
+  }
+</style>
 <div class="row">
+  <div class="entry-content main">
+    <div class="main-img flex-1 text-center center">
+      <img class="logo"
+      src="{CDNUrl}/productimages/{ProductID}.png?width=547&amp;etag={etag}">
+      <div class="lightbox-gallery">
+        {for images} <a href="#_"
+        class="lightbox" id="img{position+1}">
+        <div
+        class="close-img">
+        &times</div>
+        <img
+        src="{cdnurl}{images.src}?width=800&amp;height=600&amp;nostretch">
+        </a>
+        {/for}
+      </div>
+    </div>
+    <div class="main-description flex-1">
+      <div class="item-details">
+        <frooitemtitle>
+        <h3>
+        {Title}</h3>
+        </frooitemtitle>
+            
+        <div class="price">
+        {format eBayPrice, eBayCurrency}</div>
+        <!-- froo description -->
+        <froodescription>
+        
+        		<div id="description">
+        		<div id="descriptiontitle">
+        Item Description</div>
+        		<div id="descriptioncontent">
+        {include field="EbayDescription"}</div>
+        		<div id="descriptionbase">
+        </div>
+        		</div>
+        </froodescription>
+        <!-- end froo description -->
+        </div>
+    </div>
+  </div>
  <div
 class="span12 text-center">
- <a href="#img1">
-<img class="logo"
-src="{CDNUrl}/productimages/{ProductID}.png?width=547&amp;etag={etag}">
-</a>
- <a href="#_" class="lightbox"
-id="img1">
- <div class="close-img">
-&times;</div>
-<img
-src="{CDNUrl}/productimages/{ProductID}.png?width=800&amp;etag={etag}"
-/>
- </a>
+ 
  {for images} <a href="#_"
 class="lightbox" id="img{position+1}">
  <div
@@ -600,28 +638,6 @@ src="{cdnurl}{images.src}?width=200&amp;height=200"/>
 </div>
 </div>
 
-<div class="item-details">
-<frooitemtitle>
-<h3>
-{Title}</h3>
-</frooitemtitle>
-    
-<div class="price">
-{format eBayPrice, eBayCurrency}</div>
-<!-- froo description -->
-<froodescription>
-
-		<div id="description">
-		<div id="descriptiontitle">
-Item Description</div>
-		<div id="descriptioncontent">
-{include field="EbayDescription"}</div>
-		<div id="descriptionbase">
-</div>
-		</div>
-</froodescription>
-<!-- end froo description -->
-</div>
 
 <div class="clear">
 </div>
