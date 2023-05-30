@@ -1,3 +1,5 @@
+{defaultcss}
+
 <frootemplatename data="custom_template" />
 <frootemplateid data="5128" />
 <frootabid data="8079" />
@@ -551,80 +553,138 @@ Easter Sale</a>
 end froo image gallery -->
 
 
+<style>
+  #tabs [type=radio]:checked ~ label{
+    margin:0!important;
+    border:0!important;
+  }
+  .entry-content.main{
+    display:flex;
+    gap:1em;
+  }
+  
+  @media(max-width:884px){
+    .entry-content.main{
+      flex-direction:column;
+    }
+  }
+
+  .lightbox:target .close-img{
+        position: absolute;
+    right: 2%;
+    top: 2%;
+    padding: 0;
+  }
+
+  .entry-content.main .flex-1{
+    flex:1;
+    width:50%;
+  }
+
+  @media(max-width:768px){
+    .entry-content.main .flex-1{
+      width:100%;
+    }
+
+    .lightbox-gallery .row{
+      display:flex;
+    }
+
+    .lightbox-gallery .row>.span2{
+      width:25%:
+    }
+
+    #description #descriptioncontent{
+      max-height:unset!important;
+    }
+  }
+
+  .entry-content .main-img img{
+    max-width:100%; 
+  }
+
+
+  .lightbox:target img{
+    width: auto;
+    max-width: 80%!important;
+    height: auto;
+    max-height:unset!important;
+  }
+  
+  .m-w-100{
+    max-width:100%;
+  }
+
+  .entry-content.main .main-description .item-details{
+    float:none;
+    width:100%;
+  }
+</style>
+  
 <div class="row">
- <div
-class="span12 text-center">
- <a href="#img1">
-<img class="logo"
+  <div class="entry-content main">
+    <div class="main-img flex-1 text-center center">
+      <img class="logo"
 src="{CDNUrl}/productimages/{ProductID}.png?width=547&amp;etag={etag}">
-</a>
- <a href="#_" class="lightbox"
-id="img1">
- <div class="close-img">
-&times</div>
-<img
-src="{CDNUrl}/productimages/{ProductID}.png?width=800&amp;etag={etag}"
-/>
- </a>
- {for images} <a href="#_"
-class="lightbox" id="img{position+1}">
- <div
-class="close-img">
-&times</div>
- <img
-src="{cdnurl}{images.src}?width=800&amp;height=600&amp;nostretch">
-</a>
- {/for} <div class="clearfix">
+      <div class="lightbox-gallery">
+        {for images} 
+          <a href="javascript:;"
+          class="lightbox" id="img{position+1}">
+            <div
+            class="close-img">
+            &times</div>
+            <img
+            src="{cdnurl}{images.src}?width=800&amp;height=600&amp;nostretch">
+          </a>
+        {/for}
+        {for images step=4} 
+          <div class="row m-w-100 image-row text-center">
+           {for Images count=4
+        start={position}}
+            <div class="span2">
+              <a class="image
+              fancybox" href="#img{position+1}">
+                <img
+                src="{cdnurl}{images.src}?width=200&amp;height=200"/>
+              </a>
+            </div>
+          {/for}
+          </div>
+        {/for}
+      </div>
+    </div>
+    <div class="main-description flex-1">
+      <div class="item-details">
+        <frooitemtitle>
+        <h3>
+        {Title}</h3>
+        </frooitemtitle>
+        <div class="price">
+          {format eBayPrice, eBayCurrency}
+        </div>
+        <!-- froo description -->
+        <froodescription>
+        		<div id="description">
+        		<div id="descriptiontitle">
+        Item Description</div>
+        		<div id="descriptioncontent">
+        {include field="EbayDescription"}</div>
+        		<div id="descriptionbase">
+        </div>
+        		</div>
+        </froodescription>
+        <!-- end froo description -->
+      </div>
+    </div>
+  </div>
 </div>
- {if
-count(images) >
- 1}<hr/>
-{/if} {for images step=4} <div
-class="row image-row text-center">
- {for Images count=4
-start={position}} <div class="span2">
-<a class="image
-fancybox" href="#img{position+1}">
-<img
-src="{cdnurl}{images.src}?width=200&amp;height=200"/>
-</a>
-</div>
-{/for} </div>
- {/for} <br />
- </div>
- </div>
+<div class="after-row">
 <span id="feedback_msg">
  </span>
 <div class="clear">
 </div>
 </div>
-</div>
 
-<div class="item-details">
-<frooitemtitle>
-<h3>
-{Title}</h3>
-</frooitemtitle>
-    
-<div class="price">
-{format eBayPrice, eBayCurrency}</div>
-<!-- froo description -->
-<froodescription>
-
-		<div id="description">
-		<div id="descriptiontitle">
-Item Description</div>
-		<div id="descriptioncontent">
-{include field="EbayDescription"}</div>
-		<div id="descriptionbase">
-</div>
-		</div>
-</froodescription>
-<!-- end froo description -->
-</div>
-
-<div class="clear">
-</div>
     
 <!-- froo bottom middle custom box -->
 <froobottommiddlecustombox>
