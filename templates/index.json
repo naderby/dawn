@@ -421,6 +421,31 @@
       "settings": {
         "custom_liquid": "<!-- Begin eTrusted widget tag -->\n<etrusted-widget data-etrusted-widget-id=\"wdg-dcf50c22-1e1b-437a-8e28-521c885c731b\"><\/etrusted-widget>\n<!-- End eTrusted widget tag -->"
       }
+    },
+    "490a522d-206f-4402-ab83-0c4bf1a1a415": {
+      "type": "custom-liquid",
+      "custom_css": [
+        "h2 {text-align: center;}"
+      ],
+      "settings": {
+        "custom_liquid": "<section><h2>Our Latest Reviews<\/h2><\/section>"
+      }
+    },
+    "1687425002465290cc": {
+      "type": "apps",
+      "blocks": {
+        "a416dc77-783b-412c-ad2e-718e46a6cd1a": {
+          "type": "shopify:\/\/apps\/trusted-shops-easy-integration\/blocks\/review-carousel\/2ae4ab38-7eb9-4d62-abe3-d4a5f27cbef2",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "a416dc77-783b-412c-ad2e-718e46a6cd1a"
+      ],
+      "settings": {
+        "include_margins": true
+      }
     }
   },
   "order": [
@@ -435,6 +460,8 @@
     "featured_products",
     "image_banner",
     "1638986059856353eb",
-    "16602880581f868281"
+    "16602880581f868281",
+    "490a522d-206f-4402-ab83-0c4bf1a1a415",
+    "1687425002465290cc"
   ]
 }
