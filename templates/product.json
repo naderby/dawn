@@ -85,6 +85,11 @@
             "out_of_stock_text": "(Out of Stock)"
           }
         },
+        "fc173845-d6b4-4e48-a43d-0f66794f0a99": {
+          "type": "shopify:\/\/apps\/bundler\/blocks\/bundler-target-element\/7a6ae1b8-3b16-449b-8429-8bb89a62c664",
+          "settings": {
+          }
+        },
         "quantity_selector": {
           "type": "quantity_selector",
           "settings": {
@@ -216,6 +221,7 @@
         "451b0cb0-a751-430b-95c7-4360f048701f",
         "3fb74415-8f87-4de5-88c1-be439d3318b1",
         "variant_picker",
+        "fc173845-d6b4-4e48-a43d-0f66794f0a99",
         "quantity_selector",
         "de1384bf-463e-4209-b415-17d4fdf076e5",
         "buy_buttons",
