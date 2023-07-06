@@ -866,3 +866,40 @@ select option[disabled]{
   background-color:#f2f2f2;
 }
 }
+
+body #bundler-target-element .bndlr-product.bndlr-mix-and-match{
+  max-width:unset!important;
+  width:100%;
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+}
+
+body #bundler-target-element .bndlr-product.bndlr-mix-and-match .bndlr-product-image-url{
+  grid-column: span 1;
+  grid-row: span 2;
+}
+
+body #bundler-target-element .bndlr-product.bndlr-mix-and-match .bndlr-product-qn-container{
+    grid-column: 2 / span 2;
+    grid-row: span 1;
+    text-align: left;
+    line-height: 1.2em;
+    font-size: 90%;
+    text-decoration: none;
+}
+
+body #bundler-target-element .bndlr-product.bndlr-mix-and-match .bndlr-product-qn-container a{
+  text-decoration:none;
+}
+
+body #bundler-target-element .bndlr-product.bndlr-mix-and-match .bndlr-product-price{
+  grid-column:2 / span 2;
+}
+
+body #bundler-target-element .bndlr-product.bndlr-mix-and-match .bndlr-select-variant{
+  grid-column:span 2;
+}
+
+body #bundler-target-element .bndlr-product.bndlr-mix-and-match .bndlr-add-to-bundle{
+  grid-column:span 1;
+}
