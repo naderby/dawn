@@ -871,6 +871,9 @@ body #bundler-target-element .bndlr-product.bndlr-mix-and-match{
   width:100%;
   display:grid;
   grid-template-columns:repeat(3,1fr);
+  border-top: none;
+  border-left: none;
+  border-right: none;
 }
 
 body #bundler-target-element .bndlr-product.bndlr-mix-and-match .bndlr-product-image-url{
