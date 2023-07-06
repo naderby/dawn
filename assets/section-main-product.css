@@ -868,6 +868,7 @@ select option[disabled]{
 
 body #bundler-target-element .bundler-target-element .bndlr-products-container{
   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  padding:0;
 }
 
 body #bundler-target-element .bndlr-product.bndlr-mix-and-match{
@@ -936,4 +937,8 @@ body #bundler-target-element .bndlr-product.bndlr-mix-and-match .bndlr-select-va
 
 body #bundler-target-element .bndlr-product.bndlr-mix-and-match .bndlr-add-to-bundle{
   grid-column:span 1;
+}
+
+body #bundler-target-element .bndlr-product.bndlr-mix-and-match .bndlr-select-variant[style="display:none;"]+.bndlr-add-to-bundle{
+  grid-column:span 3;
 }
