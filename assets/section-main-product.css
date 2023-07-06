@@ -876,6 +876,22 @@ body #bundler-target-element .bndlr-product.bndlr-mix-and-match{
   border-right: none;
 }
 
+body #bundler-target-element .bndlr-bundle-title{
+  color:#fff!important;
+  background-color:#0b6e4f;
+  margin-bottom:!important;
+  padding-bottom:1em;
+}
+body #bundler-target-element .bndlr-bundle-description{
+  color:#fff!important;
+  margin-bottom:0;
+  padding-bottom:1em;
+}
+body #bundler-target-element .bndlr-mixnmatch .bndlr-inner-products-container{
+  border: 1px solid #eee;
+  border-top: none;
+}
+
 body #bundler-target-element .bndlr-product.bndlr-mix-and-match .bndlr-product-image-url{
   grid-column: span 1;
   grid-row: span 2;
@@ -903,7 +919,7 @@ body #bundler-target-element .bndlr-product.bndlr-mix-and-match .bndlr-product-p
 }
 
 body #bundler-target-element .bndlr-product.bndlr-mix-and-match .bndlr-product-price .bndlr-new-price{
-  color:#0b6e4f;
+  color:#0b6e4f!important;
 }
 
 body #bundler-target-element .bndlr-product.bndlr-mix-and-match .bndlr-select-variant{
