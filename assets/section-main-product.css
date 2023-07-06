@@ -865,7 +865,6 @@ a.product__text {
 select option[disabled]{
   background-color:#f2f2f2;
 }
-}
 
 body #bundler-target-element .bndlr-product.bndlr-mix-and-match{
   max-width:unset!important;
